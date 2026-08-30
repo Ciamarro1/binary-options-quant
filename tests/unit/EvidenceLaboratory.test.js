@@ -17,9 +17,10 @@ describe('Quantitative Evidence Laboratory Core', () => {
   });
 
   it('MetricsEngine requires statistical significance for EDGE DETECTED', () => {
-    // Break even for 1.0 payout = 50%
-    // 55 wins out of 100 = 55% win rate. Edge = 5%.
-    // CI lower bound = 0.55 - 1.96 * sqrt(0.55*0.45/100) = 0.55 - 1.96 * 0.0497 = 0.55 - 0.097 = 0.453
+    // For 1.0 payout, BE = 0.5.
+    // 55/100 = 0.55.
+    // Wilson CI lower bound for p=0.55, N=100, z=1.96:
+    // center ≈ 0.549, spread ≈ 0.096 => ciLower ≈ 0.453
     // Since 0.453 is NOT > 0.50, edge is NOT detected statistically.
     const preds = Array.from({ length: 55 }, () => ({ prob: 0.55, outcome: 'WIN' }))
       .concat(Array.from({ length: 45 }, () => ({ prob: 0.55, outcome: 'LOSS' })));

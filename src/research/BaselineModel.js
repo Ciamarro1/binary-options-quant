@@ -1,11 +1,11 @@
 "use strict";
-
 const ModelContract = require('../strategy/models/ModelContract');
 
 class BaselineModel extends ModelContract {
-  constructor() {
+  constructor(callFrequency = 0.5) {
     super();
-    this.callFrequency = 0.5; // Naive 50/50 prior
+    this.callFrequency = callFrequency;
+    Object.freeze(this); // The model instance is strictly immutable after fit
   }
 
   get id() {
@@ -13,36 +13,32 @@ class BaselineModel extends ModelContract {
   }
 
   get version() {
-    return '1.0.0';
+    return '1.0.1';
   }
 
   /**
-   * Fit the naive model on historical data.
+   * Fits the naive model strictly on market observations.
+   * Returns a NEW fitted model instance to prevent mutation.
    */
-  fit(historicalOutcomes) {
-    if (!Array.isArray(historicalOutcomes) || historicalOutcomes.length === 0) {
-      this.callFrequency = 0.5;
-      return;
+  static fit(historicalObservations) {
+    if (!Array.isArray(historicalObservations) || historicalObservations.length < 2) {
+      return new BaselineModel(0.5);
     }
     
-    let callWins = 0;
-    let validOutcomes = 0;
-    for (const outcome of historicalOutcomes) {
-      if (outcome.outcome !== 'INVALID' && outcome.outcome !== 'PUSH') {
-        validOutcomes++;
-        // If it was a CALL and it won, or PUT and it lost -> it means the market went up
-        const up = (outcome.direction === 'CALL' && outcome.outcome === 'WIN') ||
-                   (outcome.direction === 'PUT' && outcome.outcome === 'LOSS');
-        if (up) callWins++;
-      }
+    let ups = 0;
+    let valid = 0;
+    for (let i = 1; i < historicalObservations.length; i++) {
+      const prev = historicalObservations[i-1];
+      const curr = historicalObservations[i];
+      if (curr.close > prev.close) ups++;
+      if (curr.close !== prev.close) valid++;
     }
-    if (validOutcomes > 0) {
-      this.callFrequency = callWins / validOutcomes;
-    }
+    
+    const freq = valid > 0 ? ups / valid : 0.5;
+    return new BaselineModel(freq);
   }
 
   predict(featureSnapshot, regimeSnapshot) {
-    // Naive model uses only frequency
     const probCall = this.callFrequency;
     
     if (probCall > 0.5) {
@@ -52,5 +48,4 @@ class BaselineModel extends ModelContract {
     }
   }
 }
-
 module.exports = BaselineModel;

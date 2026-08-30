@@ -34,11 +34,19 @@ class MetricsEngine {
     const edge = winRate - breakEven;
     const ev = winRate * payout - (1 - winRate);
 
-    // Confidence interval (95%) for P(win)
-    // Z = 1.96 for 95%
-    const se = Math.sqrt((winRate * (1 - winRate)) / N);
-    const ciLower_P_win = winRate - 1.96 * se;
-    const ciUpper_P_win = winRate + 1.96 * se;
+    // Wilson Score Interval (95%) for P(win)
+    // Superior to Wald for proportions, especially near 0 or 1, and for small N.
+    const z = 1.96;
+    const zSq = z * z;
+    const p = winRate;
+    
+    const denominator = 1 + zSq / N;
+    const center = (p + zSq / (2 * N)) / denominator;
+    const se = Math.sqrt((p * (1 - p) / N) + (zSq / (4 * N * N)));
+    const spread = (z / denominator) * se;
+    
+    const ciLower_P_win = center - spread;
+    const ciUpper_P_win = center + spread;
 
     // Is edge detected? Edge must be positive AND lower bound of P_win CI must be > Break Even Probability
     let status = 'EDGE NOT DETECTED';

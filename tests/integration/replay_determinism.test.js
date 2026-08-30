@@ -59,4 +59,36 @@ describe('Replay Determinism & Future Injection (Adversarial)', () => {
       expect(replayOriginal.signals[i].probability).toBe(replayFuture.signals[i].probability);
     }
   });
+
+  it('HISTORICAL INVARIANCE TEST: completely different futures must not alter historical signals', () => {
+    const engine = new ReplayEngine({ signalEngine });
+    
+    // Base data up to t=3
+    const baseObs = [];
+    for (let i = 1; i <= 3; i++) {
+      baseObs.push(new MarketObservation({ asset: 'BTC', timestamp: i, open: 1, high: 2, low: 1, close: 1.5, volume: 10, timeframe: 'M1' }));
+    }
+
+    // Run A: Future goes up
+    const futureA = [
+      new MarketObservation({ asset: 'BTC', timestamp: 4, open: 1.5, high: 2.5, low: 1.5, close: 2.0, volume: 10, timeframe: 'M1' })
+    ];
+    const datasetA = new Dataset({ datasetId: 'DA', asset: 'BTC', timeframe: 'M1', source: 'X', observations: [...baseObs, ...futureA] });
+    
+    // Run B: Future goes down wildly
+    const futureB = [
+      new MarketObservation({ asset: 'BTC', timestamp: 4, open: 1.5, high: 3, low: 0.1, close: 0.2, volume: 999, timeframe: 'M1' }),
+      new MarketObservation({ asset: 'BTC', timestamp: 5, open: 0.2, high: 1, low: 0.1, close: 0.5, volume: 50, timeframe: 'M1' })
+    ];
+    const datasetB = new Dataset({ datasetId: 'DB', asset: 'BTC', timeframe: 'M1', source: 'X', observations: [...baseObs, ...futureB] });
+
+    const replayA = engine.run(datasetA, mockModel);
+    const replayB = engine.run(datasetB, mockModel);
+
+    // Signals up to t=3 MUST be identical
+    for (let i = 0; i < 3; i++) {
+      expect(replayA.signals[i].inputHash).toBe(replayB.signals[i].inputHash);
+      expect(replayA.signals[i].probability).toBe(replayB.signals[i].probability);
+    }
+  });
 });

@@ -17,7 +17,8 @@ class DatasetValidator {
          throw new Error(`DATA QUALITY ERROR: Observation at index ${i} is not a MarketObservation instance`);
       }
 
-      // Check chronological integrity
+      // Check strict chronological ordering.
+      // (Future leakage causality is enforced by ReplayEngine, not here).
       if (obs.timestamp <= lastTimestamp) {
          if (obs.timestamp === lastTimestamp) {
             throw new Error(`DATA QUALITY ERROR: Duplicate timestamp detected at ${obs.timestamp}`);
