@@ -75,31 +75,55 @@ describe('007-D: Statistical Boundaries', () => {
     expect(m.N).toBe(31);
   });
 
-  // ── D7-D8: Extreme probabilities (Wilson CI must not explode) ─────────────
-  it('D7: P_win = 0.01 (near-zero) → metrics are finite and defined', () => {
+  // ── D7: P_win = 0.01 (near-zero) ────────────────────────────────────────
+  // makePOutcomes(200, 0.01) → 2 wins, 198 losses (N=200)
+  // Wilson CI for p=0.01, N=200 ≈ [0.0027, 0.0357]
+  // The CI must be narrow and NOT clamped to [0, 1].
+  it('D7: P_win = 0.01 (near-zero) → Wilson CI is finite, narrow and positive (not clamped)', () => {
     const outcomes = makePOutcomes(200, 0.01);
     const m = MetricsEngine.calculate(outcomes, PAYOUT);
     expect(m.status).not.toBe('INSUFFICIENT EVIDENCE');
     expect(Number.isFinite(m.winRate)).toBe(true);
-    expect(Number.isFinite(m.confidenceInterval.lower)).toBe(true);
-    expect(Number.isFinite(m.confidenceInterval.upper)).toBe(true);
     expect(Number.isFinite(m.brier)).toBe(true);
     expect(Number.isFinite(m.logLoss)).toBe(true);
-    expect(m.confidenceInterval.lower).toBeGreaterThanOrEqual(0);
-    expect(m.confidenceInterval.upper).toBeLessThanOrEqual(1);
+
+    const lo = m.confidenceInterval.lower;
+    const hi = m.confidenceInterval.upper;
+
+    // Must be within probability space
+    expect(lo).toBeGreaterThanOrEqual(0);
+    expect(hi).toBeLessThanOrEqual(1);
+    // Wilson CI should be NARROW, not a trivial [0, 1]
+    // For N=200, p≈0.01, empirically CI width ≈ 0.033
+    expect(hi - lo).toBeLessThan(0.10);  // CI width must be < 10pp
+    // Lower bound should be positive (Wilson doesn't collapse to 0 for N=200)
+    expect(lo).toBeGreaterThan(0.001);
+    // Upper bound should be well below 1
+    expect(hi).toBeLessThan(0.10);
   });
 
-  it('D8: P_win = 0.99 (near-one) → metrics are finite and defined', () => {
+  // ── D8: P_win = 0.99 (near-one) ──────────────────────────────────────────
+  // Wilson CI for p=0.99, N=200 ≈ [0.9643, 0.9973]
+  it('D8: P_win = 0.99 (near-one) → Wilson CI is finite, narrow and close to 1 (not clamped)', () => {
     const outcomes = makePOutcomes(200, 0.99);
     const m = MetricsEngine.calculate(outcomes, PAYOUT);
     expect(m.status).not.toBe('INSUFFICIENT EVIDENCE');
     expect(Number.isFinite(m.winRate)).toBe(true);
-    expect(Number.isFinite(m.confidenceInterval.lower)).toBe(true);
-    expect(Number.isFinite(m.confidenceInterval.upper)).toBe(true);
     expect(Number.isFinite(m.brier)).toBe(true);
     expect(Number.isFinite(m.logLoss)).toBe(true);
-    expect(m.confidenceInterval.lower).toBeGreaterThanOrEqual(0);
-    expect(m.confidenceInterval.upper).toBeLessThanOrEqual(1);
+
+    const lo = m.confidenceInterval.lower;
+    const hi = m.confidenceInterval.upper;
+
+    // Must be within probability space
+    expect(lo).toBeGreaterThanOrEqual(0);
+    expect(hi).toBeLessThanOrEqual(1);
+    // Wilson CI should be NARROW, not a trivial [0, 1]
+    expect(hi - lo).toBeLessThan(0.10);  // CI width must be < 10pp
+    // Lower bound should be well above 0
+    expect(lo).toBeGreaterThan(0.90);
+    // Upper bound should be below 1 (Wilson doesn't collapse to exactly 1 for N=200)
+    expect(hi).toBeLessThan(1.0);
   });
 
   // ── D9: P_win exactly at break-even ───────────────────────────────────────

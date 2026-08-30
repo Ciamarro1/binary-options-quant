@@ -93,18 +93,28 @@ describe('007-C: Data Integrity', () => {
     expect(() => DatasetValidator.validate(obs)).toThrow(/Out-of-order/);
   });
 
-  // ── C7: 5-minute gap ─────────────────────────────────────────────────────
-  // DatasetValidator currently checks ordering but not gap size.
-  // This test documents the current behaviour (no gap check) and will
-  // become a FAIL if we add strict gap validation later.
-  it('C7: DatasetValidator accepts valid observations even with a 5-minute gap (gap check not yet enforced)', () => {
+  // ── C7: 5-minute gap — Architecture A: DatasetValidator is NOT cadence-aware ──
+  //
+  // ARCHITECTURAL DECISION (FROZEN: Commit 007, QUANT_CONTRACT.md §6):
+  //   Architecture A is chosen. Dataset is a general-purpose abstraction.
+  //   DatasetValidator enforces: strict chronological ordering and no duplicates.
+  //   It does NOT enforce Δt cadence — that responsibility belongs to the
+  //   ingest pipeline (ingest_dataset.js) and/or the experimental protocol.
+  //
+  //   Rationale: A Dataset may legitimately have irregular timestamps
+  //   (e.g., tick data, weekend gaps, dataset slices). Forcing 60s cadence
+  //   into the base validator would contaminate the abstraction.
+  //
+  //   If this test ever FAILS, it means gap validation was added to
+  //   DatasetValidator — which requires a conscious protocol review.
+  it('C7 (Architecture A): DatasetValidator does NOT enforce Δt cadence — 5-min gap is accepted', () => {
     const obs = [
       new MarketObservation({ asset: 'BTC', timestamp: 1704067200000, open: 100, high: 105, low: 95, close: 100, volume: 100, timeframe: '1m' }),
       new MarketObservation({ asset: 'BTC', timestamp: 1704067260000, open: 101, high: 106, low: 96, close: 101, volume: 101, timeframe: '1m' }),
-      // 5-minute jump — DatasetValidator currently doesn't check gap size
+      // 5-minute jump — intentionally NOT rejected by DatasetValidator (Architecture A)
       new MarketObservation({ asset: 'BTC', timestamp: 1704067560000, open: 102, high: 107, low: 97, close: 102, volume: 102, timeframe: '1m' }),
     ];
-    // Should pass without throwing (gap enforcement is in ingest_dataset.js, not here)
+    // Must NOT throw — gap enforcement belongs to the ingest pipeline, not here.
     expect(() => DatasetValidator.validate(obs)).not.toThrow();
   });
 });

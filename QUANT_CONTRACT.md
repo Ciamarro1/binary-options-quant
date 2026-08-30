@@ -31,3 +31,18 @@ This threshold was established because the Wilson Score CI is too wide below N=3
 ## 5. Timestamp Convention
 All timestamps in `MarketObservation`, `Signal`, and `BinaryOutcome` are **milliseconds since Unix epoch** (UTC).
 The `ReplayEngine` converts `signal.expirySeconds * 1000` to milliseconds internally before comparing to `obs.timestamp`.
+
+## 6. Temporal Cadence Architecture (Frozen: Commit 007, Protocol v1.1)
+**Architecture A** is the chosen design. The `Dataset` abstraction is cadence-agnostic.
+
+| Layer | Responsibility |
+|---|---|
+| `DatasetValidator` | Strict chronological ordering · No duplicate timestamps · Structural integrity |
+| `DatasetValidator` | Does NOT enforce Δt cadence |
+| Ingest pipeline (`ingest_dataset.js`) | Enforces 60s gap rule for 1m BTCUSDT datasets |
+| Experimental protocol | May impose additional cadence requirements per experiment |
+
+**Rationale:** A Dataset may legitimately have irregular timestamps (tick data, weekend gaps, dataset slices). Encoding a 60-second cadence into the base `DatasetValidator` would contaminate the abstraction with a domain-specific constraint. Cadence validation is the responsibility of the ingestion or experimental protocol layer.
+
+**Consequence:** Any code that relies on strictly regular Δt = 60s must validate this at its own boundary — not assume it from a bare `Dataset` object.
+
