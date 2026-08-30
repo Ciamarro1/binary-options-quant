@@ -1,15 +1,14 @@
 {
   "name": "binary-options-quant",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Binary options quantitative system",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest",
+    "lint": "echo \"No linting configured yet\" && exit 0",
+    "build": "echo \"No build step required\" && exit 0"
   },
-  "keywords": [
-    "quant",
-    "trading"
-  ],
-  "author": "",
-  "license": "ISC"
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
 }
