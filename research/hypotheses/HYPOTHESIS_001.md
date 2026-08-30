@@ -1,7 +1,7 @@
 # HYPOTHESIS-001 — Short-Horizon Momentum / Displacement
 
 > **Status:** FROZEN — Pre-declared before any OOS execution  
-> **Version:** 1.0.1 (Amendment 1)
+> **Version:** 1.0.2 (Amendment 2)
 > **Declared:** 2026-08-30  
 > **Experiment ID:** HYPOTHESIS_001_OOS_001 (to be assigned at execution)
 
@@ -83,11 +83,22 @@ Quando qualquer condição falhar. Sem inversão. Sem segunda tentativa.
 
 ---
 
-## 5. Modelo
+## 5. Modelo e Probabilidade (Conditional Historical Probability)
 
-**Determinístico por regra.** Não há ML, treinamento de pesos ou otimização numérica.
+**Modelo base:** Determinístico por regra (para a direção). Não há ML, treinamento de pesos ou otimização numérica para a decisão de CALL/PUT.
 
-O `callFrequency` ou qualquer estatística aprendida durante o Walk-Forward refere-se **apenas** às médias móveis necessárias para normalizar features (ATR, volume médio).
+### Atribuição de Probabilidade (`ProbabilitySnapshot`)
+Para que o sistema seja compatível com a camada de avaliação probabilística (Brier, LogLoss, Calibration) e não reivindique certeza irreal, o sinal utilizará **Conditional Historical Probability**.
+
+Para cada janela OOS (TEST), a probabilidade do setup (CALL ou PUT independentemente) será calculada **exclusivamente com base na janela de TRAIN** correspondente.
+
+**Regras de cálculo:**
+1. **Fórmula:** `P(WIN | setup) = wins_{setup} / (wins_{setup} + losses_{setup})`
+2. **PUSH:** Resultados `PUSH` ou `INVALID` são estritamente excluídos do denominador.
+3. **Mínimo de amostras:** Exige-se pelo menos `30` sinais resolvidos do mesmo setup (CALL ou PUT) no TRAIN.
+4. **Fallback:** Se houver menos de `30` amostras no TRAIN para aquela direção, a probabilidade do sinal no TEST será **neutra (`0.50`)**.
+5. **Smoothing:** Nenhum. Utiliza-se a frequência empírica bruta (raw frequency). Se for 0 ou 1 matematicamente (raro com N>=30), é reportado como tal.
+6. **Congelamento na janela:** A probabilidade calculada no fim do TRAIN fica **congelada** para todos os sinais daquela mesma direção durante toda a janela de TEST. (O state das features é causal/rolling, mas a probabilidade de calibração histórica pertence à janela de treino).
 
 ---
 
