@@ -61,3 +61,10 @@ The quantitative domain executes through an immutable, strictly validated sequen
 2. `BinaryContract` -> Structural validity, strict direction and sizing.
 3. `ProbabilitySnapshot` -> Model traceability, input hashing, strict [0, 1] probability.
 4. `DecisionGate` -> Evaluates `EVEngine` rules and issues an immutable `Decision` containing reason codes and trace IDs.
+
+## Signal Generation Architecture
+The research and signal generation phase operates in an isolated abstraction:
+`Market Observation -> Feature Engine -> Regime Engine -> Signal Engine -> Model -> Signal`
+
+- **Regime Check**: If the system cannot classify the regime (`UNKNOWN`), it halts generation and issues no signal.
+- **Model Isolation**: Models receive only immutable `FeatureSnapshot` and `RegimeSnapshot`. They have no connection to brokers or execution states.

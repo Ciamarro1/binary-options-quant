@@ -1,13 +1,12 @@
 # System State
 
-**Phase:** Constitutional Core
-**Commit:** 002 - Constitutional Contracts & Determinism
+**Phase:** Signal Research Core
+**Commit:** 003 - Causal Engines & Abstractions
 
 ## Current Status
 - Base constitutional structures created (`MarketObservation`, `BinaryContract`, `ProbabilitySnapshot`, `Decision`).
 - Mathematical purity established via `EVEngine`.
 - Deterministic decision-making wired in `DecisionGate`.
-- Adversarial test suite passing successfully for immutability and contract validation.
-- No strategy/signal logic established yet.
-- No live trading capability.
-- No models deployed.
+- Signal research pipeline established (`FeatureSnapshot`, `RegimeSnapshot`, `Signal`, `FeatureEngine`, `RegimeEngine`, `SignalEngine`).
+- Strict Causality rules and Model isolation verified via adversarial testing.
+- No actual strategy/alpha exists yet (Baseline model is next).
