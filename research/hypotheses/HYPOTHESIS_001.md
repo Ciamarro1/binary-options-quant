@@ -1,7 +1,7 @@
 # HYPOTHESIS-001 — Short-Horizon Momentum / Displacement
 
 > **Status:** FROZEN — Pre-declared before any OOS execution  
-> **Version:** 1.0.0  
+> **Version:** 1.0.1 (Amendment 1)
 > **Declared:** 2026-08-30  
 > **Experiment ID:** HYPOTHESIS_001_OOS_001 (to be assigned at execution)
 
@@ -31,7 +31,7 @@ Apenas informação disponível **até o fechamento do candle de entrada** (`t`)
 |---|---|---|
 | `r_t` | Retorno do candle: `close_t / open_t - 1` | 1 candle |
 | `body_t` | Tamanho absoluto do corpo: `abs(close_t - open_t)` | 1 candle |
-| `ATR_t` | Average True Range (período = 14) | 14 candles |
+| `ATR_t` | Average True Range | 14 candles |
 | `displacementRatio` | `body_t / ATR_t` | derivada |
 | `volumeRatio` | `volume_t / mean(volume_{t-20..t-1})` | 20 candles |
 
@@ -87,11 +87,37 @@ Quando qualquer condição falhar. Sem inversão. Sem segunda tentativa.
 
 **Determinístico por regra.** Não há ML, treinamento de pesos ou otimização numérica.
 
-O `callFrequency` ou qualquer estatística aprendida durante o Walk-Forward refere-se **apenas** às médias móveis necessárias para normalizar features (ATR, volume médio). Essas estatísticas são recalculadas puramente a partir da janela de treino.
+O `callFrequency` ou qualquer estatística aprendida durante o Walk-Forward refere-se **apenas** às médias móveis necessárias para normalizar features (ATR, volume médio).
 
 ---
 
-## 6. Parâmetros Congelados
+## 6. Feature State Protocol (Causal / Rolling)
+
+```text
+ATR:
+  Definition = True Range + Wilder RMA
+  Period = 14
+
+Volume:
+  Lookback = 20
+  Statistic = arithmetic mean
+
+OOS state:
+  Initialized exclusively from information available before the first OOS prediction.
+  During OOS, indicators may update sequentially using only candles whose timestamps are <= current t.
+  No t+1 or later observation may influence signal t.
+
+Replay:
+  Signal(t) → feature state available at t
+  Outcome(t) → resolved only at t + expiry
+
+No look-ahead:
+  The current candle's volume and OHLC may be used because the signal is explicitly generated at candle close.
+```
+
+---
+
+## 7. Parâmetros Congelados
 
 ```
 ATR period              = 14 candles
@@ -99,8 +125,6 @@ Volume lookback         = 20 candles
 Displacement threshold  = 1.0 (× ATR)
 Volume threshold        = 1.5 (× volume mean)
 Expiry                  = 1 candle (60s)
-Payout                  = 0.80
-Break-even (P_BE)       = 1 / (1 + 0.80) = 55.5556%
 ```
 
 > **NENHUM parâmetro será alterado após esta declaração.**  
@@ -108,7 +132,17 @@ Break-even (P_BE)       = 1 / (1 + 0.80) = 55.5556%
 
 ---
 
-## 7. Dataset
+## 8. Friction Protocol
+
+```text
+Payout = 0.80
+Break-even (P_BE) = 1 / (1 + 0.80) = 55.5556%
+Additional execution friction = 0 for this experiment; payout is the complete economic payoff model.
+```
+
+---
+
+## 9. Dataset
 
 ### Dataset de Execução (Novo — Não Contaminado)
 
@@ -133,7 +167,7 @@ datasetContentHash:    [preenchido após ingestão]
 
 ---
 
-## 8. Protocolo OOS
+## 10. Protocolo OOS
 
 Idêntico ao protocolo validado em BASELINE_OOS_001.
 
@@ -144,12 +178,9 @@ Test window:    1440 candles (1 dia)
 Mínimo de observações na janela OOS: N >= 30 (protocolo v1.1)
 ```
 
-> **Os parâmetros ATR e volume lookback são computados exclusivamente dentro da janela de treino.**  
-> Nenhuma informação da janela de teste entra no cálculo das médias.
-
 ---
 
-## 9. Critério de Aceitação
+## 11. Critério de Aceitação
 
 Para declarar evidência positiva, **todas** as condições devem ser satisfeitas:
 
@@ -167,7 +198,7 @@ Para declarar evidência positiva, **todas** as condições devem ser satisfeita
 
 ---
 
-## 10. Critério de Falsificação
+## 12. Critério de Falsificação
 
 A hipótese é considerada **FALSA** se qualquer um dos seguintes ocorrer:
 
@@ -189,7 +220,7 @@ win rate >= P_BE estatisticamente mas economicamente abaixo do break-even
 
 ---
 
-## 11. Referências Congeladas
+## 13. Referências Congeladas
 
 | Artefato | Hash / ID |
 |---|---|
@@ -201,7 +232,7 @@ win rate >= P_BE estatisticamente mas economicamente abaixo do break-even
 
 ---
 
-## 12. Declaração de Integridade
+## 14. Declaração de Integridade
 
 > Este documento foi escrito **antes de qualquer execução OOS**, antes de qualquer visualização de resultado fora do dataset de treino, e antes de qualquer ajuste de parâmetros baseado em dados de fevereiro–maio/2024.
 >
