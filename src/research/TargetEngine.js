@@ -53,7 +53,8 @@ class TargetEngine {
       expiryPrice,
       direction: signal.direction,
       outcome,
-      returnVal
+      returnVal,
+      probability: signal.probability
     });
   }
 }
