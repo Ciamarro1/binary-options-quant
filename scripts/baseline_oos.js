@@ -66,7 +66,8 @@ console.log(`  Asset:          ${EXPERIMENT.asset}`);
 console.log(`  Timeframe:      ${EXPERIMENT.timeframe}`);
 console.log(`  Period:         ${manifest.startTimestamp} → ${manifest.endTimestamp}`);
 console.log(`  Rows:           ${manifest.rowCount}`);
-console.log(`  Content Hash:   ${manifest.canonicalContentHash}`);
+console.log(`  File Hash:      ${manifest.canonicalFileSha256}`);
+console.log(`  Semantic Hash:  ${manifest.datasetContentHash}`);
 
 console.log('\n──── Model ────');
 console.log(`  ${EXPERIMENT.modelId}`);
@@ -87,11 +88,11 @@ const fileContent = fs.readFileSync(csvPath);
 const fileHash = crypto.createHash('sha256').update(fileContent).digest('hex');
 
 // Verify hash matches manifest
-if (fileHash !== manifest.canonicalContentHash) {
-  console.error(`🚨 DATASET HASH MISMATCH — ABORTING. Expected ${manifest.canonicalContentHash}, got ${fileHash}`);
+if (fileHash !== manifest.canonicalFileSha256) {
+  console.error(`🚨 DATASET FILE HASH MISMATCH — ABORTING. Expected ${manifest.canonicalFileSha256}, got ${fileHash}`);
   process.exit(1);
 }
-console.log('\n  ✓ Dataset hash verified against manifest');
+console.log('\n  ✓ Dataset file hash verified against manifest');
 
 const dataset = DatasetLoader.loadCSV(csvPath, {
   datasetId: EXPERIMENT.datasetId,
@@ -99,6 +100,12 @@ const dataset = DatasetLoader.loadCSV(csvPath, {
   timeframe: EXPERIMENT.timeframe,
   source: 'Binance Public Data'
 });
+
+if (dataset.metadata.contentHash !== manifest.datasetContentHash) {
+  console.error(`🚨 DATASET SEMANTIC HASH MISMATCH — ABORTING. Expected ${manifest.datasetContentHash}, got ${dataset.metadata.contentHash}`);
+  process.exit(1);
+}
+console.log('  ✓ Dataset semantic hash verified against manifest');
 
 // ═══════════════════════════════════════════════
 // SETUP ENGINES
@@ -127,11 +134,14 @@ for (let w = 0; w < splits.length; w++) {
   const model = BaselineModel.fit(train);
   
   // Build a mini-dataset from test window for replay
+  const testHashPayload = test.map(o => `${o.timestamp}:${o.open}:${o.high}:${o.low}:${o.close}:${o.volume}`).join('|');
+  const testContentHash = crypto.createHash('sha256').update(testHashPayload).digest('hex');
+
   const testDataset = {
     observations: test,
     metadata: {
       ...dataset.metadata,
-      contentHash: dataset.metadata.contentHash + `_W${w}`
+      contentHash: testContentHash
     }
   };
   
@@ -263,12 +273,13 @@ console.log(` FINAL STATUS: ${aggregateMetrics.status}`);
 console.log('══════════════════════════════════════════════════════════');
 
 console.log('\n──── Provenance ────');
-console.log(`  Dataset Hash:       ${manifest.canonicalContentHash}`);
-console.log(`  Model ID:           ${EXPERIMENT.modelId}`);
-console.log(`  Model Version:      ${EXPERIMENT.modelVersion}`);
-console.log(`  Protocol Version:   ${EXPERIMENT.protocolVersion}`);
-console.log(`  Experiment ID:      ${EXPERIMENT.experimentId}`);
-console.log(`  Executed At:        ${new Date().toISOString()}`);
+console.log(`  Canonical File Hash: ${manifest.canonicalFileSha256}`);
+console.log(`  Semantic Data Hash:  ${manifest.datasetContentHash}`);
+console.log(`  Model ID:            ${EXPERIMENT.modelId}`);
+console.log(`  Model Version:       ${EXPERIMENT.modelVersion}`);
+console.log(`  Protocol Version:    ${EXPERIMENT.protocolVersion}`);
+console.log(`  Experiment ID:       ${EXPERIMENT.experimentId}`);
+console.log(`  Executed At:         ${new Date().toISOString()}`);
 
 // ═══════════════════════════════════════════════
 // SAVE REPORT
@@ -278,7 +289,8 @@ const report = {
   experiment: EXPERIMENT,
   dataset: {
     datasetId: manifest.datasetId,
-    contentHash: manifest.canonicalContentHash,
+    canonicalFileSha256: manifest.canonicalFileSha256,
+    datasetContentHash: manifest.datasetContentHash,
     rowCount: manifest.rowCount,
     startTimestamp: manifest.startTimestamp,
     endTimestamp: manifest.endTimestamp

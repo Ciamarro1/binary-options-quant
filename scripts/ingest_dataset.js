@@ -358,7 +358,7 @@ function hashCanonical(csvPath) {
 // ═══════════════════════════════════════════════
 // STEP 8: MANIFEST
 // ═══════════════════════════════════════════════
-function writeManifest(rows, rawSha256, canonicalSha256, audit) {
+function writeManifest(rows, rawSha256, canonicalFileSha256, datasetContentHash, audit) {
   console.log('\n[STEP 8] WRITE MANIFEST');
   
   const manifest = {
@@ -375,7 +375,8 @@ function writeManifest(rows, rawSha256, canonicalSha256, audit) {
     rowCount: rows.length,
     startTimestamp: new Date(rows[0].timestamp).toISOString(),
     endTimestamp: new Date(rows[rows.length - 1].timestamp).toISOString(),
-    canonicalContentHash: canonicalSha256,
+    canonicalFileSha256: canonicalFileSha256,
+    datasetContentHash: datasetContentHash,
     ingestionVersion: PARAMS.ingestionVersion,
     ingestedAt: new Date().toISOString(),
     scriptVersion: '1.0.0',
@@ -456,10 +457,16 @@ async function main() {
   const audit = validateCanonical(rows);
   
   // ── STEP 7: HASH ──
-  const canonicalSha256 = hashCanonical(canonicalPath);
+  const canonicalFileSha256 = hashCanonical(canonicalPath);
+  
+  // To get datasetContentHash we load it via DatasetLoader
+  const DatasetLoader = require('../src/data/DatasetLoader');
+  const ds = DatasetLoader.loadCSV(canonicalPath, { datasetId: PARAMS.datasetId, asset: PARAMS.symbol, timeframe: PARAMS.timeframe, source: PARAMS.source });
+  const datasetContentHash = ds.metadata.contentHash;
+  console.log(`  ✓ Semantic Hash (Dataset): ${datasetContentHash}`);
   
   // ── STEP 8: MANIFEST ──
-  const manifest = writeManifest(rows, rawSha256, canonicalSha256, audit);
+  const manifest = writeManifest(rows, rawSha256, canonicalFileSha256, datasetContentHash, audit);
   
   // ── FINAL REPORT ──
   console.log('\n══════════════════════════════════════════════════════');
@@ -469,7 +476,8 @@ async function main() {
   console.log(`  Rows:               ${manifest.rowCount}`);
   console.log(`  Period:             ${manifest.startTimestamp} → ${manifest.endTimestamp}`);
   console.log(`  Source SHA-256:      ${manifest.sourceSha256}`);
-  console.log(`  Canonical SHA-256:   ${manifest.canonicalContentHash}`);
+  console.log(`  Canonical File Hash: ${manifest.canonicalFileSha256}`);
+  console.log(`  Semantic Hash:       ${manifest.datasetContentHash}`);
   console.log(`  Gaps:               ${audit.gapCount}`);
   console.log(`  Invalid OHLC:       ${audit.invalidOHLC}`);
   console.log(`  Node Version:       ${process.version}`);

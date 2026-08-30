@@ -27,7 +27,8 @@ class ReplayEngine {
       // 1. Resolve pending outcomes FIRST (avoids looking into the future by resolving exactly at target time)
       for (let i = pendingSignals.length - 1; i >= 0; i--) {
         const pending = pendingSignals[i];
-        if (obs.timestamp >= pending.signal.timestamp + pending.signal.expirySeconds) {
+        const expiryMs = pending.signal.expirySeconds * 1000;
+        if (obs.timestamp >= pending.signal.timestamp + expiryMs) {
           const outcome = TargetEngine.resolve(pending.signal, pending.entryObs, obs, payout);
           outcomes.push(outcome);
           pendingSignals.splice(i, 1);
