@@ -12,9 +12,13 @@
 7. **Commit 006B - Real Market Baseline OOS:** BTCUSDT 1m Jan-24. Win rate 50.43% vs P_BE 55.56%. EDGE NOT DETECTED. **[FROZEN]**
 8. **Commit 007 - Robustness / Adversarial Validation:** 100 tests / 28 suites. Temporal boundary, label permutation, data corruption, PUSH stress, Wilson CI math, Architecture A (cadence-agnostic Dataset). **[FROZEN]**
 
-## Current Focus: Commit 008 - Strategy Hypothesis
-- **Rule:** Hypothesis must be fully declared BEFORE any OOS execution or result observation.
-- **Structure:** Hypothesis → Features → Target → Model → Protocol → Freeze → Execute → Evaluate
-- **Constraint:** No post-hoc tuning. If OOS fails, hypothesis is discarded. If OOS passes, it advances to robustness — not celebration.
-- **Baseline:** Any new model must beat BASELINE_OOS_001 (50.43%) under identical OOS protocol.
-
+## Current Focus: Commit 008 - Strategy Hypothesis (Short-Horizon Momentum)
+- **Completed 008.1 - 008.3:**
+  - `HYPOTHESIS_001.md v1.0.2` documented and **[FROZEN]**.
+  - `DATASET_002` (BTCUSDT 1m Feb-May 2024, 174,240 rows) ingested, audited, and **[FROZEN]**.
+- **Pending Implementation (008.4 - 008.6):**
+  - Update `FeatureEngine` for `ATR(14)` (Wilder RMA) and `meanVolume(20)` with causal sequential updates (no look-ahead).
+  - Implement `DisplacementModel` using the frozen rules.
+  - Implement Conditional Historical Probability (calculated exclusively on the TRAIN window).
+  - Execute 008 OOS Protocol and evaluate against `BASELINE_OOS_001`.
+- **Constraint:** No post-hoc tuning. If OOS fails economically (vs P_BE = 55.56%), hypothesis is discarded.
