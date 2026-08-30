@@ -1,7 +1,7 @@
 # System State
 
-**Phase:** Quantitative Evidence Laboratory
-**Commit:** 004 - Out-of-Sample Testing & Calibration
+**Phase:** Dataset & Replay
+**Commit:** 005 - Causal Replay & Deterministic Verification
 
 ## Current Status
 - Base constitutional structures created (`MarketObservation`, `BinaryContract`, `ProbabilitySnapshot`, `Decision`).
@@ -11,4 +11,5 @@
 - Quantitative Evidence Laboratory implemented (`BinaryOutcome`, `TargetEngine`, `CalibrationEngine`, `MetricsEngine`).
 - Strict validation via `WalkForward` engine preventing lookahead.
 - `BaselineModel` implemented as a naive frequency baseline.
-- Ready for empirical dataset ingestion.
+- `Dataset` and `DatasetValidator` guarantee chronological integrity and hash-based identity.
+- `ReplayEngine` ensures deterministic signal generation over historical data without future leakage.

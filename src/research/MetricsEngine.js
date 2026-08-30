@@ -34,15 +34,15 @@ class MetricsEngine {
     const edge = winRate - breakEven;
     const ev = winRate * payout - (1 - winRate);
 
-    // Confidence interval (95%)
+    // Confidence interval (95%) for P(win)
     // Z = 1.96 for 95%
     const se = Math.sqrt((winRate * (1 - winRate)) / N);
-    const ciLower = winRate - 1.96 * se;
-    const ciUpper = winRate + 1.96 * se;
+    const ciLower_P_win = winRate - 1.96 * se;
+    const ciUpper_P_win = winRate + 1.96 * se;
 
-    // Is edge detected? Edge must be positive and lower bound of CI must be > breakEven
+    // Is edge detected? Edge must be positive AND lower bound of P_win CI must be > Break Even Probability
     let status = 'EDGE NOT DETECTED';
-    if (edge > 0 && ciLower > breakEven) {
+    if (edge > 0 && ciLower_P_win > breakEven) {
       status = 'EDGE DETECTED';
     }
 
@@ -56,7 +56,7 @@ class MetricsEngine {
       breakEven,
       edge,
       ev,
-      confidenceInterval: { lower: ciLower, upper: ciUpper },
+      confidenceInterval: { lower: ciLower_P_win, upper: ciUpper_P_win },
       standardError: se
     };
   }
