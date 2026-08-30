@@ -1,12 +1,17 @@
 "use strict";
 
 class MetricsEngine {
+  // Minimum sample size to produce a valid decision.
+  // Below this threshold the Wilson CI is too wide to be meaningful.
+  // This threshold is FROZEN in QUANT_CONTRACT.md v1.1.
+  static get MIN_SAMPLE_SIZE() { return 30; }
+
   static calculate(predictionsAndOutcomes, payout) {
     const valid = predictionsAndOutcomes.filter(x => x.outcome === 'WIN' || x.outcome === 'LOSS');
     const N = valid.length;
     
-    if (N === 0) {
-      return { status: 'INSUFFICIENT EVIDENCE', N: 0 };
+    if (N < MetricsEngine.MIN_SAMPLE_SIZE) {
+      return { status: 'INSUFFICIENT EVIDENCE', N, minSampleSize: MetricsEngine.MIN_SAMPLE_SIZE };
     }
 
     let brierSum = 0;
