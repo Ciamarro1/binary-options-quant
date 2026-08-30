@@ -23,3 +23,14 @@ It cannot make any API calls.
 It cannot fetch order book status.
 It cannot know the current account balance.
 It produces a purely mathematical hypothesis.
+
+## 4. Reality Check (Evidence Laboratory)
+No single metric constitutes sufficient evidence of edge.
+The laboratory MUST observe:
+- Prediction Quality (Brier, Log Loss, Accuracy)
+- Calibration (Predicted probabilities align with empirical win rates)
+- Out-of-Sample Stability (Walk-forward temporal splits)
+- Statistical Confidence (Sufficient sample size and tight confidence intervals)
+- Positive Expected Value (EV) over various valid payouts
+
+If all conditions are not unequivocally met, the system verdict is `EDGE NOT DETECTED` or `INSUFFICIENT EVIDENCE`. Failing to prove edge is not the same as proving the absence of edge, but the default state is NO EDGE.
