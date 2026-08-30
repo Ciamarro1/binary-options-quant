@@ -1,0 +1,36 @@
+{
+  "datasetId": "BINANCE_SPOT_BTCUSDT_1M_2024_01",
+  "source": "Binance Public Data",
+  "sourceUrl": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1m/BTCUSDT-1m-2024-01.zip",
+  "market": "spot",
+  "symbol": "BTCUSDT",
+  "timeframe": "1m",
+  "timezone": "UTC",
+  "sourceFile": "BTCUSDT-1m-2024-01.zip",
+  "sourceSha256": "40b78258091a468f8756843f207f5913eafc1d6e756c40a78711320d93fa5e75",
+  "canonicalSchema": [
+    "timestamp",
+    "open",
+    "high",
+    "low",
+    "close",
+    "volume"
+  ],
+  "rowCount": 44640,
+  "startTimestamp": "2024-01-01T00:00:00.000Z",
+  "endTimestamp": "2024-01-31T23:59:00.000Z",
+  "canonicalContentHash": "34974c7fbb67c13811bbbe07c8ff0ded5e33815335ca4fc8777844f19c67f54e",
+  "ingestionVersion": "1.0.0",
+  "ingestedAt": "2026-08-30T06:59:14.475Z",
+  "scriptVersion": "1.0.0",
+  "nodeVersion": "v24.15.0",
+  "audit": {
+    "gapCount": 0,
+    "invalidOHLC": 0,
+    "duplicateTimestamps": 0,
+    "outOfOrderTimestamps": 0,
+    "nonFiniteValues": 0,
+    "negativeValues": 0,
+    "gaps": []
+  }
+}

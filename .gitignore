@@ -4,5 +4,7 @@ dist/
 build/
 artifacts/model_registry/*
 !artifacts/model_registry/.gitkeep
-research/datasets/*
+research/datasets/**/raw/
+research/datasets/**/canonical/
+!research/datasets/**/manifest.json
 !research/datasets/.gitkeep
