@@ -1,0 +1,37 @@
+{
+  "datasetId": "DATASET_002",
+  "asset": "BTCUSDT",
+  "timeframe": "1m",
+  "period": "2024-02 to 2024-05",
+  "months": {
+    "2024-02": {
+      "rowCount": 41760,
+      "sourceSha256": "431132e0db8b9fe6e5c93c8e9ba3ae37dbcfa0edcdd57618b1b78ac18d14be79",
+      "canonicalFileSha256": "a3da5ed2b728c93670041c42d97e080225f37354f6ba7300537262d5f30e683a"
+    },
+    "2024-03": {
+      "rowCount": 44640,
+      "sourceSha256": "a9af86295eae839f1d072643c67eed7fcc47bb1d82c12ef312d041eec9511e7b",
+      "canonicalFileSha256": "dc96ea30ef03cbca1775c2dc4122af632a5b423eca8a8e7630d62c868a855b02"
+    },
+    "2024-04": {
+      "rowCount": 43200,
+      "sourceSha256": "753040cbfaa72bf9b1fdc6253a3b521a9a174a664dfd0929a556be327b016bc6",
+      "canonicalFileSha256": "6c5457db9087861d94aeedf47673ce02f76b09bd2bf5946507c0f7a9179416db"
+    },
+    "2024-05": {
+      "rowCount": 44640,
+      "sourceSha256": "0f709143f66a09acc430d24a5f27f9accd52689c23ce10f2c0b6ea26997bfa8a",
+      "canonicalFileSha256": "b43e40f13d7bb96639a636621bd10a489dbb23c39defdb20ba2bfdd1ce8f2012"
+    }
+  },
+  "aggregate": {
+    "rowCount": 174240,
+    "firstTimestamp": 1706745600000,
+    "firstTimestampIso": "2024-02-01T00:00:00.000Z",
+    "lastTimestamp": 1717199940000,
+    "lastTimestampIso": "2024-05-31T23:59:00.000Z",
+    "gapCount": 0,
+    "datasetContentHash": "794e40a31bc8e11c07c17075d16b5674f19b2fa0dd835ed5552a07ca77f47eaa"
+  }
+}
