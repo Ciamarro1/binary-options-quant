@@ -1,0 +1,18 @@
+{
+  "hypothesis": "H004",
+  "baseline": "BASELINE_005_CONTROL",
+  "methodology": "Inverse-Variance Weighted Paired Window Meta-Analysis",
+  "threshold_N": 10,
+  "results": {
+    "activeWindows": 179,
+    "positiveDiffs": 95,
+    "negativeDiffs": 84,
+    "weightedMeanDiff_pp": 0.9387,
+    "standardError_pp": 0.4069,
+    "zScore": 2.3071,
+    "pValue": 0.021051,
+    "isSignificant": true
+  },
+  "conclusion": "OBSERVED ASSOCIATION (AUDIT HOLD - PENDING TEMPORAL VALIDATION)",
+  "governanceDecision": "PENDING_RESEARCH_DECISION"
+}

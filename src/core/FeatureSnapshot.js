@@ -29,6 +29,10 @@ class FeatureSnapshot {
 
     deepFreeze(this);
   }
+
+  get values() {
+    return this.features;
+  }
 }
 
 module.exports = FeatureSnapshot;

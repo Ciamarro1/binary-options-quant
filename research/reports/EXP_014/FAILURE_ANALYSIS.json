@@ -1,0 +1,18 @@
+{
+  "hypothesisId": "HYPOTHESIS_002",
+  "rootCauseCategorization": {
+    "microstructuralHypothesis": "PARTIALLY_VALID",
+    "directionalAsymmetry": "CONFIRMED_POSITIVE",
+    "economicFrictionBarrier": "FATAL",
+    "probabilityCalibration": "MILD_OVERCONFIDENCE",
+    "effectiveSampleSize": "REDUCED_BY_PATH_OVERLAP"
+  },
+  "frictionMath": {
+    "payout": 0.8,
+    "requiredWinRate": 0.555556,
+    "realizedWinRate": 0.522206,
+    "shortfallPercentagePoints": 3.335,
+    "capitalDecayPerTrade": -0.060029
+  },
+  "governanceAction": "ARCHIVE_WITHOUT_PARAMETER_RESCUE"
+}

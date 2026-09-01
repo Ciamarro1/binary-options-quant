@@ -1,0 +1,19 @@
+{
+  "receiptId": "PROV_EXP_014_EXHAUSTION_BTC1M_2024_06_09",
+  "experimentId": "EXP_014_EXHAUSTION_BTC1M_2024_06_09",
+  "hypothesisId": "HYPOTHESIS_002",
+  "hypothesisVersion": "1.0.0",
+  "hypothesisSha256": "72a91dda6919e30665c98ea5c259dcb6ccfa03ce8d38ce326c5b53f5393e548a",
+  "datasetId": "DATASET_003",
+  "datasetContentHash": "3ed2064690b63516a559d10c4d8e7d8de60795f380668bc9c2d1544ad5c53638",
+  "codeCommitBaseline": "COMMIT_014_FROZEN",
+  "totalWindows": 115,
+  "triProofStatus": {
+    "statsProofAvailable": true,
+    "adversarialProofAvailable": true,
+    "provenanceVerified": true
+  },
+  "certifiedBy": "EXPERIMENT_CONTROLLER",
+  "certifiedAt": "2026-09-01T02:23:06.554Z",
+  "status": "VERIFIED_AWAITING_CRO"
+}

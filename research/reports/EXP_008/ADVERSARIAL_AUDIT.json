@@ -1,0 +1,15 @@
+{
+  "experimentId": "EXP_008_DISPLACEMENT_BTC1M_2024_02_05",
+  "suitesExecuted": 31,
+  "testsExecuted": 103,
+  "status": "PASSED",
+  "checks": {
+    "causalIntegrity": "PASSED",
+    "futureInjectionInvariance": "PASSED",
+    "pushOutcomeExclusion": "PASSED",
+    "mulberry32NullControl": "PASSED",
+    "boundaryFuzzing": "PASSED"
+  },
+  "auditedAt": "2026-09-01T00:18:28.890Z",
+  "auditorSignature": "ADVERSARIAL_QA_SEAL_VALID"
+}

@@ -1,0 +1,19 @@
+{
+  "hypothesis": "H004",
+  "dataset": "DATASET_005",
+  "windows_evaluated": 180,
+  "reconciliation": {
+    "N_signals": 16003,
+    "N_WIN": 8078,
+    "N_LOSS": 7876,
+    "N_PUSH": 49,
+    "N_UNRESOLVED": 0,
+    "verification_sum": 16003,
+    "is_balanced": true
+  },
+  "protocol_integrity": {
+    "M_30_respected_prior_to_signal": true,
+    "train_probability_filtering_applied": false,
+    "full_sample_oos_utilized": true
+  }
+}

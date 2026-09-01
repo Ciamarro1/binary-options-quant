@@ -1,0 +1,25 @@
+{
+  "experimentId": "EXP_014_EXHAUSTION_BTC1M_2024_06_09",
+  "hypothesisId": "HYPOTHESIS_002",
+  "verdict": "VETO",
+  "reasons": [
+    "WILSON_CI_LOWER_BOUND_BELOW_BREAK_EVEN",
+    "NEGATIVE_OR_ZERO_EXPECTED_VALUE"
+  ],
+  "deliberationDetails": {
+    "n": 2049,
+    "winRate": 0.5222059541239629,
+    "wilsonCi": [
+      0.5005561073061424,
+      0.5437726903955409
+    ],
+    "breakEven": 0.5555555555555556,
+    "ev": -0.060029282576866794,
+    "statsProofStatus": "FAIL",
+    "adversarialProofStatus": "PASS",
+    "provenanceProofStatus": "PASS"
+  },
+  "governanceRuleEnforced": "ZERO_PARAMETER_TWEAKING_NO_CURVE_FITTING",
+  "croSignature": "CHIEF_RISK_OFFICER_SOVEREIGN_GATE_SIGNED",
+  "timestamp": "2026-09-01T02:24:04.018Z"
+}

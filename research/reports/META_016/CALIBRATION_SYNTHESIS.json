@@ -1,0 +1,59 @@
+{
+  "metaAnalysisId": "META_016_CALIBRATION",
+  "modelId": "EXHAUSTION_MODEL",
+  "totalResolvedObservations": 2049,
+  "signalWeightedMeanPredictedProbability": 0.5198335997155733,
+  "realizedEmpiricalWinRate": 0.5222059541239629,
+  "calibrationBias": -0.0023723544083895654,
+  "expectedCalibrationError": 0.013490178072629009,
+  "binnedCalibration": [
+    {
+      "bin": 1,
+      "count": 561,
+      "avgPred": 0.4478673467514717,
+      "avgEmpirical": 0.46880570409982175,
+      "diff": 0.020938357348350034
+    },
+    {
+      "bin": 2,
+      "count": 594,
+      "avgPred": 0.5092512692687221,
+      "avgEmpirical": 0.5168350168350169,
+      "diff": 0.007583747566294763
+    },
+    {
+      "bin": 3,
+      "count": 412,
+      "avgPred": 0.5455491247417302,
+      "avgEmpirical": 0.5364077669902912,
+      "diff": 0.009141357751438983
+    },
+    {
+      "bin": 4,
+      "count": 367,
+      "avgPred": 0.5876359536226896,
+      "avgEmpirical": 0.5858310626702997,
+      "diff": 0.0018048909523898926
+    },
+    {
+      "bin": 5,
+      "count": 115,
+      "avgPred": 0.617057182355595,
+      "avgEmpirical": 0.5565217391304348,
+      "diff": 0.060535443225160246
+    }
+  ],
+  "directionalCalibration": {
+    "call": {
+      "meanTrainProb": 0.534467,
+      "realizedOosWinRate": 0.5125482625482626,
+      "bias": 0.021918737451737447
+    },
+    "put": {
+      "meanTrainProb": 0.53546,
+      "realizedOosWinRate": 0.5148042024832856,
+      "bias": 0.020655797516714425
+    }
+  },
+  "diagnosis": "Conditional historical probability estimator exhibited moderate In-Sample optimism bias (~2.1 pp overestimation)."
+}

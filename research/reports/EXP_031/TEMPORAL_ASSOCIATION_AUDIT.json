@@ -1,0 +1,15 @@
+{
+  "hypothesis": "H004",
+  "baseline": "BASELINE_005_CONTROL",
+  "methodology": "Temporal Block Bootstrap (N=10,000 resamples of non-overlapping 1-day OOS test windows)",
+  "results": {
+    "observedDelta_pp": 0.8804,
+    "bootstrapIterations": 10000,
+    "confidenceInterval_95_Lower_pp": 0.0734,
+    "confidenceInterval_95_Upper_pp": 1.7109,
+    "pValue": 0.016,
+    "isSignificant": true
+  },
+  "conclusion": "ROBUST DIRECTIONAL ASSOCIATION CONFIRMED",
+  "governanceRecommendation": "AUTHORIZE_FAMILY_04_SIGNAL_TO_PAYOFF"
+}

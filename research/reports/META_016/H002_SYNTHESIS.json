@@ -1,0 +1,31 @@
+{
+  "experimentId": "EXP_014_EXHAUSTION_BTC1M_2024_06_09",
+  "hypothesisId": "HYPOTHESIS_002",
+  "thesis": "Short-Horizon Mean-Reversion / Exhaustion Anomaly",
+  "timeframe": "1m",
+  "targetExpiry": "3 candles (180s)",
+  "dataset": "DATASET_003 (Jun-Sep 2024, 175,680 rows)",
+  "totalWindows": 115,
+  "sampleSizeResolved": 2049,
+  "winRate": 0.5222059541239629,
+  "wilsonCi95": [
+    0.5005561073061424,
+    0.5437726903955409
+  ],
+  "breakEvenRate": 0.555556,
+  "absoluteEdgeVsBreakeven": -0.03334960143159271,
+  "expectedValue": -0.060029282576866794,
+  "brierScore": 0.25135745866075726,
+  "directionalBreakdown": {
+    "callWinRate": 0.5125482625482626,
+    "putWinRate": 0.5148042024832856
+  },
+  "comparisons": {
+    "baseline003ControlWinRate": 0.49892164350084006,
+    "observedDiffVsBaseline": 0.023284310623122806,
+    "reversedControlWinRate": 0.4737873591376776,
+    "observedDiffVsReversed": 0.04841859498628526
+  },
+  "verdict": "FALSIFIED_ARCHIVED",
+  "primaryFinding": "Exhaustion setup produces observed relative superiority over baseline and reversed controls, but fails the economic viability barrier."
+}

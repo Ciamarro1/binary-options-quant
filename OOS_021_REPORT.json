@@ -1,0 +1,1570 @@
+{
+  "integrity": {
+    "dataset": "DATASET_004",
+    "windows": 152,
+    "totalLTF": 218880,
+    "eligibleHTF": 218880,
+    "sweepUpCandidates": 19,
+    "sweepDownCandidates": 14,
+    "signalsEmitted": 0,
+    "resolved": 0,
+    "unresolved": 0,
+    "pushes": 0
+  },
+  "h003_economic": {
+    "up_put": {
+      "wins": 0,
+      "losses": 0,
+      "pushes": 0,
+      "n_train_avg": 3
+    },
+    "down_call": {
+      "wins": 0,
+      "losses": 0,
+      "pushes": 0,
+      "n_train_avg": 2
+    },
+    "total": {
+      "wins": 0,
+      "losses": 0
+    }
+  },
+  "reversed_economic": {
+    "up_call": {
+      "wins": 0,
+      "losses": 0,
+      "pushes": 0
+    },
+    "down_put": {
+      "wins": 0,
+      "losses": 0,
+      "pushes": 0
+    },
+    "total": {
+      "wins": 0,
+      "losses": 0
+    }
+  },
+  "windows": [
+    {
+      "window": 1,
+      "trainUpN": 0,
+      "trainDownN": 0,
+      "probPut": null,
+      "probCall": null,
+      "signals": 0,
+      "resolved": 0,
+      "unresolved": 0
+    },
+    {
+      "window": 2,
+      "trainUpN": 0,
+      "trainDownN": 0,
+      "probPut": null,
+      "probCall": null,
+      "signals": 0,
+      "resolved": 0,
+      "unresolved": 0
+    },
+    {
+      "window": 3,
+      "trainUpN": 0,
+      "trainDownN": 0,
+      "probPut": null,
+      "probCall": null,
+      "signals": 0,
+      "resolved": 0,
+      "unresolved": 0
+    },
+    {
+      "window": 4,
+      "trainUpN": 0,
+      "trainDownN": 0,
+      "probPut": null,
+      "probCall": null,
+      "signals": 0,
+      "resolved": 0,
+      "unresolved": 0
+    },
+    {
+      "window": 5,
+      "trainUpN": 0,
+      "trainDownN": 0,
+      "probPut": null,
+      "probCall": null,
+      "signals": 0,
+      "resolved": 0,
+      "unresolved": 0
+    },
+    {
+      "window": 6,
+      "trainUpN": 0,
+      "trainDownN": 0,
+      "probPut": null,
+      "probCall": null,
+      "signals": 0,
+      "resolved": 0,
+      "unresolved": 0
+    },
+    {
+      "window": 7,
+      "trainUpN": 0,
+      "trainDownN": 0,
+      "probPut": null,
+      "probCall": null,
+      "signals": 0,
+      "resolved": 0,
+      "unresolved": 0
+    },
+    {
+      "window": 8,
+      "trainUpN": 0,
+      "trainDownN": 0,
+      "probPut": null,
+      "probCall": null,
+      "signals": 0,
+      "resolved": 0,
+      "unresolved": 0
+    },
+    {
+      "window": 9,
+      "trainUpN": 0,
+      "trainDownN": 0,
+      "probPut": null,
+      "probCall": null,
+      "signals": 0,
+      "resolved": 0,
+      "unresolved": 0
+    },
+    {
+      "window": 10,
+      "trainUpN": 0,
+      "trainDownN": 0,
+      "probPut": null,
+      "probCall": null,
+      "signals": 0,
+      "resolved": 0,
+      "unresolved": 0
+    },
+    {
+      "window": 11,
+      "trainUpN": 0,
+      "trainDownN": 0,
+      "probPut": null,
+      "probCall": null,
+      "signals": 0,
+      "resolved": 0,
+      "unresolved": 0
+    },
+    {
+      "window": 12,
+      "trainUpN": 0,
+      "trainDownN": 0,
+      "probPut": null,
+      "probCall": null,
+      "signals": 0,
+      "resolved": 0,
+      "unresolved": 0
+    },
+    {
+      "window": 13,
+      "trainUpN": 0,
+      "trainDownN": 2,
+      "probPut": null,
+      "probCall": null,
+      "signals": 0,
+      "resolved": 0,
+      "unresolved": 0
+    },
+    {
+      "window": 14,
+      "trainUpN": 0,
+      "trainDownN": 2,
+      "probPut": null,
+      "probCall": null,
+      "signals": 0,
+      "resolved": 0,
+      "unresolved": 0
+    },
+    {
+      "window": 15,
+      "trainUpN": 0,
+      "trainDownN": 2,
+      "probPut": null,
+      "probCall": null,
+      "signals": 0,
+      "resolved": 0,
+      "unresolved": 0
+    },
+    {
+      "window": 16,
+      "trainUpN": 0,
+      "trainDownN": 2,
+      "probPut": null,
+      "probCall": null,
+      "signals": 0,
+      "resolved": 0,
+      "unresolved": 0
+    },
+    {
+      "window": 17,
+      "trainUpN": 1,
+      "trainDownN": 2,
+      "probPut": null,
+      "probCall": null,
+      "signals": 0,
+      "resolved": 0,
+      "unresolved": 0
+    },
+    {
+      "window": 18,
+      "trainUpN": 1,
+      "trainDownN": 2,
+      "probPut": null,
+      "probCall": null,
+      "signals": 0,
+      "resolved": 0,
+      "unresolved": 0
+    },
+    {
+      "window": 19,
+      "trainUpN": 1,
+      "trainDownN": 2,
+      "probPut": null,
+      "probCall": null,
+      "signals": 0,
+      "resolved": 0,
+      "unresolved": 0
+    },
+    {
+      "window": 20,
+      "trainUpN": 1,
+      "trainDownN": 2,
+      "probPut": null,
+      "probCall": null,
+      "signals": 0,
+      "resolved": 0,
+      "unresolved": 0
+    },
+    {
+      "window": 21,
+      "trainUpN": 1,
+      "trainDownN": 2,
+      "probPut": null,
+      "probCall": null,
+      "signals": 0,
+      "resolved": 0,
+      "unresolved": 0
+    },
+    {
+      "window": 22,
+      "trainUpN": 1,
+      "trainDownN": 2,
+      "probPut": null,
+      "probCall": null,
+      "signals": 0,
+      "resolved": 0,
+      "unresolved": 0
+    },
+    {
+      "window": 23,
+      "trainUpN": 1,
+      "trainDownN": 2,
+      "probPut": null,
+      "probCall": null,
+      "signals": 0,
+      "resolved": 0,
+      "unresolved": 0
+    },
+    {
+      "window": 24,
+      "trainUpN": 1,
+      "trainDownN": 2,
+      "probPut": null,
+      "probCall": null,
+      "signals": 0,
+      "resolved": 0,
+      "unresolved": 0
+    },
+    {
+      "window": 25,
+      "trainUpN": 1,
+      "trainDownN": 2,
+      "probPut": null,
+      "probCall": null,
+      "signals": 0,
+      "resolved": 0,
+      "unresolved": 0
+    },
+    {
+      "window": 26,
+      "trainUpN": 1,
+      "trainDownN": 2,
+      "probPut": null,
+      "probCall": null,
+      "signals": 0,
+      "resolved": 0,
+      "unresolved": 0
+    },
+    {
+      "window": 27,
+      "trainUpN": 1,
+      "trainDownN": 2,
+      "probPut": null,
+      "probCall": null,
+      "signals": 0,
+      "resolved": 0,
+      "unresolved": 0
+    },
+    {
+      "window": 28,
+      "trainUpN": 1,
+      "trainDownN": 2,
+      "probPut": null,
+      "probCall": null,
+      "signals": 0,
+      "resolved": 0,
+      "unresolved": 0
+    },
+    {
+      "window": 29,
+      "trainUpN": 1,
+      "trainDownN": 2,
+      "probPut": null,
+      "probCall": null,
+      "signals": 0,
+      "resolved": 0,
+      "unresolved": 0
+    },
+    {
+      "window": 30,
+      "trainUpN": 1,
+      "trainDownN": 2,
+      "probPut": null,
+      "probCall": null,
+      "signals": 0,
+      "resolved": 0,
+      "unresolved": 0
+    },
+    {
+      "window": 31,
+      "trainUpN": 1,
+      "trainDownN": 2,
+      "probPut": null,
+      "probCall": null,
+      "signals": 0,
+      "resolved": 0,
+      "unresolved": 0
+    },
+    {
+      "window": 32,
+      "trainUpN": 1,
+      "trainDownN": 2,
+      "probPut": null,
+      "probCall": null,
+      "signals": 0,
+      "resolved": 0,
+      "unresolved": 0
+    },
+    {
+      "window": 33,
+      "trainUpN": 1,
+      "trainDownN": 2,
+      "probPut": null,
+      "probCall": null,
+      "signals": 0,
+      "resolved": 0,
+      "unresolved": 0
+    },
+    {
+      "window": 34,
+      "trainUpN": 5,
+      "trainDownN": 2,
+      "probPut": null,
+      "probCall": null,
+      "signals": 0,
+      "resolved": 0,
+      "unresolved": 0
+    },
+    {
+      "window": 35,
+      "trainUpN": 5,
+      "trainDownN": 2,
+      "probPut": null,
+      "probCall": null,
+      "signals": 0,
+      "resolved": 0,
+      "unresolved": 0
+    },
+    {
+      "window": 36,
+      "trainUpN": 5,
+      "trainDownN": 2,
+      "probPut": null,
+      "probCall": null,
+      "signals": 0,
+      "resolved": 0,
+      "unresolved": 0
+    },
+    {
+      "window": 37,
+      "trainUpN": 5,
+      "trainDownN": 2,
+      "probPut": null,
+      "probCall": null,
+      "signals": 0,
+      "resolved": 0,
+      "unresolved": 0
+    },
+    {
+      "window": 38,
+      "trainUpN": 5,
+      "trainDownN": 2,
+      "probPut": null,
+      "probCall": null,
+      "signals": 0,
+      "resolved": 0,
+      "unresolved": 0
+    },
+    {
+      "window": 39,
+      "trainUpN": 5,
+      "trainDownN": 2,
+      "probPut": null,
+      "probCall": null,
+      "signals": 0,
+      "resolved": 0,
+      "unresolved": 0
+    },
+    {
+      "window": 40,
+      "trainUpN": 5,
+      "trainDownN": 2,
+      "probPut": null,
+      "probCall": null,
+      "signals": 0,
+      "resolved": 0,
+      "unresolved": 0
+    },
+    {
+      "window": 41,
+      "trainUpN": 5,
+      "trainDownN": 0,
+      "probPut": null,
+      "probCall": null,
+      "signals": 0,
+      "resolved": 0,
+      "unresolved": 0
+    },
+    {
+      "window": 42,
+      "trainUpN": 5,
+      "trainDownN": 0,
+      "probPut": null,
+      "probCall": null,
+      "signals": 0,
+      "resolved": 0,
+      "unresolved": 0
+    },
+    {
+      "window": 43,
+      "trainUpN": 5,
+      "trainDownN": 0,
+      "probPut": null,
+      "probCall": null,
+      "signals": 0,
+      "resolved": 0,
+      "unresolved": 0
+    },
+    {
+      "window": 44,
+      "trainUpN": 5,
+      "trainDownN": 0,
+      "probPut": null,
+      "probCall": null,
+      "signals": 0,
+      "resolved": 0,
+      "unresolved": 0
+    },
+    {
+      "window": 45,
+      "trainUpN": 4,
+      "trainDownN": 0,
+      "probPut": null,
+      "probCall": null,
+      "signals": 0,
+      "resolved": 0,
+      "unresolved": 0
+    },
+    {
+      "window": 46,
+      "trainUpN": 4,
+      "trainDownN": 0,
+      "probPut": null,
+      "probCall": null,
+      "signals": 0,
+      "resolved": 0,
+      "unresolved": 0
+    },
+    {
+      "window": 47,
+      "trainUpN": 4,
+      "trainDownN": 0,
+      "probPut": null,
+      "probCall": null,
+      "signals": 0,
+      "resolved": 0,
+      "unresolved": 0
+    },
+    {
+      "window": 48,
+      "trainUpN": 4,
+      "trainDownN": 0,
+      "probPut": null,
+      "probCall": null,
+      "signals": 0,
+      "resolved": 0,
+      "unresolved": 0
+    },
+    {
+      "window": 49,
+      "trainUpN": 4,
+      "trainDownN": 0,
+      "probPut": null,
+      "probCall": null,
+      "signals": 0,
+      "resolved": 0,
+      "unresolved": 0
+    },
+    {
+      "window": 50,
+      "trainUpN": 4,
+      "trainDownN": 0,
+      "probPut": null,
+      "probCall": null,
+      "signals": 0,
+      "resolved": 0,
+      "unresolved": 0
+    },
+    {
+      "window": 51,
+      "trainUpN": 4,
+      "trainDownN": 0,
+      "probPut": null,
+      "probCall": null,
+      "signals": 0,
+      "resolved": 0,
+      "unresolved": 0
+    },
+    {
+      "window": 52,
+      "trainUpN": 4,
+      "trainDownN": 0,
+      "probPut": null,
+      "probCall": null,
+      "signals": 0,
+      "resolved": 0,
+      "unresolved": 0
+    },
+    {
+      "window": 53,
+      "trainUpN": 4,
+      "trainDownN": 0,
+      "probPut": null,
+      "probCall": null,
+      "signals": 0,
+      "resolved": 0,
+      "unresolved": 0
+    },
+    {
+      "window": 54,
+      "trainUpN": 4,
+      "trainDownN": 0,
+      "probPut": null,
+      "probCall": null,
+      "signals": 0,
+      "resolved": 0,
+      "unresolved": 0
+    },
+    {
+      "window": 55,
+      "trainUpN": 4,
+      "trainDownN": 0,
+      "probPut": null,
+      "probCall": null,
+      "signals": 0,
+      "resolved": 0,
+      "unresolved": 0
+    },
+    {
+      "window": 56,
+      "trainUpN": 4,
+      "trainDownN": 0,
+      "probPut": null,
+      "probCall": null,
+      "signals": 0,
+      "resolved": 0,
+      "unresolved": 0
+    },
+    {
+      "window": 57,
+      "trainUpN": 4,
+      "trainDownN": 0,
+      "probPut": null,
+      "probCall": null,
+      "signals": 0,
+      "resolved": 0,
+      "unresolved": 0
+    },
+    {
+      "window": 58,
+      "trainUpN": 4,
+      "trainDownN": 0,
+      "probPut": null,
+      "probCall": null,
+      "signals": 0,
+      "resolved": 0,
+      "unresolved": 0
+    },
+    {
+      "window": 59,
+      "trainUpN": 4,
+      "trainDownN": 0,
+      "probPut": null,
+      "probCall": null,
+      "signals": 0,
+      "resolved": 0,
+      "unresolved": 0
+    },
+    {
+      "window": 60,
+      "trainUpN": 4,
+      "trainDownN": 0,
+      "probPut": null,
+      "probCall": null,
+      "signals": 0,
+      "resolved": 0,
+      "unresolved": 0
+    },
+    {
+      "window": 61,
+      "trainUpN": 4,
+      "trainDownN": 0,
+      "probPut": null,
+      "probCall": null,
+      "signals": 0,
+      "resolved": 0,
+      "unresolved": 0
+    },
+    {
+      "window": 62,
+      "trainUpN": 0,
+      "trainDownN": 0,
+      "probPut": null,
+      "probCall": null,
+      "signals": 0,
+      "resolved": 0,
+      "unresolved": 0
+    },
+    {
+      "window": 63,
+      "trainUpN": 0,
+      "trainDownN": 0,
+      "probPut": null,
+      "probCall": null,
+      "signals": 0,
+      "resolved": 0,
+      "unresolved": 0
+    },
+    {
+      "window": 64,
+      "trainUpN": 0,
+      "trainDownN": 0,
+      "probPut": null,
+      "probCall": null,
+      "signals": 0,
+      "resolved": 0,
+      "unresolved": 0
+    },
+    {
+      "window": 65,
+      "trainUpN": 0,
+      "trainDownN": 0,
+      "probPut": null,
+      "probCall": null,
+      "signals": 0,
+      "resolved": 0,
+      "unresolved": 0
+    },
+    {
+      "window": 66,
+      "trainUpN": 0,
+      "trainDownN": 0,
+      "probPut": null,
+      "probCall": null,
+      "signals": 0,
+      "resolved": 0,
+      "unresolved": 0
+    },
+    {
+      "window": 67,
+      "trainUpN": 0,
+      "trainDownN": 0,
+      "probPut": null,
+      "probCall": null,
+      "signals": 0,
+      "resolved": 0,
+      "unresolved": 0
+    },
+    {
+      "window": 68,
+      "trainUpN": 0,
+      "trainDownN": 0,
+      "probPut": null,
+      "probCall": null,
+      "signals": 0,
+      "resolved": 0,
+      "unresolved": 0
+    },
+    {
+      "window": 69,
+      "trainUpN": 0,
+      "trainDownN": 7,
+      "probPut": null,
+      "probCall": null,
+      "signals": 0,
+      "resolved": 0,
+      "unresolved": 0
+    },
+    {
+      "window": 70,
+      "trainUpN": 0,
+      "trainDownN": 7,
+      "probPut": null,
+      "probCall": null,
+      "signals": 0,
+      "resolved": 0,
+      "unresolved": 0
+    },
+    {
+      "window": 71,
+      "trainUpN": 4,
+      "trainDownN": 7,
+      "probPut": null,
+      "probCall": null,
+      "signals": 0,
+      "resolved": 0,
+      "unresolved": 0
+    },
+    {
+      "window": 72,
+      "trainUpN": 4,
+      "trainDownN": 7,
+      "probPut": null,
+      "probCall": null,
+      "signals": 0,
+      "resolved": 0,
+      "unresolved": 0
+    },
+    {
+      "window": 73,
+      "trainUpN": 4,
+      "trainDownN": 7,
+      "probPut": null,
+      "probCall": null,
+      "signals": 0,
+      "resolved": 0,
+      "unresolved": 0
+    },
+    {
+      "window": 74,
+      "trainUpN": 4,
+      "trainDownN": 7,
+      "probPut": null,
+      "probCall": null,
+      "signals": 0,
+      "resolved": 0,
+      "unresolved": 0
+    },
+    {
+      "window": 75,
+      "trainUpN": 4,
+      "trainDownN": 7,
+      "probPut": null,
+      "probCall": null,
+      "signals": 0,
+      "resolved": 0,
+      "unresolved": 0
+    },
+    {
+      "window": 76,
+      "trainUpN": 4,
+      "trainDownN": 7,
+      "probPut": null,
+      "probCall": null,
+      "signals": 0,
+      "resolved": 0,
+      "unresolved": 0
+    },
+    {
+      "window": 77,
+      "trainUpN": 4,
+      "trainDownN": 7,
+      "probPut": null,
+      "probCall": null,
+      "signals": 0,
+      "resolved": 0,
+      "unresolved": 0
+    },
+    {
+      "window": 78,
+      "trainUpN": 5,
+      "trainDownN": 7,
+      "probPut": null,
+      "probCall": null,
+      "signals": 0,
+      "resolved": 0,
+      "unresolved": 0
+    },
+    {
+      "window": 79,
+      "trainUpN": 5,
+      "trainDownN": 7,
+      "probPut": null,
+      "probCall": null,
+      "signals": 0,
+      "resolved": 0,
+      "unresolved": 0
+    },
+    {
+      "window": 80,
+      "trainUpN": 5,
+      "trainDownN": 7,
+      "probPut": null,
+      "probCall": null,
+      "signals": 0,
+      "resolved": 0,
+      "unresolved": 0
+    },
+    {
+      "window": 81,
+      "trainUpN": 5,
+      "trainDownN": 7,
+      "probPut": null,
+      "probCall": null,
+      "signals": 0,
+      "resolved": 0,
+      "unresolved": 0
+    },
+    {
+      "window": 82,
+      "trainUpN": 5,
+      "trainDownN": 7,
+      "probPut": null,
+      "probCall": null,
+      "signals": 0,
+      "resolved": 0,
+      "unresolved": 0
+    },
+    {
+      "window": 83,
+      "trainUpN": 5,
+      "trainDownN": 7,
+      "probPut": null,
+      "probCall": null,
+      "signals": 0,
+      "resolved": 0,
+      "unresolved": 0
+    },
+    {
+      "window": 84,
+      "trainUpN": 5,
+      "trainDownN": 7,
+      "probPut": null,
+      "probCall": null,
+      "signals": 0,
+      "resolved": 0,
+      "unresolved": 0
+    },
+    {
+      "window": 85,
+      "trainUpN": 5,
+      "trainDownN": 7,
+      "probPut": null,
+      "probCall": null,
+      "signals": 0,
+      "resolved": 0,
+      "unresolved": 0
+    },
+    {
+      "window": 86,
+      "trainUpN": 5,
+      "trainDownN": 7,
+      "probPut": null,
+      "probCall": null,
+      "signals": 0,
+      "resolved": 0,
+      "unresolved": 0
+    },
+    {
+      "window": 87,
+      "trainUpN": 5,
+      "trainDownN": 7,
+      "probPut": null,
+      "probCall": null,
+      "signals": 0,
+      "resolved": 0,
+      "unresolved": 0
+    },
+    {
+      "window": 88,
+      "trainUpN": 5,
+      "trainDownN": 7,
+      "probPut": null,
+      "probCall": null,
+      "signals": 0,
+      "resolved": 0,
+      "unresolved": 0
+    },
+    {
+      "window": 89,
+      "trainUpN": 5,
+      "trainDownN": 7,
+      "probPut": null,
+      "probCall": null,
+      "signals": 0,
+      "resolved": 0,
+      "unresolved": 0
+    },
+    {
+      "window": 90,
+      "trainUpN": 5,
+      "trainDownN": 7,
+      "probPut": null,
+      "probCall": null,
+      "signals": 0,
+      "resolved": 0,
+      "unresolved": 0
+    },
+    {
+      "window": 91,
+      "trainUpN": 12,
+      "trainDownN": 7,
+      "probPut": null,
+      "probCall": null,
+      "signals": 0,
+      "resolved": 0,
+      "unresolved": 0
+    },
+    {
+      "window": 92,
+      "trainUpN": 12,
+      "trainDownN": 7,
+      "probPut": null,
+      "probCall": null,
+      "signals": 0,
+      "resolved": 0,
+      "unresolved": 0
+    },
+    {
+      "window": 93,
+      "trainUpN": 12,
+      "trainDownN": 7,
+      "probPut": null,
+      "probCall": null,
+      "signals": 0,
+      "resolved": 0,
+      "unresolved": 0
+    },
+    {
+      "window": 94,
+      "trainUpN": 12,
+      "trainDownN": 7,
+      "probPut": null,
+      "probCall": null,
+      "signals": 0,
+      "resolved": 0,
+      "unresolved": 0
+    },
+    {
+      "window": 95,
+      "trainUpN": 12,
+      "trainDownN": 7,
+      "probPut": null,
+      "probCall": null,
+      "signals": 0,
+      "resolved": 0,
+      "unresolved": 0
+    },
+    {
+      "window": 96,
+      "trainUpN": 12,
+      "trainDownN": 7,
+      "probPut": null,
+      "probCall": null,
+      "signals": 0,
+      "resolved": 0,
+      "unresolved": 0
+    },
+    {
+      "window": 97,
+      "trainUpN": 12,
+      "trainDownN": 0,
+      "probPut": null,
+      "probCall": null,
+      "signals": 0,
+      "resolved": 0,
+      "unresolved": 0
+    },
+    {
+      "window": 98,
+      "trainUpN": 12,
+      "trainDownN": 0,
+      "probPut": null,
+      "probCall": null,
+      "signals": 0,
+      "resolved": 0,
+      "unresolved": 0
+    },
+    {
+      "window": 99,
+      "trainUpN": 8,
+      "trainDownN": 0,
+      "probPut": null,
+      "probCall": null,
+      "signals": 0,
+      "resolved": 0,
+      "unresolved": 0
+    },
+    {
+      "window": 100,
+      "trainUpN": 8,
+      "trainDownN": 0,
+      "probPut": null,
+      "probCall": null,
+      "signals": 0,
+      "resolved": 0,
+      "unresolved": 0
+    },
+    {
+      "window": 101,
+      "trainUpN": 8,
+      "trainDownN": 0,
+      "probPut": null,
+      "probCall": null,
+      "signals": 0,
+      "resolved": 0,
+      "unresolved": 0
+    },
+    {
+      "window": 102,
+      "trainUpN": 8,
+      "trainDownN": 0,
+      "probPut": null,
+      "probCall": null,
+      "signals": 0,
+      "resolved": 0,
+      "unresolved": 0
+    },
+    {
+      "window": 103,
+      "trainUpN": 8,
+      "trainDownN": 0,
+      "probPut": null,
+      "probCall": null,
+      "signals": 0,
+      "resolved": 0,
+      "unresolved": 0
+    },
+    {
+      "window": 104,
+      "trainUpN": 8,
+      "trainDownN": 0,
+      "probPut": null,
+      "probCall": null,
+      "signals": 0,
+      "resolved": 0,
+      "unresolved": 0
+    },
+    {
+      "window": 105,
+      "trainUpN": 8,
+      "trainDownN": 0,
+      "probPut": null,
+      "probCall": null,
+      "signals": 0,
+      "resolved": 0,
+      "unresolved": 0
+    },
+    {
+      "window": 106,
+      "trainUpN": 7,
+      "trainDownN": 0,
+      "probPut": null,
+      "probCall": null,
+      "signals": 0,
+      "resolved": 0,
+      "unresolved": 0
+    },
+    {
+      "window": 107,
+      "trainUpN": 7,
+      "trainDownN": 0,
+      "probPut": null,
+      "probCall": null,
+      "signals": 0,
+      "resolved": 0,
+      "unresolved": 0
+    },
+    {
+      "window": 108,
+      "trainUpN": 7,
+      "trainDownN": 0,
+      "probPut": null,
+      "probCall": null,
+      "signals": 0,
+      "resolved": 0,
+      "unresolved": 0
+    },
+    {
+      "window": 109,
+      "trainUpN": 7,
+      "trainDownN": 0,
+      "probPut": null,
+      "probCall": null,
+      "signals": 0,
+      "resolved": 0,
+      "unresolved": 0
+    },
+    {
+      "window": 110,
+      "trainUpN": 7,
+      "trainDownN": 0,
+      "probPut": null,
+      "probCall": null,
+      "signals": 0,
+      "resolved": 0,
+      "unresolved": 0
+    },
+    {
+      "window": 111,
+      "trainUpN": 7,
+      "trainDownN": 0,
+      "probPut": null,
+      "probCall": null,
+      "signals": 0,
+      "resolved": 0,
+      "unresolved": 0
+    },
+    {
+      "window": 112,
+      "trainUpN": 7,
+      "trainDownN": 0,
+      "probPut": null,
+      "probCall": null,
+      "signals": 0,
+      "resolved": 0,
+      "unresolved": 0
+    },
+    {
+      "window": 113,
+      "trainUpN": 7,
+      "trainDownN": 0,
+      "probPut": null,
+      "probCall": null,
+      "signals": 0,
+      "resolved": 0,
+      "unresolved": 0
+    },
+    {
+      "window": 114,
+      "trainUpN": 7,
+      "trainDownN": 0,
+      "probPut": null,
+      "probCall": null,
+      "signals": 0,
+      "resolved": 0,
+      "unresolved": 0
+    },
+    {
+      "window": 115,
+      "trainUpN": 7,
+      "trainDownN": 0,
+      "probPut": null,
+      "probCall": null,
+      "signals": 0,
+      "resolved": 0,
+      "unresolved": 0
+    },
+    {
+      "window": 116,
+      "trainUpN": 7,
+      "trainDownN": 0,
+      "probPut": null,
+      "probCall": null,
+      "signals": 0,
+      "resolved": 0,
+      "unresolved": 0
+    },
+    {
+      "window": 117,
+      "trainUpN": 7,
+      "trainDownN": 0,
+      "probPut": null,
+      "probCall": null,
+      "signals": 0,
+      "resolved": 0,
+      "unresolved": 0
+    },
+    {
+      "window": 118,
+      "trainUpN": 7,
+      "trainDownN": 0,
+      "probPut": null,
+      "probCall": null,
+      "signals": 0,
+      "resolved": 0,
+      "unresolved": 0
+    },
+    {
+      "window": 119,
+      "trainUpN": 0,
+      "trainDownN": 0,
+      "probPut": null,
+      "probCall": null,
+      "signals": 0,
+      "resolved": 0,
+      "unresolved": 0
+    },
+    {
+      "window": 120,
+      "trainUpN": 0,
+      "trainDownN": 0,
+      "probPut": null,
+      "probCall": null,
+      "signals": 0,
+      "resolved": 0,
+      "unresolved": 0
+    },
+    {
+      "window": 121,
+      "trainUpN": 0,
+      "trainDownN": 0,
+      "probPut": null,
+      "probCall": null,
+      "signals": 0,
+      "resolved": 0,
+      "unresolved": 0
+    },
+    {
+      "window": 122,
+      "trainUpN": 0,
+      "trainDownN": 0,
+      "probPut": null,
+      "probCall": null,
+      "signals": 0,
+      "resolved": 0,
+      "unresolved": 0
+    },
+    {
+      "window": 123,
+      "trainUpN": 0,
+      "trainDownN": 0,
+      "probPut": null,
+      "probCall": null,
+      "signals": 0,
+      "resolved": 0,
+      "unresolved": 0
+    },
+    {
+      "window": 124,
+      "trainUpN": 0,
+      "trainDownN": 0,
+      "probPut": null,
+      "probCall": null,
+      "signals": 0,
+      "resolved": 0,
+      "unresolved": 0
+    },
+    {
+      "window": 125,
+      "trainUpN": 0,
+      "trainDownN": 0,
+      "probPut": null,
+      "probCall": null,
+      "signals": 0,
+      "resolved": 0,
+      "unresolved": 0
+    },
+    {
+      "window": 126,
+      "trainUpN": 0,
+      "trainDownN": 0,
+      "probPut": null,
+      "probCall": null,
+      "signals": 0,
+      "resolved": 0,
+      "unresolved": 0
+    },
+    {
+      "window": 127,
+      "trainUpN": 0,
+      "trainDownN": 0,
+      "probPut": null,
+      "probCall": null,
+      "signals": 0,
+      "resolved": 0,
+      "unresolved": 0
+    },
+    {
+      "window": 128,
+      "trainUpN": 0,
+      "trainDownN": 0,
+      "probPut": null,
+      "probCall": null,
+      "signals": 0,
+      "resolved": 0,
+      "unresolved": 0
+    },
+    {
+      "window": 129,
+      "trainUpN": 0,
+      "trainDownN": 0,
+      "probPut": null,
+      "probCall": null,
+      "signals": 0,
+      "resolved": 0,
+      "unresolved": 0
+    },
+    {
+      "window": 130,
+      "trainUpN": 0,
+      "trainDownN": 0,
+      "probPut": null,
+      "probCall": null,
+      "signals": 0,
+      "resolved": 0,
+      "unresolved": 0
+    },
+    {
+      "window": 131,
+      "trainUpN": 0,
+      "trainDownN": 0,
+      "probPut": null,
+      "probCall": null,
+      "signals": 0,
+      "resolved": 0,
+      "unresolved": 0
+    },
+    {
+      "window": 132,
+      "trainUpN": 0,
+      "trainDownN": 0,
+      "probPut": null,
+      "probCall": null,
+      "signals": 0,
+      "resolved": 0,
+      "unresolved": 0
+    },
+    {
+      "window": 133,
+      "trainUpN": 0,
+      "trainDownN": 0,
+      "probPut": null,
+      "probCall": null,
+      "signals": 0,
+      "resolved": 0,
+      "unresolved": 0
+    },
+    {
+      "window": 134,
+      "trainUpN": 0,
+      "trainDownN": 0,
+      "probPut": null,
+      "probCall": null,
+      "signals": 0,
+      "resolved": 0,
+      "unresolved": 0
+    },
+    {
+      "window": 135,
+      "trainUpN": 0,
+      "trainDownN": 0,
+      "probPut": null,
+      "probCall": null,
+      "signals": 0,
+      "resolved": 0,
+      "unresolved": 0
+    },
+    {
+      "window": 136,
+      "trainUpN": 0,
+      "trainDownN": 0,
+      "probPut": null,
+      "probCall": null,
+      "signals": 0,
+      "resolved": 0,
+      "unresolved": 0
+    },
+    {
+      "window": 137,
+      "trainUpN": 0,
+      "trainDownN": 0,
+      "probPut": null,
+      "probCall": null,
+      "signals": 0,
+      "resolved": 0,
+      "unresolved": 0
+    },
+    {
+      "window": 138,
+      "trainUpN": 0,
+      "trainDownN": 5,
+      "probPut": null,
+      "probCall": null,
+      "signals": 0,
+      "resolved": 0,
+      "unresolved": 0
+    },
+    {
+      "window": 139,
+      "trainUpN": 0,
+      "trainDownN": 5,
+      "probPut": null,
+      "probCall": null,
+      "signals": 0,
+      "resolved": 0,
+      "unresolved": 0
+    },
+    {
+      "window": 140,
+      "trainUpN": 0,
+      "trainDownN": 5,
+      "probPut": null,
+      "probCall": null,
+      "signals": 0,
+      "resolved": 0,
+      "unresolved": 0
+    },
+    {
+      "window": 141,
+      "trainUpN": 0,
+      "trainDownN": 5,
+      "probPut": null,
+      "probCall": null,
+      "signals": 0,
+      "resolved": 0,
+      "unresolved": 0
+    },
+    {
+      "window": 142,
+      "trainUpN": 0,
+      "trainDownN": 5,
+      "probPut": null,
+      "probCall": null,
+      "signals": 0,
+      "resolved": 0,
+      "unresolved": 0
+    },
+    {
+      "window": 143,
+      "trainUpN": 0,
+      "trainDownN": 5,
+      "probPut": null,
+      "probCall": null,
+      "signals": 0,
+      "resolved": 0,
+      "unresolved": 0
+    },
+    {
+      "window": 144,
+      "trainUpN": 0,
+      "trainDownN": 5,
+      "probPut": null,
+      "probCall": null,
+      "signals": 0,
+      "resolved": 0,
+      "unresolved": 0
+    },
+    {
+      "window": 145,
+      "trainUpN": 0,
+      "trainDownN": 5,
+      "probPut": null,
+      "probCall": null,
+      "signals": 0,
+      "resolved": 0,
+      "unresolved": 0
+    },
+    {
+      "window": 146,
+      "trainUpN": 0,
+      "trainDownN": 5,
+      "probPut": null,
+      "probCall": null,
+      "signals": 0,
+      "resolved": 0,
+      "unresolved": 0
+    },
+    {
+      "window": 147,
+      "trainUpN": 0,
+      "trainDownN": 5,
+      "probPut": null,
+      "probCall": null,
+      "signals": 0,
+      "resolved": 0,
+      "unresolved": 0
+    },
+    {
+      "window": 148,
+      "trainUpN": 0,
+      "trainDownN": 5,
+      "probPut": null,
+      "probCall": null,
+      "signals": 0,
+      "resolved": 0,
+      "unresolved": 0
+    },
+    {
+      "window": 149,
+      "trainUpN": 0,
+      "trainDownN": 5,
+      "probPut": null,
+      "probCall": null,
+      "signals": 0,
+      "resolved": 0,
+      "unresolved": 0
+    },
+    {
+      "window": 150,
+      "trainUpN": 0,
+      "trainDownN": 5,
+      "probPut": null,
+      "probCall": null,
+      "signals": 0,
+      "resolved": 0,
+      "unresolved": 0
+    },
+    {
+      "window": 151,
+      "trainUpN": 0,
+      "trainDownN": 5,
+      "probPut": null,
+      "probCall": null,
+      "signals": 0,
+      "resolved": 0,
+      "unresolved": 0
+    },
+    {
+      "window": 152,
+      "trainUpN": 2,
+      "trainDownN": 5,
+      "probPut": null,
+      "probCall": null,
+      "signals": 0,
+      "resolved": 0,
+      "unresolved": 0
+    }
+  ]
+}

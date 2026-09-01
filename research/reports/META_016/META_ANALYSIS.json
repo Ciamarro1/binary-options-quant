@@ -1,0 +1,42 @@
+{
+  "metaAnalysisId": "META_016_CROSS_HYPOTHESIS",
+  "researchFamily": "SHORT_HORIZON_BTCUSDT_1M",
+  "completedAt": "2026-09-01T02:34:17.207Z",
+  "experimentsIncluded": [
+    "EXP_008_DISPLACEMENT_BTC1M_2024_02_05",
+    "EXP_014_EXHAUSTION_BTC1M_2024_06_09"
+  ],
+  "summaryTable": [
+    {
+      "hypothesisId": "HYPOTHESIS_001",
+      "mechanism": "Displacement Continuation",
+      "horizon": "1m (60s)",
+      "dataset": "DATASET_002 (Feb-May 24)",
+      "resolvedN": 12808,
+      "winRate": 0.4787632729544035,
+      "wilsonCiLower": 0.47011939735352487,
+      "edgeVsPbe": -0.07679228260115206,
+      "ev": -0.13822610868207358,
+      "verdict": "FALSIFIED"
+    },
+    {
+      "hypothesisId": "HYPOTHESIS_002",
+      "mechanism": "Displacement Exhaustion",
+      "horizon": "3m (180s)",
+      "dataset": "DATASET_003 (Jun-Sep 24)",
+      "resolvedN": 2049,
+      "winRate": 0.5222059541239629,
+      "wilsonCiLower": 0.5005561073061424,
+      "edgeVsPbe": -0.03334960143159271,
+      "ev": -0.060029282576866794,
+      "verdict": "FALSIFIED"
+    }
+  ],
+  "coreFindings": {
+    "finding1": "Single-candle displacement does not produce economically viable continuation at 1m (H001: 47.88%).",
+    "finding2": "Extreme displacement with extreme close exhibits observed relative mean-reversion at 3m (H002: 52.22%), but falls short of P_BE (55.56%).",
+    "finding3": "Observed directional asymmetry (H002 vs Reversed: +4.84 pp) is statistically distinct under block resampling, but does not cross the economic hurdle.",
+    "finding4": "No mega-sample aggregation performed; experiments maintained as strictly independent evidence."
+  },
+  "familyRecommendation": "CLOSE_AND_ARCHIVE_FAMILY_EXPLORATION"
+}

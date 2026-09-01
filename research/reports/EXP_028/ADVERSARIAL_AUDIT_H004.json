@@ -1,0 +1,56 @@
+{
+  "commit": "028",
+  "hypothesis": "H004",
+  "status": "PASS",
+  "auditTimestamp": "2026-09-01T04:37:13Z",
+  "tests": [
+    {
+      "id": "028-A",
+      "name": "Train/Test Boundary Leak (Setup at end of TRAIN)",
+      "result": "PASS",
+      "description": "Candle resolving in TEST is mathematically discarded from P_train."
+    },
+    {
+      "id": "028-B",
+      "name": "Probability Immutability",
+      "result": "PASS",
+      "description": "P_call and P_put are completely frozen as constants before entering TEST loop."
+    },
+    {
+      "id": "028-C",
+      "name": "Quantile Future Injection",
+      "result": "PASS",
+      "description": "Modifying C_{t+k} has zero impact on Q_t."
+    },
+    {
+      "id": "028-D",
+      "name": "Rank Contamination",
+      "result": "PASS",
+      "description": "Modifying C_t strictly alters Q_t. Proves present responsiveness."
+    },
+    {
+      "id": "028-E",
+      "name": "Threshold Precision & Flow Check",
+      "result": "PASS",
+      "description": "Discrete boundaries (6/240 vs 7/240) respected perfectly. predict() is isolated from update()."
+    },
+    {
+      "id": "028-F",
+      "name": "Directional Symmetry",
+      "result": "PASS",
+      "description": "Flipping returns perfectly mirrors the quantile state."
+    },
+    {
+      "id": "028-G",
+      "name": "Baseline Isolation",
+      "result": "PASS",
+      "description": "H004 runner contains zero references to previous MTF/Absolute rules."
+    },
+    {
+      "id": "028-H",
+      "name": "Reproducibility",
+      "result": "PASS",
+      "description": "Deterministic hashes generated for multiple runs over the same dataset."
+    }
+  ]
+}

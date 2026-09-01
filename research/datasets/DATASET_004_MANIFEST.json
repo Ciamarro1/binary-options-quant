@@ -1,0 +1,32 @@
+{
+  "datasetId": "DATASET_004",
+  "asset": "BTCUSDT",
+  "timeframe": "1m",
+  "period": "2024-10-01T00:00:00Z to 2025-03-31T23:59:59Z",
+  "totalCandles": 262080,
+  "validation": {
+    "gaps": 0,
+    "duplicates": 0,
+    "out_of_order": 0,
+    "invalid_ohlc": 0,
+    "non_finite": 0,
+    "cadence": "60s",
+    "month_breakdown": {
+      "2024-10": 44640,
+      "2024-11": 43200,
+      "2024-12": 44640,
+      "2025-01": 44640,
+      "2025-02": 40320,
+      "2025-03": 44640
+    }
+  },
+  "hashes": {
+    "sourceHash": "5a0816bf053ca6b8bb8c5d1b0a0b416eca8511dbb4aeced87dbd7b661654a862",
+    "canonicalHash": "512c658223f8138dde57c4689031b8a278298a808ff0d7f08fe19e38e0b75742",
+    "semanticHash": "e10ed08e8fed754c9f1d5e1b3a8c3690f2bc170ec68500ce5027209d78bdead1"
+  },
+  "hypothesisId": "HYPOTHESIS_003",
+  "hypothesisHash": "76833e00b382277b25a411de0a36da1c313c0b356d5ea05c2745518a71850f02",
+  "experimentId": "EXP_018_MTF_SWEEP_BTC1M_001",
+  "frozenAt": "2026-09-01T02:46:59.905Z"
+}

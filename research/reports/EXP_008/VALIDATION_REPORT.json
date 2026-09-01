@@ -1,0 +1,3243 @@
+{
+  "experimentId": "EXP_008_DISPLACEMENT_BTC1M_2024_02_05",
+  "hypothesisId": "HYPOTHESIS_001",
+  "datasetId": "DATASET_002",
+  "protocolVersion": "1.1",
+  "parameters": {
+    "experimentId": "EXP_008_DISPLACEMENT_BTC1M_2024_02_05",
+    "hypothesisId": "HYPOTHESIS_001",
+    "hypothesisVersion": "1.0.2",
+    "datasetId": "DATASET_002",
+    "asset": "BTCUSDT",
+    "timeframe": "1m",
+    "expiryCandles": 1,
+    "expirySeconds": 60,
+    "payout": 0.8,
+    "modelId": "DISPLACEMENT_MOMENTUM",
+    "modelVersion": "1.0.0",
+    "trainSize": 10080,
+    "testSize": 1440,
+    "minTrainSamples": 30,
+    "protocolVersion": "1.1"
+  },
+  "aggregate": {
+    "status": "EDGE NOT DETECTED",
+    "N": 12808,
+    "brier": 0.2503106714263458,
+    "logLoss": 0.6937807030611871,
+    "accuracy": 0.4787632729544035,
+    "winRate": 0.4787632729544035,
+    "breakEven": 0.5555555555555556,
+    "edge": -0.07679228260115206,
+    "ev": -0.13822610868207358,
+    "confidenceInterval": {
+      "lower": 0.47011939735352487,
+      "upper": 0.48741988411870324
+    },
+    "standardError": 0.004414713222092579
+  },
+  "totals": {
+    "signals": 12978,
+    "wins": 6132,
+    "losses": 6676,
+    "pushes": 158,
+    "calls": 6463,
+    "puts": 6503
+  },
+  "windows": [
+    {
+      "window": 1,
+      "trainStart": "2024-02-01",
+      "trainEnd": "2024-02-07",
+      "testStart": "2024-02-08",
+      "testEnd": "2024-02-08",
+      "trainedProbCall": 0.5,
+      "trainedProbPut": 0.5504201680672269,
+      "signals": 95,
+      "outcomes": 95,
+      "pushes": 3,
+      "metrics": {
+        "status": "EDGE NOT DETECTED",
+        "N": 92,
+        "brier": 0.2466656739422113,
+        "logLoss": 0.6864593739043269,
+        "accuracy": 0.5652173913043478,
+        "winRate": 0.5652173913043478,
+        "breakEven": 0.5555555555555556,
+        "edge": 0.009661835748792202,
+        "ev": 0.017391304347826042,
+        "confidenceInterval": {
+          "lower": 0.46332061916830214,
+          "upper": 0.6618859717066414
+        },
+        "standardError": 0.052769579336286884
+      }
+    },
+    {
+      "window": 2,
+      "trainStart": "2024-02-02",
+      "trainEnd": "2024-02-08",
+      "testStart": "2024-02-09",
+      "testEnd": "2024-02-09",
+      "trainedProbCall": 0.5048543689320388,
+      "trainedProbPut": 0.576017130620985,
+      "signals": 93,
+      "outcomes": 93,
+      "pushes": 0,
+      "metrics": {
+        "status": "EDGE NOT DETECTED",
+        "N": 93,
+        "brier": 0.252493478707606,
+        "logLoss": 0.6981841314829832,
+        "accuracy": 0.44086021505376344,
+        "winRate": 0.44086021505376344,
+        "breakEven": 0.5555555555555556,
+        "edge": -0.11469534050179214,
+        "ev": -0.20645161290322572,
+        "confidenceInterval": {
+          "lower": 0.34429218763853453,
+          "upper": 0.5421202632090351
+        },
+        "standardError": 0.05255098574492041
+      }
+    },
+    {
+      "window": 3,
+      "trainStart": "2024-02-03",
+      "trainEnd": "2024-02-09",
+      "testStart": "2024-02-10",
+      "testEnd": "2024-02-10",
+      "trainedProbCall": 0.49166666666666664,
+      "trainedProbPut": 0.5657894736842105,
+      "signals": 114,
+      "outcomes": 114,
+      "pushes": 3,
+      "metrics": {
+        "status": "EDGE NOT DETECTED",
+        "N": 111,
+        "brier": 0.25102433631692656,
+        "logLoss": 0.6952135256143845,
+        "accuracy": 0.5315315315315315,
+        "winRate": 0.5315315315315315,
+        "breakEven": 0.5555555555555556,
+        "edge": -0.024024024024024038,
+        "ev": -0.04324324324324319,
+        "confidenceInterval": {
+          "lower": 0.4392042173016677,
+          "upper": 0.6217493047669904
+        },
+        "standardError": 0.04817928368417358
+      }
+    },
+    {
+      "window": 4,
+      "trainStart": "2024-02-04",
+      "trainEnd": "2024-02-10",
+      "testStart": "2024-02-11",
+      "testEnd": "2024-02-11",
+      "trainedProbCall": 0.5,
+      "trainedProbPut": 0.562200956937799,
+      "signals": 108,
+      "outcomes": 108,
+      "pushes": 1,
+      "metrics": {
+        "status": "EDGE NOT DETECTED",
+        "N": 107,
+        "brier": 0.25903962393452795,
+        "logLoss": 0.7113283114554658,
+        "accuracy": 0.4766355140186916,
+        "winRate": 0.4766355140186916,
+        "breakEven": 0.5555555555555556,
+        "edge": -0.078920041536864,
+        "ev": -0.14205607476635518,
+        "confidenceInterval": {
+          "lower": 0.38445952569932146,
+          "upper": 0.5704310568978261
+        },
+        "standardError": 0.049145007802050784
+      }
+    },
+    {
+      "window": 5,
+      "trainStart": "2024-02-05",
+      "trainEnd": "2024-02-11",
+      "testStart": "2024-02-12",
+      "testEnd": "2024-02-12",
+      "trainedProbCall": 0.5054704595185996,
+      "trainedProbPut": 0.5338753387533876,
+      "signals": 94,
+      "outcomes": 94,
+      "pushes": 1,
+      "metrics": {
+        "status": "EDGE NOT DETECTED",
+        "N": 93,
+        "brier": 0.25194681704671956,
+        "logLoss": 0.697046972110071,
+        "accuracy": 0.46236559139784944,
+        "winRate": 0.46236559139784944,
+        "breakEven": 0.5555555555555556,
+        "edge": -0.09318996415770614,
+        "ev": -0.16774193548387095,
+        "confidenceInterval": {
+          "lower": 0.36454451284102324,
+          "upper": 0.5631725013347029
+        },
+        "standardError": 0.05276347435404192
+      }
+    },
+    {
+      "window": 6,
+      "trainStart": "2024-02-06",
+      "trainEnd": "2024-02-12",
+      "testStart": "2024-02-13",
+      "testEnd": "2024-02-13",
+      "trainedProbCall": 0.5034802784222738,
+      "trainedProbPut": 0.5290697674418605,
+      "signals": 105,
+      "outcomes": 105,
+      "pushes": 1,
+      "metrics": {
+        "status": "EDGE NOT DETECTED",
+        "N": 104,
+        "brier": 0.2552972020205987,
+        "logLoss": 0.7037526419509016,
+        "accuracy": 0.33653846153846156,
+        "winRate": 0.33653846153846156,
+        "breakEven": 0.5555555555555556,
+        "edge": -0.21901709401709402,
+        "ev": -0.39423076923076916,
+        "confidenceInterval": {
+          "lower": 0.25298725446630643,
+          "upper": 0.43173552412748306
+        },
+        "standardError": 0.0472834070778374
+      }
+    },
+    {
+      "window": 7,
+      "trainStart": "2024-02-07",
+      "trainEnd": "2024-02-13",
+      "testStart": "2024-02-14",
+      "testEnd": "2024-02-14",
+      "trainedProbCall": 0.4752475247524752,
+      "trainedProbPut": 0.49707602339181284,
+      "signals": 102,
+      "outcomes": 102,
+      "pushes": 0,
+      "metrics": {
+        "status": "EDGE NOT DETECTED",
+        "N": 102,
+        "brier": 0.2517607223947823,
+        "logLoss": 0.6966717451499427,
+        "accuracy": 0.5294117647058824,
+        "winRate": 0.5294117647058824,
+        "breakEven": 0.5555555555555556,
+        "edge": -0.02614379084967322,
+        "ev": -0.04705882352941171,
+        "confidenceInterval": {
+          "lower": 0.43324598406044224,
+          "upper": 0.6234425013743962
+        },
+        "standardError": 0.050346898026552095
+      }
+    },
+    {
+      "window": 8,
+      "trainStart": "2024-02-08",
+      "trainEnd": "2024-02-14",
+      "testStart": "2024-02-15",
+      "testEnd": "2024-02-15",
+      "trainedProbCall": 0.48293963254593175,
+      "trainedProbPut": 0.4759036144578313,
+      "signals": 83,
+      "outcomes": 83,
+      "pushes": 0,
+      "metrics": {
+        "status": "EDGE NOT DETECTED",
+        "N": 83,
+        "brier": 0.25189735006282304,
+        "logLoss": 0.6969439223073441,
+        "accuracy": 0.5421686746987951,
+        "winRate": 0.5421686746987951,
+        "breakEven": 0.5555555555555556,
+        "edge": -0.01338688085676043,
+        "ev": -0.024096385542168697,
+        "confidenceInterval": {
+          "lower": 0.4354985237265798,
+          "upper": 0.6451080058629257
+        },
+        "standardError": 0.05594671380591251
+      }
+    },
+    {
+      "window": 9,
+      "trainStart": "2024-02-09",
+      "trainEnd": "2024-02-15",
+      "testStart": "2024-02-16",
+      "testEnd": "2024-02-16",
+      "trainedProbCall": 0.48753462603878117,
+      "trainedProbPut": 0.4649122807017544,
+      "signals": 95,
+      "outcomes": 95,
+      "pushes": 1,
+      "metrics": {
+        "status": "EDGE NOT DETECTED",
+        "N": 94,
+        "brier": 0.251644475507949,
+        "logLoss": 0.6964438542213475,
+        "accuracy": 0.5,
+        "winRate": 0.5,
+        "breakEven": 0.5555555555555556,
+        "edge": -0.05555555555555558,
+        "ev": -0.09999999999999998,
+        "confidenceInterval": {
+          "lower": 0.4009249494369979,
+          "upper": 0.599075050563002
+        },
+        "standardError": 0.052614315388433704
+      }
+    },
+    {
+      "window": 10,
+      "trainStart": "2024-02-10",
+      "trainEnd": "2024-02-16",
+      "testStart": "2024-02-17",
+      "testEnd": "2024-02-17",
+      "trainedProbCall": 0.49586776859504134,
+      "trainedProbPut": 0.4680232558139535,
+      "signals": 129,
+      "outcomes": 129,
+      "pushes": 7,
+      "metrics": {
+        "status": "EDGE NOT DETECTED",
+        "N": 122,
+        "brier": 0.2499522818301092,
+        "logLoss": 0.6930519061630336,
+        "accuracy": 0.5081967213114754,
+        "winRate": 0.5081967213114754,
+        "breakEven": 0.5555555555555556,
+        "edge": -0.04735883424408016,
+        "ev": -0.0852459016393442,
+        "confidenceInterval": {
+          "lower": 0.42059761056042066,
+          "upper": 0.5952953850785413
+        },
+        "standardError": 0.04596906879767384
+      }
+    },
+    {
+      "window": 11,
+      "trainStart": "2024-02-11",
+      "trainEnd": "2024-02-17",
+      "testStart": "2024-02-18",
+      "testEnd": "2024-02-18",
+      "trainedProbCall": 0.4943181818181818,
+      "trainedProbPut": 0.45901639344262296,
+      "signals": 133,
+      "outcomes": 133,
+      "pushes": 1,
+      "metrics": {
+        "status": "EDGE NOT DETECTED",
+        "N": 132,
+        "brier": 0.25117536195303947,
+        "logLoss": 0.6955034323963178,
+        "accuracy": 0.5303030303030303,
+        "winRate": 0.5303030303030303,
+        "breakEven": 0.5555555555555556,
+        "edge": -0.025252525252525304,
+        "ev": -0.04545454545454547,
+        "confidenceInterval": {
+          "lower": 0.44551296355872966,
+          "upper": 0.6133791578532679
+        },
+        "standardError": 0.04406928806988432
+      }
+    },
+    {
+      "window": 12,
+      "trainStart": "2024-02-12",
+      "trainEnd": "2024-02-18",
+      "testStart": "2024-02-19",
+      "testEnd": "2024-02-19",
+      "trainedProbCall": 0.49295774647887325,
+      "trainedProbPut": 0.4781491002570694,
+      "signals": 126,
+      "outcomes": 126,
+      "pushes": 0,
+      "metrics": {
+        "status": "EDGE NOT DETECTED",
+        "N": 126,
+        "brier": 0.24728927951788662,
+        "logLoss": 0.6877232455311454,
+        "accuracy": 0.3968253968253968,
+        "winRate": 0.3968253968253968,
+        "breakEven": 0.5555555555555556,
+        "edge": -0.15873015873015878,
+        "ev": -0.2857142857142858,
+        "confidenceInterval": {
+          "lower": 0.31566950403605964,
+          "upper": 0.48408650636430517
+        },
+        "standardError": 0.044273431020212015
+      }
+    },
+    {
+      "window": 13,
+      "trainStart": "2024-02-13",
+      "trainEnd": "2024-02-19",
+      "testStart": "2024-02-20",
+      "testEnd": "2024-02-20",
+      "trainedProbCall": 0.4838709677419355,
+      "trainedProbPut": 0.4641975308641975,
+      "signals": 122,
+      "outcomes": 122,
+      "pushes": 0,
+      "metrics": {
+        "status": "EDGE NOT DETECTED",
+        "N": 122,
+        "brier": 0.2513312768784734,
+        "logLoss": 0.6958084189444339,
+        "accuracy": 0.5491803278688525,
+        "winRate": 0.5491803278688525,
+        "breakEven": 0.5555555555555556,
+        "edge": -0.006375227686703067,
+        "ev": -0.011475409836065431,
+        "confidenceInterval": {
+          "lower": 0.46072938030349786,
+          "upper": 0.6346285935302741
+        },
+        "standardError": 0.04575893950986679
+      }
+    },
+    {
+      "window": 14,
+      "trainStart": "2024-02-14",
+      "trainEnd": "2024-02-20",
+      "testStart": "2024-02-21",
+      "testEnd": "2024-02-21",
+      "trainedProbCall": 0.5343511450381679,
+      "trainedProbPut": 0.475,
+      "signals": 96,
+      "outcomes": 96,
+      "pushes": 1,
+      "metrics": {
+        "status": "EDGE NOT DETECTED",
+        "N": 95,
+        "brier": 0.2509766529983838,
+        "logLoss": 0.6951002774617796,
+        "accuracy": 0.5894736842105263,
+        "winRate": 0.5894736842105263,
+        "breakEven": 0.5555555555555556,
+        "edge": 0.03391812865497068,
+        "ev": 0.0610526315789473,
+        "confidenceInterval": {
+          "lower": 0.4889523520569727,
+          "upper": 0.6830400074353867
+        },
+        "standardError": 0.05151432437661398
+      }
+    },
+    {
+      "window": 15,
+      "trainStart": "2024-02-15",
+      "trainEnd": "2024-02-21",
+      "testStart": "2024-02-22",
+      "testEnd": "2024-02-22",
+      "trainedProbCall": 0.533678756476684,
+      "trainedProbPut": 0.486284289276808,
+      "signals": 102,
+      "outcomes": 101,
+      "pushes": 1,
+      "metrics": {
+        "status": "EDGE NOT DETECTED",
+        "N": 100,
+        "brier": 0.25102006307052205,
+        "logLoss": 0.6951974922417847,
+        "accuracy": 0.36,
+        "winRate": 0.36,
+        "breakEven": 0.5555555555555556,
+        "edge": -0.1955555555555556,
+        "ev": -0.35200000000000004,
+        "confidenceInterval": {
+          "lower": 0.2727107459049014,
+          "upper": 0.45764780018837914
+        },
+        "standardError": 0.04899020310225301
+      }
+    },
+    {
+      "window": 16,
+      "trainStart": "2024-02-16",
+      "trainEnd": "2024-02-22",
+      "testStart": "2024-02-23",
+      "testEnd": "2024-02-23",
+      "trainedProbCall": 0.5153846153846153,
+      "trainedProbPut": 0.4634146341463415,
+      "signals": 132,
+      "outcomes": 132,
+      "pushes": 1,
+      "metrics": {
+        "status": "EDGE NOT DETECTED",
+        "N": 131,
+        "brier": 0.2505667015059442,
+        "logLoss": 0.694282518965489,
+        "accuracy": 0.4732824427480916,
+        "winRate": 0.4732824427480916,
+        "breakEven": 0.5555555555555556,
+        "edge": -0.08227311280746397,
+        "ev": -0.14809160305343505,
+        "confidenceInterval": {
+          "lower": 0.38976625692005357,
+          "upper": 0.5583209802530442
+        },
+        "standardError": 0.04425959764328128
+      }
+    },
+    {
+      "window": 17,
+      "trainStart": "2024-02-17",
+      "trainEnd": "2024-02-23",
+      "testStart": "2024-02-24",
+      "testEnd": "2024-02-24",
+      "trainedProbCall": 0.5166240409207161,
+      "trainedProbPut": 0.4608501118568233,
+      "signals": 148,
+      "outcomes": 148,
+      "pushes": 10,
+      "metrics": {
+        "status": "EDGE NOT DETECTED",
+        "N": 138,
+        "brier": 0.24752073546247813,
+        "logLoss": 0.6881838689252068,
+        "accuracy": 0.5144927536231884,
+        "winRate": 0.5144927536231884,
+        "breakEven": 0.5555555555555556,
+        "edge": -0.04106280193236722,
+        "ev": -0.07391304347826094,
+        "confidenceInterval": {
+          "lower": 0.43184819252577833,
+          "upper": 0.5963522789861052
+        },
+        "standardError": 0.043133545604242644
+      }
+    },
+    {
+      "window": 18,
+      "trainStart": "2024-02-18",
+      "trainEnd": "2024-02-24",
+      "testStart": "2024-02-25",
+      "testEnd": "2024-02-25",
+      "trainedProbCall": 0.5230024213075061,
+      "trainedProbPut": 0.45454545454545453,
+      "signals": 163,
+      "outcomes": 163,
+      "pushes": 12,
+      "metrics": {
+        "status": "EDGE NOT DETECTED",
+        "N": 151,
+        "brier": 0.2487479614727563,
+        "logLoss": 0.6906439108036425,
+        "accuracy": 0.5165562913907285,
+        "winRate": 0.5165562913907285,
+        "breakEven": 0.5555555555555556,
+        "edge": -0.03899926416482713,
+        "ev": -0.07019867549668879,
+        "confidenceInterval": {
+          "lower": 0.43743190146420047,
+          "upper": 0.5948591624359401
+        },
+        "standardError": 0.04118172890336822
+      }
+    },
+    {
+      "window": 19,
+      "trainStart": "2024-02-19",
+      "trainEnd": "2024-02-25",
+      "testStart": "2024-02-26",
+      "testEnd": "2024-02-26",
+      "trainedProbCall": 0.5239234449760766,
+      "trainedProbPut": 0.4519650655021834,
+      "signals": 125,
+      "outcomes": 125,
+      "pushes": 7,
+      "metrics": {
+        "status": "EDGE NOT DETECTED",
+        "N": 118,
+        "brier": 0.2518175895941904,
+        "logLoss": 0.6967976286067978,
+        "accuracy": 0.5254237288135594,
+        "winRate": 0.5254237288135594,
+        "breakEven": 0.5555555555555556,
+        "edge": -0.030131826741996215,
+        "ev": -0.05423728813559314,
+        "confidenceInterval": {
+          "lower": 0.43595066970567825,
+          "upper": 0.6132935949789615
+        },
+        "standardError": 0.04671339018500795
+      }
+    },
+    {
+      "window": 20,
+      "trainStart": "2024-02-20",
+      "trainEnd": "2024-02-26",
+      "testStart": "2024-02-27",
+      "testEnd": "2024-02-27",
+      "trainedProbCall": 0.5406032482598608,
+      "trainedProbPut": 0.4659090909090909,
+      "signals": 85,
+      "outcomes": 84,
+      "pushes": 1,
+      "metrics": {
+        "status": "EDGE NOT DETECTED",
+        "N": 83,
+        "brier": 0.24747048624922116,
+        "logLoss": 0.6880821529997325,
+        "accuracy": 0.4819277108433735,
+        "winRate": 0.4819277108433735,
+        "breakEven": 0.5555555555555556,
+        "edge": -0.07362784471218209,
+        "ev": -0.1325301204819277,
+        "confidenceInterval": {
+          "lower": 0.3776300414382687,
+          "upper": 0.5878243030233717
+        },
+        "standardError": 0.05610279686153455
+      }
+    },
+    {
+      "window": 21,
+      "trainStart": "2024-02-21",
+      "trainEnd": "2024-02-27",
+      "testStart": "2024-02-28",
+      "testEnd": "2024-02-28",
+      "trainedProbCall": 0.528395061728395,
+      "trainedProbPut": 0.4672897196261682,
+      "signals": 116,
+      "outcomes": 116,
+      "pushes": 0,
+      "metrics": {
+        "status": "EDGE NOT DETECTED",
+        "N": 116,
+        "brier": 0.24770620275417088,
+        "logLoss": 0.6885546452382011,
+        "accuracy": 0.49137931034482757,
+        "winRate": 0.49137931034482757,
+        "breakEven": 0.5555555555555556,
+        "edge": -0.06417624521072801,
+        "ev": -0.1155172413793103,
+        "confidenceInterval": {
+          "lower": 0.40214807811942266,
+          "upper": 0.5811632261355271
+        },
+        "standardError": 0.04717949894987418
+      }
+    },
+    {
+      "window": 22,
+      "trainStart": "2024-02-22",
+      "trainEnd": "2024-02-28",
+      "testStart": "2024-02-29",
+      "testEnd": "2024-02-29",
+      "trainedProbCall": 0.5252293577981652,
+      "trainedProbPut": 0.44786729857819907,
+      "signals": 74,
+      "outcomes": 74,
+      "pushes": 0,
+      "metrics": {
+        "status": "EDGE NOT DETECTED",
+        "N": 74,
+        "brier": 0.25598852226566304,
+        "logLoss": 0.7051718950322378,
+        "accuracy": 0.5405405405405406,
+        "winRate": 0.5405405405405406,
+        "breakEven": 0.5555555555555556,
+        "edge": -0.01501501501501501,
+        "ev": -0.027027027027026973,
+        "confidenceInterval": {
+          "lower": 0.42781145210146765,
+          "upper": 0.6492681557174879
+        },
+        "standardError": 0.059426862038736906
+      }
+    },
+    {
+      "window": 23,
+      "trainStart": "2024-02-23",
+      "trainEnd": "2024-02-29",
+      "testStart": "2024-03-01",
+      "testEnd": "2024-03-01",
+      "trainedProbCall": 0.5352112676056338,
+      "trainedProbPut": 0.4740740740740741,
+      "signals": 83,
+      "outcomes": 83,
+      "pushes": 0,
+      "metrics": {
+        "status": "EDGE NOT DETECTED",
+        "N": 83,
+        "brier": 0.24792061756462455,
+        "logLoss": 0.6889892737821839,
+        "accuracy": 0.39759036144578314,
+        "winRate": 0.39759036144578314,
+        "breakEven": 0.5555555555555556,
+        "edge": -0.15796519410977244,
+        "ev": -0.28433734939759026,
+        "confidenceInterval": {
+          "lower": 0.299087663224007,
+          "upper": 0.5051536220586227
+        },
+        "standardError": 0.05500091458916941
+      }
+    },
+    {
+      "window": 24,
+      "trainStart": "2024-02-24",
+      "trainEnd": "2024-03-01",
+      "testStart": "2024-03-02",
+      "testEnd": "2024-03-02",
+      "trainedProbCall": 0.5372093023255814,
+      "trainedProbPut": 0.4548022598870056,
+      "signals": 106,
+      "outcomes": 106,
+      "pushes": 1,
+      "metrics": {
+        "status": "EDGE NOT DETECTED",
+        "N": 105,
+        "brier": 0.2552991284092175,
+        "logLoss": 0.7037749273811374,
+        "accuracy": 0.5047619047619047,
+        "winRate": 0.5047619047619047,
+        "breakEven": 0.5555555555555556,
+        "edge": -0.050793650793650835,
+        "ev": -0.09142857142857141,
+        "confidenceInterval": {
+          "lower": 0.4106626869610328,
+          "upper": 0.5985249765793781
+        },
+        "standardError": 0.0496774348438389
+      }
+    },
+    {
+      "window": 25,
+      "trainStart": "2024-02-25",
+      "trainEnd": "2024-03-02",
+      "testStart": "2024-03-03",
+      "testEnd": "2024-03-03",
+      "trainedProbCall": 0.5199004975124378,
+      "trainedProbPut": 0.47246376811594204,
+      "signals": 107,
+      "outcomes": 107,
+      "pushes": 1,
+      "metrics": {
+        "status": "EDGE NOT DETECTED",
+        "N": 106,
+        "brier": 0.2542310833272272,
+        "logLoss": 0.70161825958421,
+        "accuracy": 0.5660377358490566,
+        "winRate": 0.5660377358490566,
+        "breakEven": 0.5555555555555556,
+        "edge": 0.010482180293501009,
+        "ev": 0.018867924528301883,
+        "confidenceInterval": {
+          "lower": 0.47101182829146454,
+          "upper": 0.6564444360018451
+        },
+        "standardError": 0.049018613600020564
+      }
+    },
+    {
+      "window": 26,
+      "trainStart": "2024-02-26",
+      "trainEnd": "2024-03-03",
+      "testStart": "2024-03-04",
+      "testEnd": "2024-03-04",
+      "trainedProbCall": 0.5092348284960422,
+      "trainedProbPut": 0.5015479876160991,
+      "signals": 71,
+      "outcomes": 71,
+      "pushes": 1,
+      "metrics": {
+        "status": "EDGE NOT DETECTED",
+        "N": 70,
+        "brier": 0.24938378300334324,
+        "logLoss": 0.6919145815082303,
+        "accuracy": 0.5,
+        "winRate": 0.5,
+        "breakEven": 0.5555555555555556,
+        "edge": -0.05555555555555558,
+        "ev": -0.09999999999999998,
+        "confidenceInterval": {
+          "lower": 0.3859551898733622,
+          "upper": 0.6140448101266378
+        },
+        "standardError": 0.061379382299177394
+      }
+    },
+    {
+      "window": 27,
+      "trainStart": "2024-02-27",
+      "trainEnd": "2024-03-04",
+      "testStart": "2024-03-05",
+      "testEnd": "2024-03-05",
+      "trainedProbCall": 0.5118343195266272,
+      "trainedProbPut": 0.4873417721518987,
+      "signals": 77,
+      "outcomes": 77,
+      "pushes": 0,
+      "metrics": {
+        "status": "EDGE NOT DETECTED",
+        "N": 77,
+        "brier": 0.24940399608983813,
+        "logLoss": 0.6919550030616493,
+        "accuracy": 0.5584415584415584,
+        "winRate": 0.5584415584415584,
+        "breakEven": 0.5555555555555556,
+        "edge": 0.0028860028860028253,
+        "ev": 0.005194805194805141,
+        "confidenceInterval": {
+          "lower": 0.44738036790961955,
+          "upper": 0.6639484528955104
+        },
+        "standardError": 0.05800328153722299
+      }
+    },
+    {
+      "window": 28,
+      "trainStart": "2024-02-28",
+      "trainEnd": "2024-03-05",
+      "testStart": "2024-03-06",
+      "testEnd": "2024-03-06",
+      "trainedProbCall": 0.5166163141993958,
+      "trainedProbPut": 0.4984025559105431,
+      "signals": 79,
+      "outcomes": 79,
+      "pushes": 0,
+      "metrics": {
+        "status": "EDGE NOT DETECTED",
+        "N": 79,
+        "brier": 0.24853008839111101,
+        "logLoss": 0.6902064069707048,
+        "accuracy": 0.5063291139240507,
+        "winRate": 0.5063291139240507,
+        "breakEven": 0.5555555555555556,
+        "edge": -0.049226441631504914,
+        "ev": -0.08860759493670878,
+        "confidenceInterval": {
+          "lower": 0.3983720753430729,
+          "upper": 0.6136991545704006
+        },
+        "standardError": 0.05760152340002129
+      }
+    },
+    {
+      "window": 29,
+      "trainStart": "2024-02-29",
+      "trainEnd": "2024-03-06",
+      "testStart": "2024-03-07",
+      "testEnd": "2024-03-07",
+      "trainedProbCall": 0.5204081632653061,
+      "trainedProbPut": 0.5032051282051282,
+      "signals": 81,
+      "outcomes": 81,
+      "pushes": 0,
+      "metrics": {
+        "status": "EDGE NOT DETECTED",
+        "N": 81,
+        "brier": 0.25110996609391445,
+        "logLoss": 0.6953682749492045,
+        "accuracy": 0.4567901234567901,
+        "winRate": 0.4567901234567901,
+        "breakEven": 0.5555555555555556,
+        "edge": -0.09876543209876548,
+        "ev": -0.17777777777777776,
+        "confidenceInterval": {
+          "lower": 0.352731535009501,
+          "upper": 0.564761770161547
+        },
+        "standardError": 0.05665464978166991
+      }
+    },
+    {
+      "window": 30,
+      "trainStart": "2024-03-01",
+      "trainEnd": "2024-03-07",
+      "testStart": "2024-03-08",
+      "testEnd": "2024-03-08",
+      "trainedProbCall": 0.5152542372881356,
+      "trainedProbPut": 0.4873417721518987,
+      "signals": 99,
+      "outcomes": 99,
+      "pushes": 0,
+      "metrics": {
+        "status": "EDGE NOT DETECTED",
+        "N": 99,
+        "brier": 0.2476320531484174,
+        "logLoss": 0.6884099063496945,
+        "accuracy": 0.5656565656565656,
+        "winRate": 0.5656565656565656,
+        "breakEven": 0.5555555555555556,
+        "edge": 0.010101010101010055,
+        "ev": 0.018181818181818188,
+        "confidenceInterval": {
+          "lower": 0.4673727835155469,
+          "upper": 0.659035207025246
+        },
+        "standardError": 0.050790739779465764
+      }
+    },
+    {
+      "window": 31,
+      "trainStart": "2024-03-02",
+      "trainEnd": "2024-03-08",
+      "testStart": "2024-03-09",
+      "testEnd": "2024-03-09",
+      "trainedProbCall": 0.5454545454545454,
+      "trainedProbPut": 0.5060975609756098,
+      "signals": 134,
+      "outcomes": 133,
+      "pushes": 9,
+      "metrics": {
+        "status": "EDGE NOT DETECTED",
+        "N": 124,
+        "brier": 0.2471563650843217,
+        "logLoss": 0.6874487255540366,
+        "accuracy": 0.5645161290322581,
+        "winRate": 0.5645161290322581,
+        "breakEven": 0.5555555555555556,
+        "edge": 0.008960573476702538,
+        "ev": 0.016129032258064613,
+        "confidenceInterval": {
+          "lower": 0.4766059129009367,
+          "upper": 0.6485489662620275
+        },
+        "standardError": 0.045221928593168266
+      }
+    },
+    {
+      "window": 32,
+      "trainStart": "2024-03-03",
+      "trainEnd": "2024-03-09",
+      "testStart": "2024-03-10",
+      "testEnd": "2024-03-10",
+      "trainedProbCall": 0.5641025641025641,
+      "trainedProbPut": 0.5075987841945289,
+      "signals": 100,
+      "outcomes": 100,
+      "pushes": 0,
+      "metrics": {
+        "status": "EDGE NOT DETECTED",
+        "N": 100,
+        "brier": 0.24829580284786024,
+        "logLoss": 0.6897339939953507,
+        "accuracy": 0.55,
+        "winRate": 0.55,
+        "breakEven": 0.5555555555555556,
+        "edge": -0.005555555555555536,
+        "ev": -0.009999999999999898,
+        "confidenceInterval": {
+          "lower": 0.45244427031643447,
+          "upper": 0.6438562489359654
+        },
+        "standardError": 0.05070542377300479
+      }
+    },
+    {
+      "window": 33,
+      "trainStart": "2024-03-04",
+      "trainEnd": "2024-03-10",
+      "testStart": "2024-03-11",
+      "testEnd": "2024-03-11",
+      "trainedProbCall": 0.5760517799352751,
+      "trainedProbPut": 0.49240121580547114,
+      "signals": 100,
+      "outcomes": 100,
+      "pushes": 0,
+      "metrics": {
+        "status": "EDGE NOT DETECTED",
+        "N": 100,
+        "brier": 0.24594506150819387,
+        "logLoss": 0.6850076380501426,
+        "accuracy": 0.51,
+        "winRate": 0.51,
+        "breakEven": 0.5555555555555556,
+        "edge": -0.04555555555555557,
+        "ev": -0.08199999999999996,
+        "confidenceInterval": {
+          "lower": 0.4134784047743415,
+          "upper": 0.6057816990761385
+        },
+        "standardError": 0.0509415351162487
+      }
+    },
+    {
+      "window": 34,
+      "trainStart": "2024-03-05",
+      "trainEnd": "2024-03-11",
+      "testStart": "2024-03-12",
+      "testEnd": "2024-03-12",
+      "trainedProbCall": 0.5735735735735735,
+      "trainedProbPut": 0.49107142857142855,
+      "signals": 107,
+      "outcomes": 107,
+      "pushes": 0,
+      "metrics": {
+        "status": "EDGE NOT DETECTED",
+        "N": 107,
+        "brier": 0.24962483883340417,
+        "logLoss": 0.6924209863379619,
+        "accuracy": 0.4672897196261682,
+        "winRate": 0.4672897196261682,
+        "breakEven": 0.5555555555555556,
+        "edge": -0.08826583592938736,
+        "ev": -0.1588785046728971,
+        "confidenceInterval": {
+          "lower": 0.3755319718023794,
+          "upper": 0.5613148438336273
+        },
+        "standardError": 0.04909515255707316
+      }
+    },
+    {
+      "window": 35,
+      "trainStart": "2024-03-06",
+      "trainEnd": "2024-03-12",
+      "testStart": "2024-03-13",
+      "testEnd": "2024-03-13",
+      "trainedProbCall": 0.5673352435530086,
+      "trainedProbPut": 0.4744318181818182,
+      "signals": 94,
+      "outcomes": 94,
+      "pushes": 1,
+      "metrics": {
+        "status": "EDGE NOT DETECTED",
+        "N": 93,
+        "brier": 0.23845510192923902,
+        "logLoss": 0.6699617778720534,
+        "accuracy": 0.5161290322580645,
+        "winRate": 0.5161290322580645,
+        "breakEven": 0.5555555555555556,
+        "edge": -0.03942652329749108,
+        "ev": -0.07096774193548389,
+        "confidenceInterval": {
+          "lower": 0.4159537133977669,
+          "upper": 0.6150247090983505
+        },
+        "standardError": 0.05288115464460621
+      }
+    },
+    {
+      "window": 36,
+      "trainStart": "2024-03-07",
+      "trainEnd": "2024-03-13",
+      "testStart": "2024-03-14",
+      "testEnd": "2024-03-14",
+      "trainedProbCall": 0.5769230769230769,
+      "trainedProbPut": 0.4676056338028169,
+      "signals": 110,
+      "outcomes": 110,
+      "pushes": 0,
+      "metrics": {
+        "status": "EDGE NOT DETECTED",
+        "N": 110,
+        "brier": 0.25360694942675,
+        "logLoss": 0.7004903738952504,
+        "accuracy": 0.4,
+        "winRate": 0.4,
+        "breakEven": 0.5555555555555556,
+        "edge": -0.15555555555555556,
+        "ev": -0.2799999999999999,
+        "confidenceInterval": {
+          "lower": 0.3133177568006176,
+          "upper": 0.493431269917208
+        },
+        "standardError": 0.04755197243695185
+      }
+    },
+    {
+      "window": 37,
+      "trainStart": "2024-03-08",
+      "trainEnd": "2024-03-14",
+      "testStart": "2024-03-15",
+      "testEnd": "2024-03-15",
+      "trainedProbCall": 0.56951871657754,
+      "trainedProbPut": 0.4535809018567639,
+      "signals": 92,
+      "outcomes": 91,
+      "pushes": 0,
+      "metrics": {
+        "status": "EDGE NOT DETECTED",
+        "N": 91,
+        "brier": 0.24975639598819377,
+        "logLoss": 0.6927135875734605,
+        "accuracy": 0.4065934065934066,
+        "winRate": 0.4065934065934066,
+        "breakEven": 0.5555555555555556,
+        "edge": -0.148962148962149,
+        "ev": -0.2681318681318681,
+        "confidenceInterval": {
+          "lower": 0.311446242328006,
+          "upper": 0.5093075197342115
+        },
+        "standardError": 0.052605629421530554
+      }
+    },
+    {
+      "window": 38,
+      "trainStart": "2024-03-09",
+      "trainEnd": "2024-03-15",
+      "testStart": "2024-03-16",
+      "testEnd": "2024-03-16",
+      "trainedProbCall": 0.5469613259668509,
+      "trainedProbPut": 0.4397905759162304,
+      "signals": 80,
+      "outcomes": 80,
+      "pushes": 0,
+      "metrics": {
+        "status": "EDGE NOT DETECTED",
+        "N": 80,
+        "brier": 0.2533470857837314,
+        "logLoss": 0.6998878300900675,
+        "accuracy": 0.5125,
+        "winRate": 0.5125,
+        "breakEven": 0.5555555555555556,
+        "edge": -0.043055555555555625,
+        "ev": -0.07750000000000007,
+        "confidenceInterval": {
+          "lower": 0.4049314460370689,
+          "upper": 0.6189230605563166
+        },
+        "standardError": 0.05721109485930155
+      }
+    },
+    {
+      "window": 39,
+      "trainStart": "2024-03-10",
+      "trainEnd": "2024-03-16",
+      "testStart": "2024-03-17",
+      "testEnd": "2024-03-17",
+      "trainedProbCall": 0.5358255451713395,
+      "trainedProbPut": 0.432,
+      "signals": 102,
+      "outcomes": 102,
+      "pushes": 0,
+      "metrics": {
+        "status": "EDGE NOT DETECTED",
+        "N": 102,
+        "brier": 0.26275177343418027,
+        "logLoss": 0.7187838427370207,
+        "accuracy": 0.49019607843137253,
+        "winRate": 0.49019607843137253,
+        "breakEven": 0.5555555555555556,
+        "edge": -0.06535947712418305,
+        "ev": -0.11764705882352938,
+        "confidenceInterval": {
+          "lower": 0.39531235331103515,
+          "upper": 0.5857914848773521
+        },
+        "standardError": 0.050421708812498724
+      }
+    },
+    {
+      "window": 40,
+      "trainStart": "2024-03-11",
+      "trainEnd": "2024-03-17",
+      "testStart": "2024-03-18",
+      "testEnd": "2024-03-18",
+      "trainedProbCall": 0.5121212121212121,
+      "trainedProbPut": 0.4363143631436314,
+      "signals": 79,
+      "outcomes": 79,
+      "pushes": 0,
+      "metrics": {
+        "status": "EDGE NOT DETECTED",
+        "N": 79,
+        "brier": 0.2511615593645192,
+        "logLoss": 0.6954976208600592,
+        "accuracy": 0.5063291139240507,
+        "winRate": 0.5063291139240507,
+        "breakEven": 0.5555555555555556,
+        "edge": -0.049226441631504914,
+        "ev": -0.08860759493670878,
+        "confidenceInterval": {
+          "lower": 0.3983720753430729,
+          "upper": 0.6136991545704006
+        },
+        "standardError": 0.05760152340002129
+      }
+    },
+    {
+      "window": 41,
+      "trainStart": "2024-03-12",
+      "trainEnd": "2024-03-18",
+      "testStart": "2024-03-19",
+      "testEnd": "2024-03-19",
+      "trainedProbCall": 0.5,
+      "trainedProbPut": 0.44324324324324327,
+      "signals": 73,
+      "outcomes": 73,
+      "pushes": 0,
+      "metrics": {
+        "status": "EDGE NOT DETECTED",
+        "N": 73,
+        "brier": 0.2511200056035302,
+        "logLoss": 0.695405122761165,
+        "accuracy": 0.4520547945205479,
+        "winRate": 0.4520547945205479,
+        "breakEven": 0.5555555555555556,
+        "edge": -0.10350076103500766,
+        "ev": -0.18630136986301365,
+        "confidenceInterval": {
+          "lower": 0.3431446980664788,
+          "upper": 0.565758812531947
+        },
+        "standardError": 0.05977783316364874
+      }
+    },
+    {
+      "window": 42,
+      "trainStart": "2024-03-13",
+      "trainEnd": "2024-03-19",
+      "testStart": "2024-03-20",
+      "testEnd": "2024-03-20",
+      "trainedProbCall": 0.4825174825174825,
+      "trainedProbPut": 0.4519774011299435,
+      "signals": 73,
+      "outcomes": 73,
+      "pushes": 0,
+      "metrics": {
+        "status": "EDGE NOT DETECTED",
+        "N": 73,
+        "brier": 0.2545324186728474,
+        "logLoss": 0.7022384696961989,
+        "accuracy": 0.547945205479452,
+        "winRate": 0.547945205479452,
+        "breakEven": 0.5555555555555556,
+        "edge": -0.007610350076103556,
+        "ev": -0.013698630136986356,
+        "confidenceInterval": {
+          "lower": 0.43424118746805285,
+          "upper": 0.6568553019335212
+        },
+        "standardError": 0.05977783316364875
+      }
+    },
+    {
+      "window": 43,
+      "trainStart": "2024-03-14",
+      "trainEnd": "2024-03-20",
+      "testStart": "2024-03-21",
+      "testEnd": "2024-03-21",
+      "trainedProbCall": 0.4645390070921986,
+      "trainedProbPut": 0.47477744807121663,
+      "signals": 89,
+      "outcomes": 89,
+      "pushes": 0,
+      "metrics": {
+        "status": "EDGE NOT DETECTED",
+        "N": 89,
+        "brier": 0.24814729128321927,
+        "logLoss": 0.6894362866177248,
+        "accuracy": 0.4606741573033708,
+        "winRate": 0.4606741573033708,
+        "breakEven": 0.5555555555555556,
+        "edge": -0.09488139825218478,
+        "ev": -0.17078651685393254,
+        "confidenceInterval": {
+          "lower": 0.3608954818482133,
+          "upper": 0.563707282429869
+        },
+        "standardError": 0.05397091282068862
+      }
+    },
+    {
+      "window": 44,
+      "trainStart": "2024-03-15",
+      "trainEnd": "2024-03-21",
+      "testStart": "2024-03-22",
+      "testEnd": "2024-03-22",
+      "trainedProbCall": 0.4620938628158845,
+      "trainedProbPut": 0.496875,
+      "signals": 80,
+      "outcomes": 80,
+      "pushes": 0,
+      "metrics": {
+        "status": "EDGE NOT DETECTED",
+        "N": 80,
+        "brier": 0.2541631485325611,
+        "logLoss": 0.7014930695237368,
+        "accuracy": 0.45,
+        "winRate": 0.45,
+        "breakEven": 0.5555555555555556,
+        "edge": -0.10555555555555557,
+        "ev": -0.19,
+        "confidenceInterval": {
+          "lower": 0.3457751037437976,
+          "upper": 0.5588068698826599
+        },
+        "standardError": 0.05695447743593123
+      }
+    },
+    {
+      "window": 45,
+      "trainStart": "2024-03-16",
+      "trainEnd": "2024-03-22",
+      "testStart": "2024-03-23",
+      "testEnd": "2024-03-23",
+      "trainedProbCall": 0.48507462686567165,
+      "trainedProbPut": 0.4890282131661442,
+      "signals": 109,
+      "outcomes": 109,
+      "pushes": 0,
+      "metrics": {
+        "status": "EDGE NOT DETECTED",
+        "N": 109,
+        "brier": 0.24788520067907216,
+        "logLoss": 0.6889163828160942,
+        "accuracy": 0.42201834862385323,
+        "winRate": 0.42201834862385323,
+        "breakEven": 0.5555555555555556,
+        "edge": -0.13353720693170235,
+        "ev": -0.24036697247706418,
+        "confidenceInterval": {
+          "lower": 0.333508120513485,
+          "upper": 0.515838219843263
+        },
+        "standardError": 0.048152078582033034
+      }
+    },
+    {
+      "window": 46,
+      "trainStart": "2024-03-17",
+      "trainEnd": "2024-03-23",
+      "testStart": "2024-03-24",
+      "testEnd": "2024-03-24",
+      "trainedProbCall": 0.45695364238410596,
+      "trainedProbPut": 0.4840764331210191,
+      "signals": 120,
+      "outcomes": 120,
+      "pushes": 1,
+      "metrics": {
+        "status": "EDGE NOT DETECTED",
+        "N": 119,
+        "brier": 0.24886330329400852,
+        "logLoss": 0.6908709214810467,
+        "accuracy": 0.47058823529411764,
+        "winRate": 0.47058823529411764,
+        "breakEven": 0.5555555555555556,
+        "edge": -0.08496732026143794,
+        "ev": -0.15294117647058825,
+        "confidenceInterval": {
+          "lower": 0.38323576373558965,
+          "upper": 0.5597802829456648
+        },
+        "standardError": 0.0464907631859809
+      }
+    },
+    {
+      "window": 47,
+      "trainStart": "2024-03-18",
+      "trainEnd": "2024-03-24",
+      "testStart": "2024-03-25",
+      "testEnd": "2024-03-25",
+      "trainedProbCall": 0.4668769716088328,
+      "trainedProbPut": 0.46984126984126984,
+      "signals": 89,
+      "outcomes": 89,
+      "pushes": 0,
+      "metrics": {
+        "status": "EDGE NOT DETECTED",
+        "N": 89,
+        "brier": 0.2435784085623502,
+        "logLoss": 0.680288288143411,
+        "accuracy": 0.38202247191011235,
+        "winRate": 0.38202247191011235,
+        "breakEven": 0.5555555555555556,
+        "edge": -0.17353308364544323,
+        "ev": -0.3123595505617977,
+        "confidenceInterval": {
+          "lower": 0.2879475721243411,
+          "upper": 0.4858607207099056
+        },
+        "standardError": 0.05266731648624613
+      }
+    },
+    {
+      "window": 48,
+      "trainStart": "2024-03-19",
+      "trainEnd": "2024-03-25",
+      "testStart": "2024-03-26",
+      "testEnd": "2024-03-26",
+      "trainedProbCall": 0.4507462686567164,
+      "trainedProbPut": 0.45454545454545453,
+      "signals": 93,
+      "outcomes": 93,
+      "pushes": 0,
+      "metrics": {
+        "status": "EDGE NOT DETECTED",
+        "N": 93,
+        "brier": 0.24918054197947895,
+        "logLoss": 0.6915161975597212,
+        "accuracy": 0.46236559139784944,
+        "winRate": 0.46236559139784944,
+        "breakEven": 0.5555555555555556,
+        "edge": -0.09318996415770614,
+        "ev": -0.16774193548387095,
+        "confidenceInterval": {
+          "lower": 0.36454451284102324,
+          "upper": 0.5631725013347029
+        },
+        "standardError": 0.05276347435404192
+      }
+    },
+    {
+      "window": 49,
+      "trainStart": "2024-03-20",
+      "trainEnd": "2024-03-26",
+      "testStart": "2024-03-27",
+      "testEnd": "2024-03-27",
+      "trainedProbCall": 0.47058823529411764,
+      "trainedProbPut": 0.4309210526315789,
+      "signals": 96,
+      "outcomes": 96,
+      "pushes": 0,
+      "metrics": {
+        "status": "EDGE NOT DETECTED",
+        "N": 96,
+        "brier": 0.24841964953691167,
+        "logLoss": 0.6899766726159405,
+        "accuracy": 0.46875,
+        "winRate": 0.46875,
+        "breakEven": 0.5555555555555556,
+        "edge": -0.08680555555555558,
+        "ev": -0.15625,
+        "confidenceInterval": {
+          "lower": 0.3720590570105098,
+          "upper": 0.5678457522072913
+        },
+        "standardError": 0.0519442413561835
+      }
+    },
+    {
+      "window": 50,
+      "trainStart": "2024-03-21",
+      "trainEnd": "2024-03-27",
+      "testStart": "2024-03-28",
+      "testEnd": "2024-03-28",
+      "trainedProbCall": 0.46994535519125685,
+      "trainedProbPut": 0.4200626959247649,
+      "signals": 93,
+      "outcomes": 92,
+      "pushes": 1,
+      "metrics": {
+        "status": "EDGE NOT DETECTED",
+        "N": 91,
+        "brier": 0.2464835011716275,
+        "logLoss": 0.6861431121736791,
+        "accuracy": 0.4065934065934066,
+        "winRate": 0.4065934065934066,
+        "breakEven": 0.5555555555555556,
+        "edge": -0.148962148962149,
+        "ev": -0.2681318681318681,
+        "confidenceInterval": {
+          "lower": 0.311446242328006,
+          "upper": 0.5093075197342115
+        },
+        "standardError": 0.052605629421530554
+      }
+    },
+    {
+      "window": 51,
+      "trainStart": "2024-03-22",
+      "trainEnd": "2024-03-28",
+      "testStart": "2024-03-29",
+      "testEnd": "2024-03-29",
+      "trainedProbCall": 0.4613333333333333,
+      "trainedProbPut": 0.4161290322580645,
+      "signals": 113,
+      "outcomes": 113,
+      "pushes": 1,
+      "metrics": {
+        "status": "EDGE NOT DETECTED",
+        "N": 112,
+        "brier": 0.25821168006210493,
+        "logLoss": 0.7097069129767739,
+        "accuracy": 0.5446428571428571,
+        "winRate": 0.5446428571428571,
+        "breakEven": 0.5555555555555556,
+        "edge": -0.010912698412698485,
+        "ev": -0.019642857142857184,
+        "confidenceInterval": {
+          "lower": 0.4524610601997964,
+          "upper": 0.6338637143198924
+        },
+        "standardError": 0.04786346049908554
+      }
+    },
+    {
+      "window": 52,
+      "trainStart": "2024-03-23",
+      "trainEnd": "2024-03-29",
+      "testStart": "2024-03-30",
+      "testEnd": "2024-03-30",
+      "trainedProbCall": 0.4629156010230179,
+      "trainedProbPut": 0.44648318042813456,
+      "signals": 157,
+      "outcomes": 156,
+      "pushes": 5,
+      "metrics": {
+        "status": "EDGE NOT DETECTED",
+        "N": 151,
+        "brier": 0.2527660307209144,
+        "logLoss": 0.6987071715759844,
+        "accuracy": 0.5033112582781457,
+        "winRate": 0.5033112582781457,
+        "breakEven": 0.5555555555555556,
+        "edge": -0.05224429727740987,
+        "ev": -0.09403973509933772,
+        "confidenceInterval": {
+          "lower": 0.42447504442015704,
+          "upper": 0.5819831683598711
+        },
+        "standardError": 0.04120288201754226
+      }
+    },
+    {
+      "window": 53,
+      "trainStart": "2024-03-24",
+      "trainEnd": "2024-03-30",
+      "testStart": "2024-03-31",
+      "testEnd": "2024-03-31",
+      "trainedProbCall": 0.47815533980582525,
+      "trainedProbPut": 0.4548022598870056,
+      "signals": 159,
+      "outcomes": 159,
+      "pushes": 6,
+      "metrics": {
+        "status": "EDGE NOT DETECTED",
+        "N": 153,
+        "brier": 0.2529275325451058,
+        "logLoss": 0.6990092397875216,
+        "accuracy": 0.5490196078431373,
+        "winRate": 0.5490196078431373,
+        "breakEven": 0.5555555555555556,
+        "edge": -0.006535947712418277,
+        "ev": -0.011764705882352844,
+        "confidenceInterval": {
+          "lower": 0.46993466614950324,
+          "upper": 0.6257032258383367
+        },
+        "standardError": 0.04073461072977882
+      }
+    },
+    {
+      "window": 54,
+      "trainStart": "2024-03-25",
+      "trainEnd": "2024-03-31",
+      "testStart": "2024-04-01",
+      "testEnd": "2024-04-01",
+      "trainedProbCall": 0.5079365079365079,
+      "trainedProbPut": 0.45027624309392267,
+      "signals": 108,
+      "outcomes": 108,
+      "pushes": 1,
+      "metrics": {
+        "status": "EDGE NOT DETECTED",
+        "N": 107,
+        "brier": 0.2513588485745777,
+        "logLoss": 0.6958717651654116,
+        "accuracy": 0.42990654205607476,
+        "winRate": 0.42990654205607476,
+        "breakEven": 0.5555555555555556,
+        "edge": -0.12564901349948082,
+        "ev": -0.22616822429906536,
+        "confidenceInterval": {
+          "lower": 0.34013913708365806,
+          "upper": 0.5245326107077849
+        },
+        "standardError": 0.04872798885670421
+      }
+    },
+    {
+      "window": 55,
+      "trainStart": "2024-03-26",
+      "trainEnd": "2024-04-01",
+      "testStart": "2024-04-02",
+      "testEnd": "2024-04-02",
+      "trainedProbCall": 0.505720823798627,
+      "trainedProbPut": 0.4625322997416021,
+      "signals": 97,
+      "outcomes": 97,
+      "pushes": 1,
+      "metrics": {
+        "status": "EDGE NOT DETECTED",
+        "N": 96,
+        "brier": 0.2504457227099494,
+        "logLoss": 0.6940396440358955,
+        "accuracy": 0.4270833333333333,
+        "winRate": 0.4270833333333333,
+        "breakEven": 0.5555555555555556,
+        "edge": -0.12847222222222227,
+        "ev": -0.23125000000000007,
+        "confidenceInterval": {
+          "lower": 0.33281921379650237,
+          "upper": 0.5269586743783666
+        },
+        "standardError": 0.05150721292418755
+      }
+    },
+    {
+      "window": 56,
+      "trainStart": "2024-03-27",
+      "trainEnd": "2024-04-02",
+      "testStart": "2024-04-03",
+      "testEnd": "2024-04-03",
+      "trainedProbCall": 0.4806763285024155,
+      "trainedProbPut": 0.4795180722891566,
+      "signals": 90,
+      "outcomes": 90,
+      "pushes": 0,
+      "metrics": {
+        "status": "EDGE NOT DETECTED",
+        "N": 90,
+        "brier": 0.24728810853712027,
+        "logLoss": 0.6877207080970142,
+        "accuracy": 0.4222222222222222,
+        "winRate": 0.4222222222222222,
+        "breakEven": 0.5555555555555556,
+        "edge": -0.13333333333333336,
+        "ev": -0.23999999999999994,
+        "confidenceInterval": {
+          "lower": 0.32542241309246966,
+          "upper": 0.525390019773125
+        },
+        "standardError": 0.05318956961191438
+      }
+    },
+    {
+      "window": 57,
+      "trainStart": "2024-03-28",
+      "trainEnd": "2024-04-03",
+      "testStart": "2024-04-04",
+      "testEnd": "2024-04-04",
+      "trainedProbCall": 0.47058823529411764,
+      "trainedProbPut": 0.4784688995215311,
+      "signals": 112,
+      "outcomes": 112,
+      "pushes": 0,
+      "metrics": {
+        "status": "EDGE NOT DETECTED",
+        "N": 112,
+        "brier": 0.2514547949490861,
+        "logLoss": 0.6960597672078512,
+        "accuracy": 0.5178571428571429,
+        "winRate": 0.5178571428571429,
+        "breakEven": 0.5555555555555556,
+        "edge": -0.037698412698412676,
+        "ev": -0.06785714285714273,
+        "confidenceInterval": {
+          "lower": 0.42626821184923186,
+          "upper": 0.6082616979586438
+        },
+        "standardError": 0.04801935272524613
+      }
+    },
+    {
+      "window": 58,
+      "trainStart": "2024-03-29",
+      "trainEnd": "2024-04-04",
+      "testStart": "2024-04-05",
+      "testEnd": "2024-04-05",
+      "trainedProbCall": 0.49160671462829736,
+      "trainedProbPut": 0.48842592592592593,
+      "signals": 110,
+      "outcomes": 110,
+      "pushes": 0,
+      "metrics": {
+        "status": "EDGE NOT DETECTED",
+        "N": 110,
+        "brier": 0.25137054383604757,
+        "logLoss": 0.6958886757212961,
+        "accuracy": 0.5636363636363636,
+        "winRate": 0.5636363636363636,
+        "breakEven": 0.5555555555555556,
+        "edge": 0.008080808080808022,
+        "ev": 0.014545454545454528,
+        "confidenceInterval": {
+          "lower": 0.47036133797284124,
+          "upper": 0.6526165541158151
+        },
+        "standardError": 0.048117405876767105
+      }
+    },
+    {
+      "window": 59,
+      "trainStart": "2024-03-30",
+      "trainEnd": "2024-04-05",
+      "testStart": "2024-04-06",
+      "testEnd": "2024-04-06",
+      "trainedProbCall": 0.49065420560747663,
+      "trainedProbPut": 0.49878934624697335,
+      "signals": 126,
+      "outcomes": 126,
+      "pushes": 0,
+      "metrics": {
+        "status": "EDGE NOT DETECTED",
+        "N": 126,
+        "brier": 0.25000989734633894,
+        "logLoss": 0.6931669413300227,
+        "accuracy": 0.5634920634920635,
+        "winRate": 0.5634920634920635,
+        "breakEven": 0.5555555555555556,
+        "edge": 0.007936507936507908,
+        "ev": 0.01428571428571429,
+        "confidenceInterval": {
+          "lower": 0.47628498117338214,
+          "upper": 0.6469420893494703
+        },
+        "standardError": 0.04486230963912449
+      }
+    },
+    {
+      "window": 60,
+      "trainStart": "2024-03-31",
+      "trainEnd": "2024-04-06",
+      "testStart": "2024-04-07",
+      "testEnd": "2024-04-07",
+      "trainedProbCall": 0.4892086330935252,
+      "trainedProbPut": 0.5227272727272727,
+      "signals": 139,
+      "outcomes": 139,
+      "pushes": 1,
+      "metrics": {
+        "status": "EDGE NOT DETECTED",
+        "N": 138,
+        "brier": 0.24959362337679925,
+        "logLoss": 0.6923342492311356,
+        "accuracy": 0.5,
+        "winRate": 0.5,
+        "breakEven": 0.5555555555555556,
+        "edge": -0.05555555555555558,
+        "ev": -0.09999999999999998,
+        "confidenceInterval": {
+          "lower": 0.4177143195324772,
+          "upper": 0.5822856804675228
+        },
+        "standardError": 0.043151185206308
+      }
+    },
+    {
+      "window": 61,
+      "trainStart": "2024-04-01",
+      "trainEnd": "2024-04-07",
+      "testStart": "2024-04-08",
+      "testEnd": "2024-04-08",
+      "trainedProbCall": 0.46153846153846156,
+      "trainedProbPut": 0.5308641975308642,
+      "signals": 117,
+      "outcomes": 117,
+      "pushes": 2,
+      "metrics": {
+        "status": "EDGE NOT DETECTED",
+        "N": 115,
+        "brier": 0.2535207871101178,
+        "logLoss": 0.7002038867393175,
+        "accuracy": 0.5217391304347826,
+        "winRate": 0.5217391304347826,
+        "breakEven": 0.5555555555555556,
+        "edge": -0.033816425120772986,
+        "ev": -0.060869565217391286,
+        "confidenceInterval": {
+          "lower": 0.4312223611420244,
+          "upper": 0.6108504483792206
+        },
+        "standardError": 0.04735423534207626
+      }
+    },
+    {
+      "window": 62,
+      "trainStart": "2024-04-02",
+      "trainEnd": "2024-04-08",
+      "testStart": "2024-04-09",
+      "testEnd": "2024-04-09",
+      "trainedProbCall": 0.48756218905472637,
+      "trainedProbPut": 0.5301507537688442,
+      "signals": 114,
+      "outcomes": 114,
+      "pushes": 1,
+      "metrics": {
+        "status": "EDGE NOT DETECTED",
+        "N": 113,
+        "brier": 0.24677304598838717,
+        "logLoss": 0.6866877253037036,
+        "accuracy": 0.5132743362831859,
+        "winRate": 0.5132743362831859,
+        "breakEven": 0.5555555555555556,
+        "edge": -0.04228121927236972,
+        "ev": -0.07610619469026542,
+        "confidenceInterval": {
+          "lower": 0.4222063746832804,
+          "upper": 0.6034694120228243
+        },
+        "standardError": 0.047812586471943426
+      }
+    },
+    {
+      "window": 63,
+      "trainStart": "2024-04-03",
+      "trainEnd": "2024-04-09",
+      "testStart": "2024-04-10",
+      "testEnd": "2024-04-10",
+      "trainedProbCall": 0.4916864608076009,
+      "trainedProbPut": 0.5468354430379747,
+      "signals": 120,
+      "outcomes": 119,
+      "pushes": 0,
+      "metrics": {
+        "status": "EDGE NOT DETECTED",
+        "N": 119,
+        "brier": 0.2521805363907722,
+        "logLoss": 0.6975286290939284,
+        "accuracy": 0.42857142857142855,
+        "winRate": 0.42857142857142855,
+        "breakEven": 0.5555555555555556,
+        "edge": -0.12698412698412703,
+        "ev": -0.22857142857142854,
+        "confidenceInterval": {
+          "lower": 0.3432630208001519,
+          "upper": 0.5183473782828948
+        },
+        "standardError": 0.04610624808813262
+      }
+    },
+    {
+      "window": 64,
+      "trainStart": "2024-04-04",
+      "trainEnd": "2024-04-10",
+      "testStart": "2024-04-11",
+      "testEnd": "2024-04-11",
+      "trainedProbCall": 0.48519362186788156,
+      "trainedProbPut": 0.5486284289276808,
+      "signals": 123,
+      "outcomes": 123,
+      "pushes": 1,
+      "metrics": {
+        "status": "EDGE NOT DETECTED",
+        "N": 122,
+        "brier": 0.25508794383399697,
+        "logLoss": 0.7033601047508088,
+        "accuracy": 0.45081967213114754,
+        "winRate": 0.45081967213114754,
+        "breakEven": 0.5555555555555556,
+        "edge": -0.10473588342440804,
+        "ev": -0.18852459016393447,
+        "confidenceInterval": {
+          "lower": 0.3653714064697258,
+          "upper": 0.5392706196965023
+        },
+        "standardError": 0.04575893950986681
+      }
+    },
+    {
+      "window": 65,
+      "trainStart": "2024-04-05",
+      "trainEnd": "2024-04-11",
+      "testStart": "2024-04-12",
+      "testEnd": "2024-04-12",
+      "trainedProbCall": 0.4840182648401826,
+      "trainedProbPut": 0.5323741007194245,
+      "signals": 108,
+      "outcomes": 108,
+      "pushes": 0,
+      "metrics": {
+        "status": "EDGE NOT DETECTED",
+        "N": 108,
+        "brier": 0.25101402749313456,
+        "logLoss": 0.695179354382545,
+        "accuracy": 0.48148148148148145,
+        "winRate": 0.48148148148148145,
+        "breakEven": 0.5555555555555556,
+        "edge": -0.07407407407407413,
+        "ev": -0.13333333333333341,
+        "confidenceInterval": {
+          "lower": 0.3895121132367203,
+          "upper": 0.5747230193078783
+        },
+        "standardError": 0.048928297601209446
+      }
+    },
+    {
+      "window": 66,
+      "trainStart": "2024-04-06",
+      "trainEnd": "2024-04-12",
+      "testStart": "2024-04-13",
+      "testEnd": "2024-04-13",
+      "trainedProbCall": 0.47306791569086654,
+      "trainedProbPut": 0.5187793427230047,
+      "signals": 103,
+      "outcomes": 103,
+      "pushes": 0,
+      "metrics": {
+        "status": "EDGE NOT DETECTED",
+        "N": 103,
+        "brier": 0.25151348999904105,
+        "logLoss": 0.6961765865134527,
+        "accuracy": 0.4854368932038835,
+        "winRate": 0.4854368932038835,
+        "breakEven": 0.5555555555555556,
+        "edge": -0.07011866235167208,
+        "ev": -0.12621359223300965,
+        "confidenceInterval": {
+          "lower": 0.3911889229019198,
+          "upper": 0.580732126576935
+        },
+        "standardError": 0.05015627885319124
+      }
+    },
+    {
+      "window": 67,
+      "trainStart": "2024-04-07",
+      "trainEnd": "2024-04-13",
+      "testStart": "2024-04-14",
+      "testEnd": "2024-04-14",
+      "trainedProbCall": 0.47642679900744417,
+      "trainedProbPut": 0.49417249417249415,
+      "signals": 96,
+      "outcomes": 96,
+      "pushes": 0,
+      "metrics": {
+        "status": "EDGE NOT DETECTED",
+        "N": 96,
+        "brier": 0.2509110049121093,
+        "logLoss": 0.6949707575773894,
+        "accuracy": 0.5104166666666666,
+        "winRate": 0.5104166666666666,
+        "breakEven": 0.5555555555555556,
+        "edge": -0.04513888888888895,
+        "ev": -0.08125000000000004,
+        "confidenceInterval": {
+          "lower": 0.41195862420919654,
+          "upper": 0.6080731060515364
+        },
+        "standardError": 0.052031206553757856
+      }
+    },
+    {
+      "window": 68,
+      "trainStart": "2024-04-08",
+      "trainEnd": "2024-04-14",
+      "testStart": "2024-04-15",
+      "testEnd": "2024-04-15",
+      "trainedProbCall": 0.4839572192513369,
+      "trainedProbPut": 0.49038461538461536,
+      "signals": 90,
+      "outcomes": 90,
+      "pushes": 0,
+      "metrics": {
+        "status": "EDGE NOT DETECTED",
+        "N": 90,
+        "brier": 0.24938796309355363,
+        "logLoss": 0.6919231365821894,
+        "accuracy": 0.45555555555555555,
+        "winRate": 0.45555555555555555,
+        "breakEven": 0.5555555555555556,
+        "edge": -0.10000000000000003,
+        "ev": -0.18000000000000005,
+        "confidenceInterval": {
+          "lower": 0.3565944565658975,
+          "upper": 0.5581555050715851
+        },
+        "standardError": 0.05361341068438587
+      }
+    },
+    {
+      "window": 69,
+      "trainStart": "2024-04-09",
+      "trainEnd": "2024-04-15",
+      "testStart": "2024-04-16",
+      "testEnd": "2024-04-16",
+      "trainedProbCall": 0.47863247863247865,
+      "trainedProbPut": 0.4819277108433735,
+      "signals": 97,
+      "outcomes": 97,
+      "pushes": 0,
+      "metrics": {
+        "status": "EDGE NOT DETECTED",
+        "N": 97,
+        "brier": 0.2507837401005519,
+        "logLoss": 0.6947160970052124,
+        "accuracy": 0.5051546391752577,
+        "winRate": 0.5051546391752577,
+        "breakEven": 0.5555555555555556,
+        "edge": -0.05040091638029787,
+        "ev": -0.0907216494845361,
+        "confidenceInterval": {
+          "lower": 0.40737305891143216,
+          "upper": 0.6025434834679033
+        },
+        "standardError": 0.051760198519234815
+      }
+    },
+    {
+      "window": 70,
+      "trainStart": "2024-04-10",
+      "trainEnd": "2024-04-16",
+      "testStart": "2024-04-17",
+      "testEnd": "2024-04-17",
+      "trainedProbCall": 0.5,
+      "trainedProbPut": 0.46115288220551376,
+      "signals": 103,
+      "outcomes": 103,
+      "pushes": 0,
+      "metrics": {
+        "status": "EDGE NOT DETECTED",
+        "N": 103,
+        "brier": 0.2510950771580627,
+        "logLoss": 0.6953432093451637,
+        "accuracy": 0.5048543689320388,
+        "winRate": 0.5048543689320388,
+        "breakEven": 0.5555555555555556,
+        "edge": -0.05070118662351675,
+        "ev": -0.09126213592233007,
+        "confidenceInterval": {
+          "lower": 0.4098737535926197,
+          "upper": 0.5994858965810955
+        },
+        "standardError": 0.05017452134019601
+      }
+    },
+    {
+      "window": 71,
+      "trainStart": "2024-04-11",
+      "trainEnd": "2024-04-17",
+      "testStart": "2024-04-18",
+      "testEnd": "2024-04-18",
+      "trainedProbCall": 0.5131195335276968,
+      "trainedProbPut": 0.46564885496183206,
+      "signals": 109,
+      "outcomes": 109,
+      "pushes": 0,
+      "metrics": {
+        "status": "EDGE NOT DETECTED",
+        "N": 109,
+        "brier": 0.2501045392688825,
+        "logLoss": 0.6933537279335437,
+        "accuracy": 0.42201834862385323,
+        "winRate": 0.42201834862385323,
+        "breakEven": 0.5555555555555556,
+        "edge": -0.13353720693170235,
+        "ev": -0.24036697247706418,
+        "confidenceInterval": {
+          "lower": 0.333508120513485,
+          "upper": 0.515838219843263
+        },
+        "standardError": 0.048152078582033034
+      }
+    },
+    {
+      "window": 72,
+      "trainStart": "2024-04-12",
+      "trainEnd": "2024-04-18",
+      "testStart": "2024-04-19",
+      "testEnd": "2024-04-19",
+      "trainedProbCall": 0.5014749262536873,
+      "trainedProbPut": 0.4690721649484536,
+      "signals": 96,
+      "outcomes": 96,
+      "pushes": 0,
+      "metrics": {
+        "status": "EDGE NOT DETECTED",
+        "N": 96,
+        "brier": 0.24840314172549852,
+        "logLoss": 0.6899495722294454,
+        "accuracy": 0.40625,
+        "winRate": 0.40625,
+        "breakEven": 0.5555555555555556,
+        "edge": -0.14930555555555558,
+        "ev": -0.26875,
+        "confidenceInterval": {
+          "lower": 0.3134514434260545,
+          "upper": 0.5062629842273485
+        },
+        "standardError": 0.05115490203036373
+      }
+    },
+    {
+      "window": 73,
+      "trainStart": "2024-04-13",
+      "trainEnd": "2024-04-19",
+      "testStart": "2024-04-20",
+      "testEnd": "2024-04-20",
+      "trainedProbCall": 0.48823529411764705,
+      "trainedProbPut": 0.46419098143236076,
+      "signals": 110,
+      "outcomes": 110,
+      "pushes": 0,
+      "metrics": {
+        "status": "EDGE NOT DETECTED",
+        "N": 110,
+        "brier": 0.24570319329260085,
+        "logLoss": 0.6845429334502607,
+        "accuracy": 0.4,
+        "winRate": 0.4,
+        "breakEven": 0.5555555555555556,
+        "edge": -0.15555555555555556,
+        "ev": -0.2799999999999999,
+        "confidenceInterval": {
+          "lower": 0.3133177568006176,
+          "upper": 0.493431269917208
+        },
+        "standardError": 0.04755197243695185
+      }
+    },
+    {
+      "window": 74,
+      "trainStart": "2024-04-14",
+      "trainEnd": "2024-04-20",
+      "testStart": "2024-04-21",
+      "testEnd": "2024-04-21",
+      "trainedProbCall": 0.4714285714285714,
+      "trainedProbPut": 0.45454545454545453,
+      "signals": 111,
+      "outcomes": 111,
+      "pushes": 0,
+      "metrics": {
+        "status": "EDGE NOT DETECTED",
+        "N": 111,
+        "brier": 0.24096408096408067,
+        "logLoss": 0.6750444924047511,
+        "accuracy": 0.35135135135135137,
+        "winRate": 0.35135135135135137,
+        "breakEven": 0.5555555555555556,
+        "edge": -0.2042042042042042,
+        "ev": -0.3675675675675676,
+        "confidenceInterval": {
+          "lower": 0.26886873786022286,
+          "upper": 0.44377894381610355
+        },
+        "standardError": 0.046164202767748824
+      }
+    },
+    {
+      "window": 75,
+      "trainStart": "2024-04-15",
+      "trainEnd": "2024-04-21",
+      "testStart": "2024-04-22",
+      "testEnd": "2024-04-22",
+      "trainedProbCall": 0.43902439024390244,
+      "trainedProbPut": 0.44054054054054054,
+      "signals": 110,
+      "outcomes": 110,
+      "pushes": 0,
+      "metrics": {
+        "status": "EDGE NOT DETECTED",
+        "N": 110,
+        "brier": 0.2570293809647156,
+        "logLoss": 0.7072946353852051,
+        "accuracy": 0.5272727272727272,
+        "winRate": 0.5272727272727272,
+        "breakEven": 0.5555555555555556,
+        "edge": -0.028282828282828354,
+        "ev": -0.05090909090909096,
+        "confidenceInterval": {
+          "lower": 0.4346352821640568,
+          "upper": 0.6180695287310817
+        },
+        "standardError": 0.048428683033359524
+      }
+    },
+    {
+      "window": 76,
+      "trainStart": "2024-04-16",
+      "trainEnd": "2024-04-22",
+      "testStart": "2024-04-23",
+      "testEnd": "2024-04-23",
+      "trainedProbCall": 0.4508816120906801,
+      "trainedProbPut": 0.44505494505494503,
+      "signals": 126,
+      "outcomes": 126,
+      "pushes": 1,
+      "metrics": {
+        "status": "EDGE NOT DETECTED",
+        "N": 125,
+        "brier": 0.25044658702564454,
+        "logLoss": 0.6940510609390839,
+        "accuracy": 0.48,
+        "winRate": 0.48,
+        "breakEven": 0.5555555555555556,
+        "edge": -0.0755555555555556,
+        "ev": -0.136,
+        "confidenceInterval": {
+          "lower": 0.3943261533805731,
+          "upper": 0.5668665048912894
+        },
+        "standardError": 0.04536811214939409
+      }
+    },
+    {
+      "window": 77,
+      "trainStart": "2024-04-17",
+      "trainEnd": "2024-04-23",
+      "testStart": "2024-04-24",
+      "testEnd": "2024-04-24",
+      "trainedProbCall": 0.4504950495049505,
+      "trainedProbPut": 0.44502617801047123,
+      "signals": 127,
+      "outcomes": 127,
+      "pushes": 0,
+      "metrics": {
+        "status": "EDGE NOT DETECTED",
+        "N": 127,
+        "brier": 0.25729131009567763,
+        "logLoss": 0.7077943976035632,
+        "accuracy": 0.5433070866141733,
+        "winRate": 0.5433070866141733,
+        "breakEven": 0.5555555555555556,
+        "edge": -0.012248468941382318,
+        "ev": -0.022047244094488105,
+        "confidenceInterval": {
+          "lower": 0.45667325127746106,
+          "upper": 0.6273978698338675
+        },
+        "standardError": 0.04486960117971617
+      }
+    },
+    {
+      "window": 78,
+      "trainStart": "2024-04-18",
+      "trainEnd": "2024-04-24",
+      "testStart": "2024-04-25",
+      "testEnd": "2024-04-25",
+      "trainedProbCall": 0.45905707196029777,
+      "trainedProbPut": 0.45185185185185184,
+      "signals": 134,
+      "outcomes": 134,
+      "pushes": 0,
+      "metrics": {
+        "status": "EDGE NOT DETECTED",
+        "N": 134,
+        "brier": 0.25810771517493764,
+        "logLoss": 0.7094135508112155,
+        "accuracy": 0.5671641791044776,
+        "winRate": 0.5671641791044776,
+        "breakEven": 0.5555555555555556,
+        "edge": 0.011608623548922004,
+        "ev": 0.020895522388059695,
+        "confidenceInterval": {
+          "lower": 0.4825566078616206,
+          "upper": 0.6480280632391211
+        },
+        "standardError": 0.04342227033879698
+      }
+    },
+    {
+      "window": 79,
+      "trainStart": "2024-04-19",
+      "trainEnd": "2024-04-25",
+      "testStart": "2024-04-26",
+      "testEnd": "2024-04-26",
+      "trainedProbCall": 0.48184019370460046,
+      "trainedProbPut": 0.4677804295942721,
+      "signals": 132,
+      "outcomes": 132,
+      "pushes": 3,
+      "metrics": {
+        "status": "EDGE NOT DETECTED",
+        "N": 129,
+        "brier": 0.2532906577493855,
+        "logLoss": 0.6997365457503095,
+        "accuracy": 0.5503875968992248,
+        "winRate": 0.5503875968992248,
+        "breakEven": 0.5555555555555556,
+        "edge": -0.0051679586563307955,
+        "ev": -0.009302325581395376,
+        "confidenceInterval": {
+          "lower": 0.46432333758246425,
+          "upper": 0.6335375734574509
+        },
+        "standardError": 0.04445240040422921
+      }
+    },
+    {
+      "window": 80,
+      "trainStart": "2024-04-20",
+      "trainEnd": "2024-04-26",
+      "testStart": "2024-04-27",
+      "testEnd": "2024-04-27",
+      "trainedProbCall": 0.5023255813953489,
+      "trainedProbPut": 0.4863013698630137,
+      "signals": 143,
+      "outcomes": 143,
+      "pushes": 2,
+      "metrics": {
+        "status": "EDGE NOT DETECTED",
+        "N": 141,
+        "brier": 0.25043243228485895,
+        "logLoss": 0.6940123069925526,
+        "accuracy": 0.524822695035461,
+        "winRate": 0.524822695035461,
+        "breakEven": 0.5555555555555556,
+        "edge": -0.030732860520094607,
+        "ev": -0.05531914893617024,
+        "confidenceInterval": {
+          "lower": 0.44283301378980977,
+          "upper": 0.6054956431706215
+        },
+        "standardError": 0.04262613167557495
+      }
+    },
+    {
+      "window": 81,
+      "trainStart": "2024-04-21",
+      "trainEnd": "2024-04-27",
+      "testStart": "2024-04-28",
+      "testEnd": "2024-04-28",
+      "trainedProbCall": 0.5201793721973094,
+      "trainedProbPut": 0.5010989010989011,
+      "signals": 160,
+      "outcomes": 160,
+      "pushes": 2,
+      "metrics": {
+        "status": "EDGE NOT DETECTED",
+        "N": 158,
+        "brier": 0.2510828557759312,
+        "logLoss": 0.6953140364353667,
+        "accuracy": 0.4240506329113924,
+        "winRate": 0.4240506329113924,
+        "breakEven": 0.5555555555555556,
+        "edge": -0.1315049226441632,
+        "ev": -0.2367088607594936,
+        "confidenceInterval": {
+          "lower": 0.3496922402163018,
+          "upper": 0.5020146138929013
+        },
+        "standardError": 0.039802532729944995
+      }
+    },
+    {
+      "window": 82,
+      "trainStart": "2024-04-22",
+      "trainEnd": "2024-04-28",
+      "testStart": "2024-04-29",
+      "testEnd": "2024-04-29",
+      "trainedProbCall": 0.5369565217391304,
+      "trainedProbPut": 0.49586776859504134,
+      "signals": 119,
+      "outcomes": 119,
+      "pushes": 1,
+      "metrics": {
+        "status": "EDGE NOT DETECTED",
+        "N": 118,
+        "brier": 0.25432253375031544,
+        "logLoss": 0.7018094056447295,
+        "accuracy": 0.4406779661016949,
+        "winRate": 0.4406779661016949,
+        "breakEven": 0.5555555555555556,
+        "edge": -0.11487758945386067,
+        "ev": -0.20677966101694922,
+        "confidenceInterval": {
+          "lower": 0.3543729178513183,
+          "upper": 0.5307237978845222
+        },
+        "standardError": 0.04645207839989106
+      }
+    },
+    {
+      "window": 83,
+      "trainStart": "2024-04-23",
+      "trainEnd": "2024-04-29",
+      "testStart": "2024-04-30",
+      "testEnd": "2024-04-30",
+      "trainedProbCall": 0.5123595505617977,
+      "trainedProbPut": 0.4970414201183432,
+      "signals": 122,
+      "outcomes": 122,
+      "pushes": 0,
+      "metrics": {
+        "status": "EDGE NOT DETECTED",
+        "N": 122,
+        "brier": 0.2503095665101264,
+        "logLoss": 0.6937664810492086,
+        "accuracy": 0.47540983606557374,
+        "winRate": 0.47540983606557374,
+        "breakEven": 0.5555555555555556,
+        "edge": -0.08014571948998184,
+        "ev": -0.14426229508196725,
+        "confidenceInterval": {
+          "lower": 0.38890272235052964,
+          "upper": 0.5634182907325844
+        },
+        "standardError": 0.04592112401745395
+      }
+    },
+    {
+      "window": 84,
+      "trainStart": "2024-04-24",
+      "trainEnd": "2024-04-30",
+      "testStart": "2024-05-01",
+      "testEnd": "2024-05-01",
+      "trainedProbCall": 0.5044843049327354,
+      "trainedProbPut": 0.5029940119760479,
+      "signals": 111,
+      "outcomes": 111,
+      "pushes": 0,
+      "metrics": {
+        "status": "EDGE NOT DETECTED",
+        "N": 111,
+        "brier": 0.25083634035171243,
+        "logLoss": 0.6948198902413187,
+        "accuracy": 0.3783783783783784,
+        "winRate": 0.3783783783783784,
+        "breakEven": 0.5555555555555556,
+        "edge": -0.17717717717717718,
+        "ev": -0.3189189189189189,
+        "confidenceInterval": {
+          "lower": 0.29365167964777406,
+          "upper": 0.47124187808740203
+        },
+        "standardError": 0.046871535514626715
+      }
+    },
+    {
+      "window": 85,
+      "trainStart": "2024-04-25",
+      "trainEnd": "2024-05-01",
+      "testStart": "2024-05-02",
+      "testEnd": "2024-05-02",
+      "trainedProbCall": 0.49099099099099097,
+      "trainedProbPut": 0.47638603696098564,
+      "signals": 125,
+      "outcomes": 124,
+      "pushes": 1,
+      "metrics": {
+        "status": "EDGE NOT DETECTED",
+        "N": 123,
+        "brier": 0.2516213355665561,
+        "logLoss": 0.6963929999684421,
+        "accuracy": 0.5121951219512195,
+        "winRate": 0.5121951219512195,
+        "breakEven": 0.5555555555555556,
+        "edge": -0.04336043360433606,
+        "ev": -0.07804878048780484,
+        "confidenceInterval": {
+          "lower": 0.4248356555093271,
+          "upper": 0.5988158909864598
+        },
+        "standardError": 0.045768897121902005
+      }
+    },
+    {
+      "window": 86,
+      "trainStart": "2024-04-26",
+      "trainEnd": "2024-05-02",
+      "testStart": "2024-05-03",
+      "testEnd": "2024-05-03",
+      "trainedProbCall": 0.4748858447488584,
+      "trainedProbPut": 0.4718162839248434,
+      "signals": 119,
+      "outcomes": 119,
+      "pushes": 0,
+      "metrics": {
+        "status": "EDGE NOT DETECTED",
+        "N": 119,
+        "brier": 0.24616162287133664,
+        "logLoss": 0.6854643435041133,
+        "accuracy": 0.4117647058823529,
+        "winRate": 0.4117647058823529,
+        "breakEven": 0.5555555555555556,
+        "edge": -0.14379084967320266,
+        "ev": -0.25882352941176473,
+        "confidenceInterval": {
+          "lower": 0.32744744181799823,
+          "upper": 0.5016006982257654
+        },
+        "standardError": 0.045861054412494356
+      }
+    },
+    {
+      "window": 87,
+      "trainStart": "2024-04-27",
+      "trainEnd": "2024-05-03",
+      "testStart": "2024-05-04",
+      "testEnd": "2024-05-04",
+      "trainedProbCall": 0.4461883408071749,
+      "trainedProbPut": 0.4553376906318083,
+      "signals": 126,
+      "outcomes": 126,
+      "pushes": 0,
+      "metrics": {
+        "status": "EDGE NOT DETECTED",
+        "N": 126,
+        "brier": 0.23863533143160467,
+        "logLoss": 0.670343800421951,
+        "accuracy": 0.36507936507936506,
+        "winRate": 0.36507936507936506,
+        "breakEven": 0.5555555555555556,
+        "edge": -0.19047619047619052,
+        "ev": -0.3428571428571428,
+        "confidenceInterval": {
+          "lower": 0.28616132270264294,
+          "upper": 0.45198115243629566
+        },
+        "standardError": 0.0435906867596879
+      }
+    },
+    {
+      "window": 88,
+      "trainStart": "2024-04-28",
+      "trainEnd": "2024-05-04",
+      "testStart": "2024-05-05",
+      "testEnd": "2024-05-05",
+      "trainedProbCall": 0.4144144144144144,
+      "trainedProbPut": 0.44170403587443946,
+      "signals": 126,
+      "outcomes": 126,
+      "pushes": 1,
+      "metrics": {
+        "status": "EDGE NOT DETECTED",
+        "N": 125,
+        "brier": 0.24305471552903055,
+        "logLoss": 0.6791608306030175,
+        "accuracy": 0.424,
+        "winRate": 0.424,
+        "breakEven": 0.5555555555555556,
+        "edge": -0.1315555555555556,
+        "ev": -0.23680000000000007,
+        "confidenceInterval": {
+          "lower": 0.3409019521121861,
+          "upper": 0.5116301493208913
+        },
+        "standardError": 0.0448916205989492
+      }
+    },
+    {
+      "window": 89,
+      "trainStart": "2024-04-29",
+      "trainEnd": "2024-05-05",
+      "testStart": "2024-05-06",
+      "testEnd": "2024-05-06",
+      "trainedProbCall": 0.40229885057471265,
+      "trainedProbPut": 0.4562647754137116,
+      "signals": 133,
+      "outcomes": 133,
+      "pushes": 1,
+      "metrics": {
+        "status": "EDGE NOT DETECTED",
+        "N": 132,
+        "brier": 0.25070425190377893,
+        "logLoss": 0.694683613836828,
+        "accuracy": 0.45454545454545453,
+        "winRate": 0.45454545454545453,
+        "breakEven": 0.5555555555555556,
+        "edge": -0.10101010101010105,
+        "ev": -0.18181818181818177,
+        "confidenceInterval": {
+          "lower": 0.3720859280570039,
+          "upper": 0.5395758898249997
+        },
+        "standardError": 0.04397051714305695
+      }
+    },
+    {
+      "window": 90,
+      "trainStart": "2024-04-30",
+      "trainEnd": "2024-05-06",
+      "testStart": "2024-05-07",
+      "testEnd": "2024-05-07",
+      "trainedProbCall": 0.4108352144469526,
+      "trainedProbPut": 0.44755244755244755,
+      "signals": 128,
+      "outcomes": 128,
+      "pushes": 0,
+      "metrics": {
+        "status": "EDGE NOT DETECTED",
+        "N": 128,
+        "brier": 0.2446983073179255,
+        "logLoss": 0.6825243196457961,
+        "accuracy": 0.421875,
+        "winRate": 0.421875,
+        "breakEven": 0.5555555555555556,
+        "edge": -0.13368055555555558,
+        "ev": -0.24062499999999998,
+        "confidenceInterval": {
+          "lower": 0.3398196990498745,
+          "upper": 0.5084831128092049
+        },
+        "standardError": 0.04431771032264852
+      }
+    },
+    {
+      "window": 91,
+      "trainStart": "2024-05-01",
+      "trainEnd": "2024-05-07",
+      "testStart": "2024-05-08",
+      "testEnd": "2024-05-08",
+      "trainedProbCall": 0.4080717488789238,
+      "trainedProbPut": 0.4377880184331797,
+      "signals": 122,
+      "outcomes": 122,
+      "pushes": 2,
+      "metrics": {
+        "status": "EDGE NOT DETECTED",
+        "N": 120,
+        "brier": 0.23203988962856004,
+        "logLoss": 0.6569794122124059,
+        "accuracy": 0.3416666666666667,
+        "winRate": 0.3416666666666667,
+        "breakEven": 0.5555555555555556,
+        "edge": -0.2138888888888889,
+        "ev": -0.38499999999999995,
+        "confidenceInterval": {
+          "lower": 0.26290306359700033,
+          "upper": 0.43025335557071076
+        },
+        "standardError": 0.04405809506482028
+      }
+    },
+    {
+      "window": 92,
+      "trainStart": "2024-05-02",
+      "trainEnd": "2024-05-08",
+      "testStart": "2024-05-09",
+      "testEnd": "2024-05-09",
+      "trainedProbCall": 0.39819004524886875,
+      "trainedProbPut": 0.437219730941704,
+      "signals": 124,
+      "outcomes": 124,
+      "pushes": 0,
+      "metrics": {
+        "status": "EDGE NOT DETECTED",
+        "N": 124,
+        "brier": 0.25442639367884784,
+        "logLoss": 0.7022384910270411,
+        "accuracy": 0.47580645161290325,
+        "winRate": 0.47580645161290325,
+        "breakEven": 0.5555555555555556,
+        "edge": -0.07974910394265233,
+        "ev": -0.14354838709677414,
+        "confidenceInterval": {
+          "lower": 0.3899577057750623,
+          "upper": 0.5631092145388261
+        },
+        "standardError": 0.045539758728550005
+      }
+    },
+    {
+      "window": 93,
+      "trainStart": "2024-05-03",
+      "trainEnd": "2024-05-09",
+      "testStart": "2024-05-10",
+      "testEnd": "2024-05-10",
+      "trainedProbCall": 0.4079822616407982,
+      "trainedProbPut": 0.4216589861751152,
+      "signals": 121,
+      "outcomes": 121,
+      "pushes": 1,
+      "metrics": {
+        "status": "EDGE NOT DETECTED",
+        "N": 120,
+        "brier": 0.2361771419526802,
+        "logLoss": 0.6653071267328972,
+        "accuracy": 0.375,
+        "winRate": 0.375,
+        "breakEven": 0.5555555555555556,
+        "edge": -0.18055555555555558,
+        "ev": -0.32499999999999996,
+        "confidenceInterval": {
+          "lower": 0.2935229130478532,
+          "upper": 0.4642321547161293
+        },
+        "standardError": 0.04494240140940896
+      }
+    },
+    {
+      "window": 94,
+      "trainStart": "2024-05-04",
+      "trainEnd": "2024-05-10",
+      "testStart": "2024-05-11",
+      "testEnd": "2024-05-11",
+      "trainedProbCall": 0.408675799086758,
+      "trainedProbPut": 0.40979955456570155,
+      "signals": 156,
+      "outcomes": 156,
+      "pushes": 1,
+      "metrics": {
+        "status": "EDGE NOT DETECTED",
+        "N": 155,
+        "brier": 0.24353478491574873,
+        "logLoss": 0.6801618631497107,
+        "accuracy": 0.41935483870967744,
+        "winRate": 0.41935483870967744,
+        "breakEven": 0.5555555555555556,
+        "edge": -0.13620071684587814,
+        "ev": -0.24516129032258055,
+        "confidenceInterval": {
+          "lower": 0.34454075364903425,
+          "upper": 0.49806974637111157
+        },
+        "standardError": 0.0401362588057326
+      }
+    },
+    {
+      "window": 95,
+      "trainStart": "2024-05-05",
+      "trainEnd": "2024-05-11",
+      "testStart": "2024-05-12",
+      "testEnd": "2024-05-12",
+      "trainedProbCall": 0.41284403669724773,
+      "trainedProbPut": 0.41875,
+      "signals": 168,
+      "outcomes": 168,
+      "pushes": 8,
+      "metrics": {
+        "status": "EDGE NOT DETECTED",
+        "N": 160,
+        "brier": 0.25413824425388964,
+        "logLoss": 0.7015807258875867,
+        "accuracy": 0.48125,
+        "winRate": 0.48125,
+        "breakEven": 0.5555555555555556,
+        "edge": -0.07430555555555557,
+        "ev": -0.13375000000000004,
+        "confidenceInterval": {
+          "lower": 0.40518009436228114,
+          "upper": 0.558199169512095
+        },
+        "standardError": 0.03997272018983697
+      }
+    },
+    {
+      "window": 96,
+      "trainStart": "2024-05-06",
+      "trainEnd": "2024-05-12",
+      "testStart": "2024-05-13",
+      "testEnd": "2024-05-13",
+      "trainedProbCall": 0.4392935982339956,
+      "trainedProbPut": 0.4164989939637827,
+      "signals": 122,
+      "outcomes": 122,
+      "pushes": 2,
+      "metrics": {
+        "status": "EDGE NOT DETECTED",
+        "N": 120,
+        "brier": 0.24388863607373504,
+        "logLoss": 0.680860571443457,
+        "accuracy": 0.425,
+        "winRate": 0.425,
+        "breakEven": 0.5555555555555556,
+        "edge": -0.1305555555555556,
+        "ev": -0.23499999999999993,
+        "confidenceInterval": {
+          "lower": 0.34022892313997877,
+          "upper": 0.5144241175184108
+        },
+        "standardError": 0.04586014367375856
+      }
+    },
+    {
+      "window": 97,
+      "trainStart": "2024-05-07",
+      "trainEnd": "2024-05-13",
+      "testStart": "2024-05-14",
+      "testEnd": "2024-05-14",
+      "trainedProbCall": 0.4314159292035398,
+      "trainedProbPut": 0.4140786749482402,
+      "signals": 132,
+      "outcomes": 132,
+      "pushes": 2,
+      "metrics": {
+        "status": "EDGE NOT DETECTED",
+        "N": 130,
+        "brier": 0.26587199788829213,
+        "logLoss": 0.7252610719394026,
+        "accuracy": 0.5538461538461539,
+        "winRate": 0.5538461538461539,
+        "breakEven": 0.5555555555555556,
+        "edge": -0.0017094017094017033,
+        "ev": -0.003076923076922977,
+        "confidenceInterval": {
+          "lower": 0.4680699077833656,
+          "upper": 0.6365313522135263
+        },
+        "standardError": 0.04424479839255063
+      }
+    },
+    {
+      "window": 98,
+      "trainStart": "2024-05-08",
+      "trainEnd": "2024-05-14",
+      "testStart": "2024-05-15",
+      "testEnd": "2024-05-15",
+      "trainedProbCall": 0.4369369369369369,
+      "trainedProbPut": 0.4426559356136821,
+      "signals": 124,
+      "outcomes": 124,
+      "pushes": 1,
+      "metrics": {
+        "status": "EDGE NOT DETECTED",
+        "N": 123,
+        "brier": 0.25048004047447986,
+        "logLoss": 0.6941354738306291,
+        "accuracy": 0.4715447154471545,
+        "winRate": 0.4715447154471545,
+        "breakEven": 0.5555555555555556,
+        "edge": -0.0840108401084011,
+        "ev": -0.15121951219512192,
+        "confidenceInterval": {
+          "lower": 0.38552806231685766,
+          "upper": 0.5592849958596396
+        },
+        "standardError": 0.04571015318910762
+      }
+    },
+    {
+      "window": 99,
+      "trainStart": "2024-05-09",
+      "trainEnd": "2024-05-15",
+      "testStart": "2024-05-16",
+      "testEnd": "2024-05-16",
+      "trainedProbCall": 0.4564755838641189,
+      "trainedProbPut": 0.45588235294117646,
+      "signals": 122,
+      "outcomes": 122,
+      "pushes": 0,
+      "metrics": {
+        "status": "EDGE NOT DETECTED",
+        "N": 122,
+        "brier": 0.2504326846053359,
+        "logLoss": 0.6940191989157302,
+        "accuracy": 0.48360655737704916,
+        "winRate": 0.48360655737704916,
+        "breakEven": 0.5555555555555556,
+        "edge": -0.07194899817850642,
+        "ev": -0.12950819672131147,
+        "confidenceInterval": {
+          "lower": 0.39679226961314173,
+          "upper": 0.5714217391089342
+        },
+        "standardError": 0.045951095367392364
+      }
+    },
+    {
+      "window": 100,
+      "trainStart": "2024-05-10",
+      "trainEnd": "2024-05-16",
+      "testStart": "2024-05-17",
+      "testEnd": "2024-05-17",
+      "trainedProbCall": 0.4684095860566449,
+      "trainedProbPut": 0.448559670781893,
+      "signals": 144,
+      "outcomes": 144,
+      "pushes": 2,
+      "metrics": {
+        "status": "EDGE NOT DETECTED",
+        "N": 142,
+        "brier": 0.24885670144315306,
+        "logLoss": 0.6908499892386329,
+        "accuracy": 0.4788732394366197,
+        "winRate": 0.4788732394366197,
+        "breakEven": 0.5555555555555556,
+        "edge": -0.07668231611893589,
+        "ev": -0.1380281690140845,
+        "confidenceInterval": {
+          "lower": 0.3983508906520301,
+          "upper": 0.5605085842851618
+        },
+        "standardError": 0.042485875057066934
+      }
+    },
+    {
+      "window": 101,
+      "trainStart": "2024-05-11",
+      "trainEnd": "2024-05-17",
+      "testStart": "2024-05-18",
+      "testEnd": "2024-05-18",
+      "trainedProbCall": 0.4896265560165975,
+      "trainedProbPut": 0.4556701030927835,
+      "signals": 159,
+      "outcomes": 159,
+      "pushes": 12,
+      "metrics": {
+        "status": "EDGE NOT DETECTED",
+        "N": 147,
+        "brier": 0.251459389630985,
+        "logLoss": 0.6960771253936529,
+        "accuracy": 0.4965986394557823,
+        "winRate": 0.4965986394557823,
+        "breakEven": 0.5555555555555556,
+        "edge": -0.05895691609977327,
+        "ev": -0.10612244897959183,
+        "confidenceInterval": {
+          "lower": 0.4168939321328172,
+          "upper": 0.5764765969519976
+        },
+        "standardError": 0.041773747906408566
+      }
+    },
+    {
+      "window": 102,
+      "trainStart": "2024-05-12",
+      "trainEnd": "2024-05-18",
+      "testStart": "2024-05-19",
+      "testEnd": "2024-05-19",
+      "trainedProbCall": 0.5072463768115942,
+      "trainedProbPut": 0.4612159329140461,
+      "signals": 156,
+      "outcomes": 156,
+      "pushes": 3,
+      "metrics": {
+        "status": "EDGE NOT DETECTED",
+        "N": 153,
+        "brier": 0.25410464839523755,
+        "logLoss": 0.7013753690463224,
+        "accuracy": 0.5620915032679739,
+        "winRate": 0.5620915032679739,
+        "breakEven": 0.5555555555555556,
+        "edge": 0.006535947712418277,
+        "ev": 0.011764705882352955,
+        "confidenceInterval": {
+          "lower": 0.4829094954690235,
+          "upper": 0.6382318343822405
+        },
+        "standardError": 0.04061792075311992
+      }
+    },
+    {
+      "window": 103,
+      "trainStart": "2024-05-13",
+      "trainEnd": "2024-05-19",
+      "testStart": "2024-05-20",
+      "testEnd": "2024-05-20",
+      "trainedProbCall": 0.5105042016806722,
+      "trainedProbPut": 0.48535564853556484,
+      "signals": 148,
+      "outcomes": 148,
+      "pushes": 0,
+      "metrics": {
+        "status": "EDGE NOT DETECTED",
+        "N": 148,
+        "brier": 0.2506343425520262,
+        "logLoss": 0.6944161660394119,
+        "accuracy": 0.49324324324324326,
+        "winRate": 0.49324324324324326,
+        "breakEven": 0.5555555555555556,
+        "edge": -0.062312312312312323,
+        "ev": -0.11216216216216218,
+        "confidenceInterval": {
+          "lower": 0.4138913213567432,
+          "upper": 0.572937057690896
+        },
+        "standardError": 0.04162603260851471
+      }
+    },
+    {
+      "window": 104,
+      "trainStart": "2024-05-14",
+      "trainEnd": "2024-05-20",
+      "testStart": "2024-05-21",
+      "testEnd": "2024-05-21",
+      "trainedProbCall": 0.512,
+      "trainedProbPut": 0.5010438413361169,
+      "signals": 89,
+      "outcomes": 89,
+      "pushes": 0,
+      "metrics": {
+        "status": "EDGE NOT DETECTED",
+        "N": 89,
+        "brier": 0.2522568312078858,
+        "logLoss": 0.697661722047478,
+        "accuracy": 0.4044943820224719,
+        "winRate": 0.4044943820224719,
+        "breakEven": 0.5555555555555556,
+        "edge": -0.15106117353308368,
+        "ev": -0.27191011235955054,
+        "confidenceInterval": {
+          "lower": 0.30853277331729134,
+          "upper": 0.508359654215194
+        },
+        "standardError": 0.05317658606274571
+      }
+    },
+    {
+      "window": 105,
+      "trainStart": "2024-05-15",
+      "trainEnd": "2024-05-21",
+      "testStart": "2024-05-22",
+      "testEnd": "2024-05-22",
+      "trainedProbCall": 0.5009940357852882,
+      "trainedProbPut": 0.4804597701149425,
+      "signals": 110,
+      "outcomes": 110,
+      "pushes": 1,
+      "metrics": {
+        "status": "EDGE NOT DETECTED",
+        "N": 109,
+        "brier": 0.24824937455766066,
+        "logLoss": 0.689644112611366,
+        "accuracy": 0.3669724770642202,
+        "winRate": 0.3669724770642202,
+        "breakEven": 0.5555555555555556,
+        "edge": -0.18858307849133538,
+        "ev": -0.33944954128440363,
+        "confidenceInterval": {
+          "lower": 0.2824558024116093,
+          "upper": 0.46054677819696066
+        },
+        "standardError": 0.047032556293719115
+      }
+    },
+    {
+      "window": 106,
+      "trainStart": "2024-05-16",
+      "trainEnd": "2024-05-22",
+      "testStart": "2024-05-23",
+      "testEnd": "2024-05-23",
+      "trainedProbCall": 0.47974413646055436,
+      "trainedProbPut": 0.4780701754385965,
+      "signals": 122,
+      "outcomes": 122,
+      "pushes": 2,
+      "metrics": {
+        "status": "EDGE NOT DETECTED",
+        "N": 120,
+        "brier": 0.2501928858852444,
+        "logLoss": 0.6935336856029973,
+        "accuracy": 0.49166666666666664,
+        "winRate": 0.49166666666666664,
+        "breakEven": 0.5555555555555556,
+        "edge": -0.06388888888888894,
+        "ev": -0.11499999999999999,
+        "confidenceInterval": {
+          "lower": 0.4038741586989492,
+          "upper": 0.5799761791519831
+        },
+        "standardError": 0.046362151309813845
+      }
+    },
+    {
+      "window": 107,
+      "trainStart": "2024-05-17",
+      "trainEnd": "2024-05-23",
+      "testStart": "2024-05-24",
+      "testEnd": "2024-05-24",
+      "trainedProbCall": 0.4579831932773109,
+      "trainedProbPut": 0.5,
+      "signals": 106,
+      "outcomes": 105,
+      "pushes": 0,
+      "metrics": {
+        "status": "EDGE NOT DETECTED",
+        "N": 105,
+        "brier": 0.25647654019591004,
+        "logLoss": 0.7061329505158124,
+        "accuracy": 0.49523809523809526,
+        "winRate": 0.49523809523809526,
+        "breakEven": 0.5555555555555556,
+        "edge": -0.060317460317460325,
+        "ev": -0.10857142857142854,
+        "confidenceInterval": {
+          "lower": 0.40147502342062186,
+          "upper": 0.5893373130389672
+        },
+        "standardError": 0.0496774348438389
+      }
+    },
+    {
+      "window": 108,
+      "trainStart": "2024-05-18",
+      "trainEnd": "2024-05-24",
+      "testStart": "2024-05-25",
+      "testEnd": "2024-05-25",
+      "trainedProbCall": 0.465324384787472,
+      "trainedProbPut": 0.49658314350797267,
+      "signals": 165,
+      "outcomes": 164,
+      "pushes": 9,
+      "metrics": {
+        "status": "EDGE NOT DETECTED",
+        "N": 155,
+        "brier": 0.24829398312387116,
+        "logLoss": 0.689730641232229,
+        "accuracy": 0.47096774193548385,
+        "winRate": 0.47096774193548385,
+        "breakEven": 0.5555555555555556,
+        "edge": -0.08458781362007173,
+        "ev": -0.15225806451612905,
+        "confidenceInterval": {
+          "lower": 0.39404010770828635,
+          "upper": 0.549299672298966
+        },
+        "standardError": 0.04058867290139386
+      }
+    },
+    {
+      "window": 109,
+      "trainStart": "2024-05-19",
+      "trainEnd": "2024-05-25",
+      "testStart": "2024-05-26",
+      "testEnd": "2024-05-26",
+      "trainedProbCall": 0.4592274678111588,
+      "trainedProbPut": 0.4953051643192488,
+      "signals": 155,
+      "outcomes": 154,
+      "pushes": 9,
+      "metrics": {
+        "status": "EDGE NOT DETECTED",
+        "N": 145,
+        "brier": 0.2533601797270608,
+        "logLoss": 0.6998860082150997,
+        "accuracy": 0.496551724137931,
+        "winRate": 0.496551724137931,
+        "breakEven": 0.5555555555555556,
+        "edge": -0.05900383141762455,
+        "ev": -0.1062068965517241,
+        "confidenceInterval": {
+          "lower": 0.41631514799793,
+          "upper": 0.5769663001993481
+        },
+        "standardError": 0.04206821698716151
+      }
+    },
+    {
+      "window": 110,
+      "trainStart": "2024-05-20",
+      "trainEnd": "2024-05-26",
+      "testStart": "2024-05-27",
+      "testEnd": "2024-05-27",
+      "trainedProbCall": 0.46496815286624205,
+      "trainedProbPut": 0.4650602409638554,
+      "signals": 128,
+      "outcomes": 128,
+      "pushes": 0,
+      "metrics": {
+        "status": "EDGE NOT DETECTED",
+        "N": 128,
+        "brier": 0.25613885102853645,
+        "logLoss": 0.7054469515147407,
+        "accuracy": 0.5703125,
+        "winRate": 0.5703125,
+        "breakEven": 0.5555555555555556,
+        "edge": 0.01475694444444442,
+        "ev": 0.026562500000000044,
+        "confidenceInterval": {
+          "lower": 0.4837377469365458,
+          "upper": 0.6527897223902828
+        },
+        "standardError": 0.04441980812934751
+      }
+    },
+    {
+      "window": 111,
+      "trainStart": "2024-05-21",
+      "trainEnd": "2024-05-27",
+      "testStart": "2024-05-28",
+      "testEnd": "2024-05-28",
+      "trainedProbCall": 0.46860986547085204,
+      "trainedProbPut": 0.48086124401913877,
+      "signals": 127,
+      "outcomes": 126,
+      "pushes": 0,
+      "metrics": {
+        "status": "EDGE NOT DETECTED",
+        "N": 126,
+        "brier": 0.2462494398226623,
+        "logLoss": 0.6856367594654041,
+        "accuracy": 0.42857142857142855,
+        "winRate": 0.42857142857142855,
+        "breakEven": 0.5555555555555556,
+        "edge": -0.12698412698412703,
+        "ev": -0.22857142857142854,
+        "confidenceInterval": {
+          "lower": 0.34553656104284475,
+          "upper": 0.5158329846189462
+        },
+        "standardError": 0.04476749293691031
+      }
+    },
+    {
+      "window": 112,
+      "trainStart": "2024-05-22",
+      "trainEnd": "2024-05-28",
+      "testStart": "2024-05-29",
+      "testEnd": "2024-05-29",
+      "trainedProbCall": 0.46741573033707867,
+      "trainedProbPut": 0.48237885462555063,
+      "signals": 113,
+      "outcomes": 113,
+      "pushes": 0,
+      "metrics": {
+        "status": "EDGE NOT DETECTED",
+        "N": 113,
+        "brier": 0.24939897079751822,
+        "logLoss": 0.6919456345883541,
+        "accuracy": 0.4690265486725664,
+        "winRate": 0.4690265486725664,
+        "breakEven": 0.5555555555555556,
+        "edge": -0.0865290068829892,
+        "ev": -0.15575221238938042,
+        "confidenceInterval": {
+          "lower": 0.37955088300166584,
+          "upper": 0.5605389480174233
+        },
+        "standardError": 0.04774005575524908
+      }
+    },
+    {
+      "window": 113,
+      "trainStart": "2024-05-23",
+      "trainEnd": "2024-05-29",
+      "testStart": "2024-05-30",
+      "testEnd": "2024-05-30",
+      "trainedProbCall": 0.49002217294900224,
+      "trainedProbPut": 0.4889380530973451,
+      "signals": 134,
+      "outcomes": 134,
+      "pushes": 2,
+      "metrics": {
+        "status": "EDGE NOT DETECTED",
+        "N": 132,
+        "brier": 0.248977926202772,
+        "logLoss": 0.6911027354360963,
+        "accuracy": 0.44696969696969696,
+        "winRate": 0.44696969696969696,
+        "breakEven": 0.5555555555555556,
+        "edge": -0.10858585858585862,
+        "ev": -0.19545454545454538,
+        "confidenceInterval": {
+          "lower": 0.3648469153839581,
+          "upper": 0.5320918721450462
+        },
+        "standardError": 0.04390619688921812
+      }
+    },
+    {
+      "window": 114,
+      "trainStart": "2024-05-24",
+      "trainEnd": "2024-05-30",
+      "testStart": "2024-05-31",
+      "testEnd": "2024-05-31",
+      "trainedProbCall": 0.49356223175965663,
+      "trainedProbPut": 0.4722838137472284,
+      "signals": 126,
+      "outcomes": 126,
+      "pushes": 4,
+      "metrics": {
+        "status": "EDGE NOT DETECTED",
+        "N": 122,
+        "brier": 0.24884013377083403,
+        "logLoss": 0.6908250628996345,
+        "accuracy": 0.48360655737704916,
+        "winRate": 0.48360655737704916,
+        "breakEven": 0.5555555555555556,
+        "edge": -0.07194899817850642,
+        "ev": -0.12950819672131147,
+        "confidenceInterval": {
+          "lower": 0.39679226961314173,
+          "upper": 0.5714217391089342
+        },
+        "standardError": 0.045951095367392364
+      }
+    }
+  ],
+  "executedAt": "2026-09-01T00:18:28.887Z",
+  "verdict": "EDGE NOT DETECTED"
+}

@@ -144,7 +144,7 @@ async function main() {
     // 3. Unzip
     if (!fs.existsSync(rawCsvPath)) {
       console.log(`[EXTRACTING] ${zipName}`);
-      execSync(`tar -xf ${zipPath} -C ${RAW_DIR}`);
+      execSync(`tar -xf "${zipPath}" -C "${RAW_DIR}"`);
     }
 
     // 4. Canonicalize

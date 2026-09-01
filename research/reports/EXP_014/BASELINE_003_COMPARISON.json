@@ -1,0 +1,516 @@
+{
+  "experimentId": "EXP_014_EXHAUSTION_BTC1M_2024_06_09",
+  "pairedWindows": [
+    {
+      "window": 1,
+      "h002WinRate": 0.5319148936170213,
+      "baselineWinRate": 0.5014880952380952,
+      "reversedWinRate": 0.46808510638297873,
+      "h002Ev": -0.04255319148936171
+    },
+    {
+      "window": 2,
+      "h002WinRate": 0.547945205479452,
+      "baselineWinRate": 0.5072796934865901,
+      "reversedWinRate": 0.4520547945205479,
+      "h002Ev": -0.013698630136986356
+    },
+    {
+      "window": 3,
+      "h002WinRate": 0.5348837209302325,
+      "baselineWinRate": 0.5085592011412268,
+      "reversedWinRate": 0.46511627906976744,
+      "h002Ev": -0.03720930232558145
+    },
+    {
+      "window": 4,
+      "baselineWinRate": 0.5157673440784863
+    },
+    {
+      "window": 5,
+      "baselineWinRate": 0.483554933519944
+    },
+    {
+      "window": 6,
+      "baselineWinRate": 0.5108164689462665
+    },
+    {
+      "window": 7,
+      "baselineWinRate": 0.4954640614096302
+    },
+    {
+      "window": 8,
+      "h002WinRate": 0.3877551020408163,
+      "baselineWinRate": 0.5183823529411765,
+      "reversedWinRate": 0.6122448979591837,
+      "h002Ev": -0.3020408163265306
+    },
+    {
+      "window": 9,
+      "h002WinRate": 0.4583333333333333,
+      "baselineWinRate": 0.5130111524163569,
+      "reversedWinRate": 0.5416666666666666,
+      "h002Ev": -0.17500000000000004
+    },
+    {
+      "window": 10,
+      "baselineWinRate": 0.5017421602787456
+    },
+    {
+      "window": 11,
+      "baselineWinRate": 0.47795661301609516
+    },
+    {
+      "window": 12,
+      "baselineWinRate": 0.5
+    },
+    {
+      "window": 13,
+      "baselineWinRate": 0.5024734982332155
+    },
+    {
+      "window": 14,
+      "baselineWinRate": 0.5034965034965035
+    },
+    {
+      "window": 15,
+      "h002WinRate": 0.4027777777777778,
+      "baselineWinRate": 0.5118858954041204,
+      "reversedWinRate": 0.5972222222222222,
+      "h002Ev": -0.27499999999999997
+    },
+    {
+      "window": 16,
+      "h002WinRate": 0.3939393939393939,
+      "baselineWinRate": 0.4812398042414356,
+      "reversedWinRate": 0.6060606060606061,
+      "h002Ev": -0.2909090909090909
+    },
+    {
+      "window": 17,
+      "baselineWinRate": 0.4696441032798325
+    },
+    {
+      "window": 18,
+      "baselineWinRate": 0.4989517819706499
+    },
+    {
+      "window": 19,
+      "baselineWinRate": 0.5230446927374302
+    },
+    {
+      "window": 20,
+      "baselineWinRate": 0.4951048951048951
+    },
+    {
+      "window": 21,
+      "baselineWinRate": 0.5024492652204339
+    },
+    {
+      "window": 22,
+      "h002WinRate": 0.575,
+      "baselineWinRate": 0.4989247311827957,
+      "reversedWinRate": 0.425,
+      "h002Ev": 0.03499999999999992
+    },
+    {
+      "window": 23,
+      "h002WinRate": 0.3617021276595745,
+      "baselineWinRate": 0.4760200429491768,
+      "reversedWinRate": 0.6382978723404256,
+      "h002Ev": -0.34893617021276596
+    },
+    {
+      "window": 24,
+      "baselineWinRate": 0.5073477956613016
+    },
+    {
+      "window": 25,
+      "baselineWinRate": 0.5028011204481793
+    },
+    {
+      "window": 26,
+      "baselineWinRate": 0.505586592178771
+    },
+    {
+      "window": 27,
+      "baselineWinRate": 0.47317073170731705
+    },
+    {
+      "window": 28,
+      "baselineWinRate": 0.49860335195530725
+    },
+    {
+      "window": 29,
+      "baselineWinRate": 0.4947662247034194
+    },
+    {
+      "window": 30,
+      "baselineWinRate": 0.49056603773584906
+    },
+    {
+      "window": 31,
+      "baselineWinRate": 0.5111731843575419
+    },
+    {
+      "window": 32,
+      "baselineWinRate": 0.5066294487090021
+    },
+    {
+      "window": 33,
+      "baselineWinRate": 0.5070028011204482
+    },
+    {
+      "window": 34,
+      "baselineWinRate": 0.4763231197771588
+    },
+    {
+      "window": 35,
+      "baselineWinRate": 0.5192442267319805
+    },
+    {
+      "window": 36,
+      "baselineWinRate": 0.502820874471086
+    },
+    {
+      "window": 37,
+      "baselineWinRate": 0.5269419174247726
+    },
+    {
+      "window": 38,
+      "baselineWinRate": 0.5487465181058496
+    },
+    {
+      "window": 39,
+      "baselineWinRate": 0.5170969993021632
+    },
+    {
+      "window": 40,
+      "baselineWinRate": 0.48639218422889047
+    },
+    {
+      "window": 41,
+      "baselineWinRate": 0.5031402651779484
+    },
+    {
+      "window": 42,
+      "baselineWinRate": 0.5073272854152129
+    },
+    {
+      "window": 43,
+      "h002WinRate": 0.47368421052631576,
+      "baselineWinRate": 0.4872881355932203,
+      "reversedWinRate": 0.5263157894736842,
+      "h002Ev": -0.14736842105263165
+    },
+    {
+      "window": 44,
+      "h002WinRate": 0.5666666666666667,
+      "baselineWinRate": 0.5038488453463961,
+      "reversedWinRate": 0.43333333333333335,
+      "h002Ev": 0.020000000000000018
+    },
+    {
+      "window": 45,
+      "baselineWinRate": 0.5111888111888112
+    },
+    {
+      "window": 46,
+      "baselineWinRate": 0.5073272854152129
+    },
+    {
+      "window": 47,
+      "baselineWinRate": 0.5094339622641509
+    },
+    {
+      "window": 48,
+      "baselineWinRate": 0.4933705512909979
+    },
+    {
+      "window": 49,
+      "baselineWinRate": 0.4643854748603352
+    },
+    {
+      "window": 50,
+      "baselineWinRate": 0.49333333333333335
+    },
+    {
+      "window": 51,
+      "baselineWinRate": 0.47228070175438597
+    },
+    {
+      "window": 52,
+      "baselineWinRate": 0.5101186322400558
+    },
+    {
+      "window": 53,
+      "baselineWinRate": 0.4989532449406839
+    },
+    {
+      "window": 54,
+      "baselineWinRate": 0.4989517819706499
+    },
+    {
+      "window": 55,
+      "baselineWinRate": 0.5104895104895105
+    },
+    {
+      "window": 56,
+      "baselineWinRate": 0.4662020905923345
+    },
+    {
+      "window": 57,
+      "baselineWinRate": 0.513268156424581
+    },
+    {
+      "window": 58,
+      "baselineWinRate": 0.48989547038327524
+    },
+    {
+      "window": 59,
+      "baselineWinRate": 0.5344947735191637
+    },
+    {
+      "window": 60,
+      "baselineWinRate": 0.471039776692254
+    },
+    {
+      "window": 61,
+      "baselineWinRate": 0.49721059972105996
+    },
+    {
+      "window": 62,
+      "baselineWinRate": 0.4689895470383275
+    },
+    {
+      "window": 63,
+      "baselineWinRate": 0.49198606271777
+    },
+    {
+      "window": 64,
+      "baselineWinRate": 0.4989517819706499
+    },
+    {
+      "window": 65,
+      "baselineWinRate": 0.47280334728033474
+    },
+    {
+      "window": 66,
+      "baselineWinRate": 0.5024390243902439
+    },
+    {
+      "window": 67,
+      "baselineWinRate": 0.5181311018131102
+    },
+    {
+      "window": 68,
+      "baselineWinRate": 0.48850174216027875
+    },
+    {
+      "window": 69,
+      "baselineWinRate": 0.4937325905292479
+    },
+    {
+      "window": 70,
+      "baselineWinRate": 0.5038327526132405
+    },
+    {
+      "window": 71,
+      "baselineWinRate": 0.5122463261021694
+    },
+    {
+      "window": 72,
+      "baselineWinRate": 0.4835779175401817
+    },
+    {
+      "window": 73,
+      "baselineWinRate": 0.5192442267319805
+    },
+    {
+      "window": 74,
+      "baselineWinRate": 0.4891835310537334
+    },
+    {
+      "window": 75,
+      "baselineWinRate": 0.46545708304256805
+    },
+    {
+      "window": 76,
+      "baselineWinRate": 0.48360083740404747
+    },
+    {
+      "window": 77,
+      "baselineWinRate": 0.5391061452513967
+    },
+    {
+      "window": 78,
+      "baselineWinRate": 0.49477351916376305
+    },
+    {
+      "window": 79,
+      "h002WinRate": 0.631578947368421,
+      "baselineWinRate": 0.509090909090909,
+      "reversedWinRate": 0.3684210526315789,
+      "h002Ev": 0.13684210526315788
+    },
+    {
+      "window": 80,
+      "baselineWinRate": 0.5275645498953245
+    },
+    {
+      "window": 81,
+      "baselineWinRate": 0.4961618981158409
+    },
+    {
+      "window": 82,
+      "baselineWinRate": 0.5034867503486751
+    },
+    {
+      "window": 83,
+      "baselineWinRate": 0.47173761339846476
+    },
+    {
+      "window": 84,
+      "baselineWinRate": 0.5003484320557491
+    },
+    {
+      "window": 85,
+      "h002WinRate": 0.5806451612903226,
+      "baselineWinRate": 0.5144061841180604,
+      "reversedWinRate": 0.41935483870967744,
+      "h002Ev": 0.04516129032258076
+    },
+    {
+      "window": 86,
+      "baselineWinRate": 0.5178197064989518
+    },
+    {
+      "window": 87,
+      "baselineWinRate": 0.49860335195530725
+    },
+    {
+      "window": 88,
+      "baselineWinRate": 0.5202797202797202
+    },
+    {
+      "window": 89,
+      "baselineWinRate": 0.48535564853556484
+    },
+    {
+      "window": 90,
+      "baselineWinRate": 0.5073375262054507
+    },
+    {
+      "window": 91,
+      "baselineWinRate": 0.49721059972105996
+    },
+    {
+      "window": 92,
+      "baselineWinRate": 0.48080949057920447
+    },
+    {
+      "window": 93,
+      "baselineWinRate": 0.4821553533939818
+    },
+    {
+      "window": 94,
+      "baselineWinRate": 0.5195258019525802
+    },
+    {
+      "window": 95,
+      "baselineWinRate": 0.4989503149055283
+    },
+    {
+      "window": 96,
+      "baselineWinRate": 0.496513249651325
+    },
+    {
+      "window": 97,
+      "baselineWinRate": 0.5170969993021632
+    },
+    {
+      "window": 98,
+      "baselineWinRate": 0.5167832167832168
+    },
+    {
+      "window": 99,
+      "baselineWinRate": 0.46343178621659636
+    },
+    {
+      "window": 100,
+      "h002WinRate": 0.5581395348837209,
+      "baselineWinRate": 0.5007132667617689,
+      "reversedWinRate": 0.4418604651162791,
+      "h002Ev": 0.0046511627906976605
+    },
+    {
+      "window": 101,
+      "baselineWinRate": 0.5118715083798883
+    },
+    {
+      "window": 102,
+      "baselineWinRate": 0.44755244755244755
+    },
+    {
+      "window": 103,
+      "baselineWinRate": 0.4909344490934449
+    },
+    {
+      "window": 104,
+      "baselineWinRate": 0.5073170731707317
+    },
+    {
+      "window": 105,
+      "baselineWinRate": 0.5017421602787456
+    },
+    {
+      "window": 106,
+      "h002WinRate": 0.6410256410256411,
+      "baselineWinRate": 0.4883227176220807,
+      "reversedWinRate": 0.358974358974359,
+      "h002Ev": 0.15384615384615397
+    },
+    {
+      "window": 107,
+      "baselineWinRate": 0.48142957252978275
+    },
+    {
+      "window": 108,
+      "baselineWinRate": 0.5090655509065551
+    },
+    {
+      "window": 109,
+      "baselineWinRate": 0.5247386759581881
+    },
+    {
+      "window": 110,
+      "baselineWinRate": 0.4895397489539749
+    },
+    {
+      "window": 111,
+      "baselineWinRate": 0.505586592178771
+    },
+    {
+      "window": 112,
+      "baselineWinRate": 0.509447165850245
+    },
+    {
+      "window": 113,
+      "h002WinRate": 0.5454545454545454,
+      "baselineWinRate": 0.48579545454545453,
+      "reversedWinRate": 0.45454545454545453,
+      "h002Ev": -0.018181818181818243
+    },
+    {
+      "window": 114,
+      "h002WinRate": 0.5405405405405406,
+      "baselineWinRate": 0.49644886363636365,
+      "reversedWinRate": 0.4594594594594595,
+      "h002Ev": -0.027027027027026973
+    },
+    {
+      "window": 115,
+      "baselineWinRate": 0.45917655268667135
+    }
+  ]
+}

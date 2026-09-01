@@ -1,0 +1,27 @@
+{
+  "experimentId": "EXP_008_DISPLACEMENT_BTC1M_2024_02_05",
+  "hypothesisId": "HYPOTHESIS_001",
+  "hypothesisVersion": "1.0.2",
+  "datasetId": "DATASET_002",
+  "datasetContentHash": "794e40a31bc8e11c07c17075d16b5674f19b2fa0dd835ed5552a07ca77f47eaa",
+  "protocolVersion": "1.1",
+  "quantumEstimand": "P_win = P(WIN | resolved, non-PUSH)",
+  "payout": 0.8,
+  "breakEvenWinRate": 0.5555555555555556,
+  "parameters": {
+    "atrPeriod": 14,
+    "atrMethod": "Wilder_RMA",
+    "volumeLookback": 20,
+    "volumeMethod": "Arithmetic_Mean_Past_20",
+    "displacementThreshold": 1,
+    "volumeThreshold": 1.5,
+    "expirySeconds": 60,
+    "trainSize": 10080,
+    "testSize": 1440,
+    "minTrainSamples": 30
+  },
+  "status": "FALSIFIED_ARCHIVED",
+  "createdAt": "2026-09-01T00:14:09.896Z",
+  "controllerSignature": "EC_VERIFIED_LOCK_VALID",
+  "hypothesisSha256": "6cd90fdd68fe34d973e451765a1f2a72f31a7528c060ad809ca1fb1f4a33fbfb"
+}

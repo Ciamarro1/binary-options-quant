@@ -1,0 +1,29 @@
+{
+  "experimentId": "EXP_008_DISPLACEMENT_BTC1M_2024_02_05",
+  "hypothesisId": "HYPOTHESIS_001",
+  "hypothesisVersion": "1.0.2",
+  "hypothesisSha256": "6cd90fdd68fe34d973e451765a1f2a72f31a7528c060ad809ca1fb1f4a33fbfb",
+  "datasetId": "DATASET_002",
+  "status": "FALSIFIED_ARCHIVED",
+  "empiricalSummary": {
+    "N": 12808,
+    "winRate": 0.478763,
+    "wilsonCi": [
+      0.470119,
+      0.48742
+    ],
+    "breakEven": 0.555556,
+    "edge": -0.076792,
+    "ev": -0.138226,
+    "brier": 0.250311,
+    "edgeWindows": "0/114"
+  },
+  "falsificationReason": "WILSON_CI_LOWER_BOUND_BELOW_BREAK_EVEN",
+  "conclusions": {
+    "testedAxiom": "Short-horizon 1m displacement continuation",
+    "result": "Falsified under pre-registered conditions (47.88% vs 55.56% required)",
+    "epistemicCaveat": "Does not prove market-wide mean-reversion; proves solely that pre-registered momentum rule is economically invalid on 1m BTCUSDT."
+  },
+  "closedAt": "2026-09-01T00:48:06.135Z",
+  "controllerSignature": "EC_POST_MORTEM_CERTIFIED_OK"
+}

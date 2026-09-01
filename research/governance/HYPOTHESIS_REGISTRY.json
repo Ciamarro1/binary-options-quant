@@ -1,0 +1,70 @@
+{
+  "registryVersion": "1.0",
+  "totalHypothesesTested": 2,
+  "totalParameterVariantsEvaluated": 1,
+  "hypotheses": [
+    {
+      "hypothesisId": "HYPOTHESIS_001",
+      "title": "Short-Horizon Momentum / Volatility Displacement",
+      "version": "1.0.2",
+      "sha256": "6cd90fdd68fe34d973e451765a1f2a72f31a7528c060ad809ca1fb1f4a33fbfb",
+      "datasetId": "DATASET_002",
+      "runId": "EXP_008_DISPLACEMENT_BTC1M_2024_02_05",
+      "verdict": "FALSIFIED",
+      "croDecision": "VETO",
+      "archivedAt": "2026-09-01T00:48:06.140Z"
+    },
+    {
+      "hypothesisId": "HYPOTHESIS_002",
+      "title": "Short-Horizon Mean-Reversion / Exhaustion",
+      "version": "1.0.0",
+      "sha256": "72a91dda6919e30665c98ea5c259dcb6ccfa03ce8d38ce326c5b53f5393e548a",
+      "parentHypothesis": "HYPOTHESIS_001",
+      "datasetId": "DATASET_003",
+      "targetPeriod": "2024-06 to 2024-09",
+      "totalOosWindows": 115,
+      "status": "FALSIFIED_ARCHIVED",
+      "registeredAt": "2026-09-01T02:04:45.701Z",
+      "verdict": "FALSIFIED",
+      "croDecision": "VETO",
+      "runId": "EXP_014_EXHAUSTION_BTC1M_2024_06_09",
+      "archivedAt": "2026-09-01T02:24:20.900Z"
+    }
+  ],
+  "governanceRules": {
+    "familyWiseErrorControl": "ACTIVE",
+    "maxConcurrentExplorations": 1,
+    "postHocSelectionTolerance": 0
+  },
+  "researchFamilyLedger": {
+    "familyId": "SHORT_HORIZON_BTCUSDT_1M",
+    "asset": "BTCUSDT",
+    "timeframe": "1m",
+    "description": "Exploration of single-candle displacement mechanics (continuation vs exhaustion) on 1m BTCUSDT spot.",
+    "hypotheses": [
+      {
+        "hypothesisId": "HYPOTHESIS_001",
+        "mechanism": "Displacement Continuation (Momentum)",
+        "expiry": "1 candle (60s)",
+        "realizedWinRate": 0.478763,
+        "verdict": "FALSIFIED"
+      },
+      {
+        "hypothesisId": "HYPOTHESIS_002",
+        "mechanism": "Displacement Reversal (Exhaustion)",
+        "expiry": "3 candles (180s)",
+        "realizedWinRate": 0.522206,
+        "verdict": "FALSIFIED"
+      }
+    ],
+    "totalVariantsTested": 2,
+    "postHocVariantsExplored": 0,
+    "familyStatus": "EXPLORATION_COMPLETE_PENDING_META_ANALYSIS"
+  },
+  "H004": {
+    "status": "FALSIFIED_ARCHIVED",
+    "economicEdge": "NOT_DETECTED",
+    "observedRelativeAdvantage": "+0.88pp",
+    "notes": "Observed relative advantage does not constitute statistical confirmation of predictive superiority absent a formally specified comparison test."
+  }
+}

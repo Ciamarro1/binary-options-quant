@@ -1,0 +1,64 @@
+{
+  "experimentId": "EXP_018_MTF_SWEEP_BTC1M_001",
+  "target": "BASELINE_004_CONTROL",
+  "dataset": "DATASET_004",
+  "expiry": "3 candles",
+  "payout": 0.8,
+  "p_be": 0.555556,
+  "windows": 152,
+  "reconciliation": {
+    "totalSignals": 218880,
+    "totalWin": 98116,
+    "totalLoss": 98572,
+    "totalPush": 21736,
+    "totalUnresolved": 456,
+    "mathCheck": "totalSignals === totalWin + totalLoss + totalPush + totalUnresolved"
+  },
+  "metrics": {
+    "N_resolved": 196688,
+    "winRate": 0.4988408037094281,
+    "expectedValue": -0.1020865533230294,
+    "pushCount": 21736
+  },
+  "governance": {
+    "isFrozen": true,
+    "frozenAt": "2026-09-01T02:49:30.751Z",
+    "methodology": "Historical Naive Directional Baseline. 100% blind to H003 logic. Explicitly excludes closeLocation, Sweep, SMA1h, SwingHigh15m, SwingLow15m."
+  },
+  "windowsData": [
+    {
+      "windowIndex": 1,
+      "testStart": "2024-10-31T00:00:00.000Z",
+      "testEnd": "2024-10-31T23:59:59.000Z",
+      "testRows": 1440,
+      "signals_emitted": 1440,
+      "win": 647,
+      "loss": 647,
+      "push": 143,
+      "unresolved": 3
+    },
+    {
+      "windowIndex": 2,
+      "testStart": "2024-11-01T00:00:00.000Z",
+      "testEnd": "2024-11-01T23:59:59.000Z",
+      "testRows": 1440,
+      "signals_emitted": 1440,
+      "win": 644,
+      "loss": 650,
+      "push": 143,
+      "unresolved": 3
+    },
+    "...",
+    {
+      "windowIndex": 152,
+      "testStart": "2025-03-31T00:00:00.000Z",
+      "testEnd": "2025-03-31T23:59:59.000Z",
+      "testRows": 1440,
+      "signals_emitted": 1440,
+      "win": 644,
+      "loss": 650,
+      "push": 143,
+      "unresolved": 3
+    }
+  ]
+}

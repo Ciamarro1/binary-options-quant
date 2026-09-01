@@ -1,0 +1,55 @@
+{
+  "source": "Binance Public Data Archive",
+  "pair": "BTCUSDT",
+  "interval": "1m",
+  "monthsFetched": [
+    "2024-10",
+    "2024-11",
+    "2024-12",
+    "2025-01",
+    "2025-02",
+    "2025-03"
+  ],
+  "files": [
+    {
+      "file": "BTCUSDT-1m-2024-10.zip",
+      "zipSha256": "13f7f9f9bed652fd152422246cfbcaefa6223692c5c37fb3ca4e72f45501e607",
+      "rowCount": 44640
+    },
+    {
+      "file": "BTCUSDT-1m-2024-11.zip",
+      "zipSha256": "c30a63bd0e8a77f2d18a2a019272b907f29a84fd5378796cf9333b041edcb12b",
+      "rowCount": 43200
+    },
+    {
+      "file": "BTCUSDT-1m-2024-12.zip",
+      "zipSha256": "58fef0b7c7abce7a0201efd04ed3732f236f607f3fcecf228fb8384cad1ae2c1",
+      "rowCount": 44640
+    },
+    {
+      "file": "BTCUSDT-1m-2025-01.zip",
+      "zipSha256": "8d028b2f91aad57d6b693d44449c93f9c4b7044f55f298c8a3ac40ab676dafac",
+      "rowCount": 44640
+    },
+    {
+      "file": "BTCUSDT-1m-2025-02.zip",
+      "zipSha256": "26b3795072983a66bdbe8327e0d5e71069bdd5ca831d4da3850ba68ef7a991ef",
+      "rowCount": 40320
+    },
+    {
+      "file": "BTCUSDT-1m-2025-03.zip",
+      "zipSha256": "e333601b6c721434f3cdd6670ffde2371bef7946572864c49ba6431a690ab1ca",
+      "rowCount": 44640
+    }
+  ],
+  "canonicalFileSha256": "126835182b28972a6e9f86751aff5f8f40cca6bf48970de994041e77a566230d",
+  "datasetContentHash": "126835182b28972a6e9f86751aff5f8f40cca6bf48970de994041e77a566230d",
+  "rowCount": 262080,
+  "gaps": 0,
+  "duplicates": 0,
+  "syntheticPathDetected": false,
+  "sourceTimestampUnit": "MIXED (MS < 2025, MICROSECONDS >= 2025)",
+  "normalizedTimestampUnit": "MILLISECONDS",
+  "normalizationRule": "if (ts > 9999999999999) Math.floor(ts / 1000)",
+  "normalizationVersion": "1.0.0"
+}

@@ -1,0 +1,25 @@
+{
+  "experimentId": "EXP_008_DISPLACEMENT_BTC1M_2024_02_05",
+  "hypothesisId": "HYPOTHESIS_001",
+  "thesis": "Short-Horizon Momentum / Volatility Displacement Continuation",
+  "timeframe": "1m",
+  "targetExpiry": "1 candle (60s)",
+  "dataset": "DATASET_002 (Feb-May 2024, 174,240 rows)",
+  "totalWindows": 114,
+  "sampleSizeResolved": 12808,
+  "winRate": 0.4787632729544035,
+  "wilsonCi95": [
+    0.47011939735352487,
+    0.48741988411870324
+  ],
+  "breakEvenRate": 0.555556,
+  "absoluteEdgeVsBreakeven": -0.07679228260115206,
+  "expectedValue": -0.13822610868207358,
+  "brierScore": 0.2503106714263458,
+  "directionalBreakdown": {
+    "callWinRate": 0.4806,
+    "putWinRate": 0.477
+  },
+  "verdict": "FALSIFIED_ARCHIVED",
+  "primaryFinding": "Single-candle 1m momentum following volatility displacement fails systematically across both CALL and PUT directions."
+}

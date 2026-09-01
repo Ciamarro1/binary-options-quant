@@ -1,0 +1,14 @@
+{
+  "experimentId": "EXP_008_DISPLACEMENT_BTC1M_2024_02_05",
+  "hypothesisId": "HYPOTHESIS_001",
+  "hypothesisVersion": "1.0.2",
+  "datasetId": "DATASET_002",
+  "datasetContentHash": "794e40a31bc8e11c07c17075d16b5674f19b2fa0dd835ed5552a07ca77f47eaa",
+  "protocolVersion": "1.1",
+  "totalWindows": 114,
+  "oosExecution": "BLIND_COMPLIANT",
+  "status": "VERIFIED_UNBROKEN_LINEAGE_ARCHIVED",
+  "certifiedAt": "2026-09-01T00:18:28.890Z",
+  "controllerSignature": "EXPERIMENT_CONTROLLER_FINAL_CERTIFIED",
+  "hypothesisSha256": "6cd90fdd68fe34d973e451765a1f2a72f31a7528c060ad809ca1fb1f4a33fbfb"
+}

@@ -1,0 +1,26 @@
+{
+  "experimentId": "EXP_014_EXHAUSTION_BTC1M_2024_06_09",
+  "hypothesisId": "HYPOTHESIS_002",
+  "hypothesisVersion": "1.0.0",
+  "datasetId": "DATASET_003",
+  "protocolVersion": "1.1",
+  "parameters": {
+    "asset": "BTCUSDT",
+    "timeframe": "1m",
+    "expiryCandles": 3,
+    "expirySeconds": 180,
+    "payout": 0.8,
+    "breakEvenRate": 0.5555555555555556,
+    "trainSize": 10080,
+    "testSize": 1440,
+    "totalWindows": 115,
+    "bodyThreshold": 2,
+    "upperCloseLocation": 0.9,
+    "lowerCloseLocation": 0.1,
+    "volumeThreshold": 2,
+    "minTrainSamples": 30
+  },
+  "datasetContentHash": "3ed2064690b63516a559d10c4d8e7d8de60795f380668bc9c2d1544ad5c53638",
+  "executedAt": "2026-09-01T02:23:06.542Z",
+  "status": "EXECUTED_AWAITING_CRO_DELIBERATION"
+}

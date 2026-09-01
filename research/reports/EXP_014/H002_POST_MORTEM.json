@@ -1,0 +1,41 @@
+{
+  "experimentId": "EXP_014_EXHAUSTION_BTC1M_2024_06_09",
+  "hypothesisId": "HYPOTHESIS_002",
+  "hypothesisVersion": "1.0.0",
+  "datasetId": "DATASET_003",
+  "status": "FALSIFIED_ARCHIVED",
+  "empiricalSummary": {
+    "totalSignals": 2085,
+    "resolvedTrades": 2049,
+    "pushes": 34,
+    "unresolved": 2,
+    "winRate": 0.522206,
+    "wilsonCi95": [
+      0.500556,
+      0.543773
+    ],
+    "breakEvenRate": 0.555556,
+    "edgeVsBreakeven": -0.03335,
+    "edgeVsBaseline": 0.023284,
+    "edgeVsReversed": 0.048419,
+    "expectedValue": -0.060029,
+    "brierScore": 0.251357
+  },
+  "directionalBreakdown": {
+    "call": {
+      "signals": 1036,
+      "wins": 531,
+      "winRate": 0.512548,
+      "meanTrainProb": 0.534467
+    },
+    "put": {
+      "signals": 1047,
+      "wins": 539,
+      "winRate": 0.514804,
+      "meanTrainProb": 0.53546
+    }
+  },
+  "epistemicVerdict": "PREDICTIVE_INFORMATION_EXISTS_BUT_ECONOMICALLY_INSUFFICIENT",
+  "falsificationReason": "WILSON_CI_LOWER_BOUND_BELOW_BREAK_EVEN",
+  "closedAt": "2026-09-01T02:31:44.009Z"
+}

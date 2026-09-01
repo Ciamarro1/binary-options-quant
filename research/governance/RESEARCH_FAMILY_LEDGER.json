@@ -1,0 +1,47 @@
+{
+  "ledgerVersion": "1.0.0",
+  "lastUpdated": "2026-09-01T02:34:17.215Z",
+  "families": [
+    {
+      "familyId": "SHORT_HORIZON_BTCUSDT_1M",
+      "asset": "BTCUSDT",
+      "timeframe": "1m",
+      "mandateDescription": "Single-candle displacement anomaly exploration under binary contracts.",
+      "status": "CLOSED_ARCHIVED",
+      "preRegisteredHypotheses": [
+        {
+          "hypothesisId": "HYPOTHESIS_001",
+          "version": "1.0.2",
+          "mechanism": "Displacement Continuation",
+          "targetHorizon": "1 candle (60s)",
+          "dataset": "DATASET_002",
+          "sampleSizeN": 12808,
+          "winRate": 0.478763,
+          "verdict": "FALSIFIED",
+          "croDecision": "VETO"
+        },
+        {
+          "hypothesisId": "HYPOTHESIS_002",
+          "version": "1.0.0",
+          "mechanism": "Displacement Reversal (Exhaustion)",
+          "targetHorizon": "3 candles (180s)",
+          "dataset": "DATASET_003",
+          "sampleSizeN": 2049,
+          "winRate": 0.522206,
+          "relativeEdgeVsBaseline": 0.023284,
+          "verdict": "FALSIFIED",
+          "croDecision": "VETO"
+        }
+      ],
+      "metaAnalysisReference": "research/reports/META_016/META_ANALYSIS.json",
+      "cumulativeConclusion": "No simple 1m displacement setup achieves the 55.56% payout breakeven hurdle."
+    }
+  ],
+  "Family_03_Relative_State": {
+    "status": "CLOSED_ARCHIVED",
+    "hypotheses_tested": [
+      "H004"
+    ],
+    "conclusion": "Statistically confirmed directional association (p=0.021), but structurally failed economic barriers. NEW_RESEARCH_FAMILY_AUTHORIZED."
+  }
+}

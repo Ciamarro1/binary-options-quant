@@ -1,0 +1,20 @@
+{
+  "experimentId": "EXP_008_DISPLACEMENT_BTC1M_2024_02_05",
+  "hypothesisId": "HYPOTHESIS_001",
+  "verdict": "VETO",
+  "reasons": [
+    "WILSON_CI_LOWER_BOUND_BELOW_BREAK_EVEN",
+    "NEGATIVE_OR_ZERO_EXPECTED_VALUE"
+  ],
+  "auditedStats": {
+    "N": 12808,
+    "winRate": 0.4787632729544035,
+    "wilsonCiLower": 0.47011939735352487,
+    "breakEven": 0.5555555555555556,
+    "ev": -0.13822610868207358
+  },
+  "adversarialVerified": true,
+  "provenanceVerified": true,
+  "deliberatedAt": "2026-09-01T00:18:37.473Z",
+  "croSignature": "CRO_DECISION_VETO_TIMESTAMP_1788221917475"
+}

@@ -1,0 +1,36 @@
+{
+  "hypothesisId": "HYPOTHESIS_002",
+  "hypothesisVersion": "1.0.0",
+  "batteryVersion": "2.0.0",
+  "auditedAt": "2026-09-01T02:17:26.366Z",
+  "tests": {
+    "reversedControl": {
+      "status": "PASS",
+      "upExhaustionMirror": true,
+      "downExhaustionMirror": true
+    },
+    "labelPermutation": {
+      "iterations": 1000,
+      "seed": 42,
+      "falsePositiveCount": 0,
+      "falsePositiveRate": 0,
+      "status": "PASS"
+    },
+    "nullControl": {
+      "sampleSize": 1997,
+      "winRate": 0.5187781672508763,
+      "ev": -0.06619929894842258,
+      "status": "PASS"
+    },
+    "numericalFuzzing": {
+      "flatCandleHandled": true,
+      "status": "PASS"
+    },
+    "governanceIntegrity": {
+      "immutabilityVerified": true,
+      "status": "PASS"
+    }
+  },
+  "overallVerdict": "PASS",
+  "status": "CLEAR_FOR_BLIND_OOS"
+}
