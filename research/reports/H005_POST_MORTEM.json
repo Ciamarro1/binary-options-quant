@@ -1,0 +1,31 @@
+{
+  "postMortemId": "POST_MORTEM_H005",
+  "hypothesisId": "HYPOTHESIS_005",
+  "asset": "XAUXAG",
+  "status": "FALSIFIED_ARCHIVED",
+  "archivedAt": "2026-09-11T07:24:00.000Z",
+  "summary": {
+    "sampleSize": 6210,
+    "realizedWinRate": 0.543639,
+    "breakevenRate": 0.531915,
+    "wilsonLowerBound": 0.531228,
+    "wilsonUpperBound": 0.555997,
+    "deficitBps": -6.87,
+    "nominalEv": 0.022033
+  },
+  "rootCauseAnalysis": {
+    "primaryFailureMode": "INSUFFICIENT_WILSON_MARGIN",
+    "description": "Win rate (54.36%) surpassed breakeven hurdle (53.19%), but confidence interval lower bound fell short by 6.87 basis points due to finite sample variance.",
+    "directionalAsymmetry": {
+      "putWinRate": 0.566079,
+      "putSample": 3178,
+      "putWilsonLower": 0.548821,
+      "callWinRate": 0.520119,
+      "callSample": 3032,
+      "callWilsonLower": 0.502314,
+      "deltaPp": 0.04596
+    }
+  },
+  "epistemicAxiom": "Predictive Alpha != Economic Hurdle Clearance without Dispersion Control.",
+  "governanceStatus": "LOCKED_IMMUTABLE"
+}

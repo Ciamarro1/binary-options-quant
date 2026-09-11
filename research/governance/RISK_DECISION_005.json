@@ -1,0 +1,37 @@
+{
+  "decisionId": "RISK_DECISION_005",
+  "experimentId": "EXP_035_XAUXAG_RATIO_ZREVERT_001",
+  "hypothesisId": "HYPOTHESIS_005",
+  "asset": "XAUXAG",
+  "deliberatedAt": "2026-09-11T07:17:30.000Z",
+  "chiefRiskOfficer": "Autonomous Quantitative CRO",
+  "triProofAudit": {
+    "statsProof": {
+      "sampleSize": 6210,
+      "sampleFloorMet": true,
+      "realizedWinRate": 0.543639,
+      "breakevenThreshold": 0.531915,
+      "nominalEdgeObserved": true,
+      "wilsonLowerBound": 0.531228,
+      "wilsonUpperBound": 0.555997,
+      "wilsonGateMet": false,
+      "deficitBasisPoints": 6.87
+    },
+    "adversarialProof": {
+      "auditId": "ADVERSARIAL_AUDIT_005",
+      "status": "CLEAR_FOR_BLIND_OOS",
+      "reversedControlWinRate": 0.456361,
+      "directionalSymmetryMet": true
+    },
+    "provenanceProof": {
+      "datasetId": "DATASET_XAUXAG_001",
+      "datasetContentHash": "5e9018f67579cfeacfbd8c11e3ab86a99df2b3c8cb723617e5c5a9d930d9c3ea",
+      "codeFrozenExAnte": true,
+      "chineseWallViolations": 0
+    }
+  },
+  "sovereignVerdict": "VETO",
+  "classification": "FALSIFIED_FOR_PRODUCTION_ARCHIVED",
+  "rationale": "Constitutional Invariant 4 mandates W_low > P_BE. Realized win rate (54.36%) exceeds breakeven (53.19%), yielding positive EV (+0.0220). However, the 95% Wilson lower bound (53.1228%) fails to cross P_BE by 6.87 basis points. In accordance with zero-tolerance risk rules, promotion is strictly VETOED. Retroactive threshold tuning (e.g. searching for |Z| >= 2.2) is constitutional violation (Moving Goalpost / P-Hacking).",
+  "remediationPath": "The statistical phenomenon of commodity ratio mean-reversion is empirically validated (54.36% vs 45.64% on reversed control). To achieve production promotion, research must formulate a NEW hypothesis (HYPOTHESIS_006) with ex-ante enhanced signal selectivity (e.g., conditional volatility filtering or higher threshold) under a new pre-registered experimental lifecycle."
+}

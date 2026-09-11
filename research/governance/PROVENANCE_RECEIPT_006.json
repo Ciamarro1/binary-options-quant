@@ -1,0 +1,35 @@
+{
+  "receiptId": "PROVENANCE_RECEIPT_006",
+  "experimentId": "EXP_036_XAUXAG_TREND_ZREVERT_001",
+  "hypothesisId": "HYPOTHESIS_006",
+  "timestampUtc": "2026-09-11T07:27:15.000Z",
+  "experimentController": "Head of Research Operations",
+  "immutableArtifacts": {
+    "hypothesisSpec": {
+      "path": "research/governance/HYPOTHESIS_006.json",
+      "sha256": "ee38053ea26d15345a754dfe03a4766b7ac2d139aa932a0a403e45da880a11a4"
+    },
+    "canonicalDataset": {
+      "datasetId": "DATASET_XAUXAG_001",
+      "path": "research/datasets/XAUXAG/1m/2025-06_08/canonical/XAUXAG_1m_canonical.csv",
+      "fileSha256": "5e9018f67579cfeacfbd8c11e3ab86a99df2b3c8cb723617e5c5a9d930d9c3ea",
+      "semanticContentHash": "24845127de1de02151ca4aa7ea9a4f02a432b92aa6fe6413f9ac9fd7fdbb0e1d"
+    },
+    "modelImplementation": {
+      "path": "src/strategy/models/TrendConditionedRatioZScoreModel.js"
+    },
+    "adversarialAudit": {
+      "path": "research/reports/ADVERSARIAL_AUDIT_006.json",
+      "verdict": "ADVERSARIAL_CLEARANCE_GRANTED"
+    },
+    "validationReport": {
+      "path": "research/reports/VALIDATION_REPORT_006.json",
+      "verdict": "PASS_STATISTICAL_GATE"
+    },
+    "croDecision": {
+      "path": "research/governance/RISK_DECISION_006.json",
+      "verdict": "PASS_RESEARCH_REGISTRY_GATE"
+    }
+  },
+  "lineageIntegrity": "VERIFIED_CRYPTO_LOCKED"
+}

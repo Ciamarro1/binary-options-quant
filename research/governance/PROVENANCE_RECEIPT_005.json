@@ -1,0 +1,33 @@
+{
+  "receiptId": "PROVENANCE_RECEIPT_005",
+  "experimentId": "EXP_035_XAUXAG_RATIO_ZREVERT_001",
+  "hypothesisId": "HYPOTHESIS_005",
+  "timestampUtc": "2026-09-11T07:17:45.000Z",
+  "experimentController": "Head of Research Operations",
+  "immutableArtifacts": {
+    "hypothesisSpec": {
+      "path": "research/governance/HYPOTHESIS_005.json",
+      "sha256": "c61231eb809abd476ba46e3f285f41ef3949513c7190ad7ff41d57c85e2178a5"
+    },
+    "canonicalDataset": {
+      "datasetId": "DATASET_XAUXAG_001",
+      "path": "research/datasets/XAUXAG/1m/2025-06_08/canonical/XAUXAG_1m_canonical.csv",
+      "fileSha256": "5e9018f67579cfeacfbd8c11e3ab86a99df2b3c8cb723617e5c5a9d930d9c3ea",
+      "semanticContentHash": "24845127de1de02151ca4aa7ea9a4f02a432b92aa6fe6413f9ac9fd7fdbb0e1d"
+    },
+    "modelImplementation": {
+      "path": "src/strategy/models/RatioZScoreModel.js"
+    },
+    "adversarialAudit": {
+      "path": "research/reports/ADVERSARIAL_AUDIT_005.json"
+    },
+    "validationReport": {
+      "path": "research/reports/VALIDATION_REPORT_005.json"
+    },
+    "croDecision": {
+      "path": "research/governance/RISK_DECISION_005.json",
+      "verdict": "VETO"
+    }
+  },
+  "lineageIntegrity": "VERIFIED_CRYPTO_LOCKED"
+}

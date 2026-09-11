@@ -1,0 +1,27 @@
+{
+  "auditId": "ADVERSARIAL_AUDIT_006",
+  "hypothesisId": "HYPOTHESIS_006",
+  "targetAsset": "XAUXAG",
+  "auditedAt": "2026-09-11T07:26:30.000Z",
+  "status": "CLEAR_FOR_BLIND_OOS",
+  "auditor": "Adversarial QA Engineer (Red Team)",
+  "testBatteryResults": {
+    "036-A_MultiHorizonCausality": {
+      "status": "PASS",
+      "findings": "Zero lookahead confirmed across both 120m intraday and 1440m macro windows."
+    },
+    "036-B_MacroTrendFilter": {
+      "status": "PASS",
+      "findings": "Counter-trend setups strictly filtered out (dip in downtrend and spike in uptrend yield NO_SIGNAL)."
+    },
+    "036-C_ReversedControl": {
+      "status": "PASS",
+      "findings": "Negative directional control consistently inverts signals."
+    },
+    "036-D_LookbackGuards": {
+      "status": "PASS",
+      "findings": "Model fails closed when fewer than 1440 bars are available."
+    }
+  },
+  "verdict": "ADVERSARIAL_CLEARANCE_GRANTED"
+}

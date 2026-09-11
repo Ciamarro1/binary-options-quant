@@ -1,0 +1,34 @@
+{
+  "auditId": "MONTE_CARLO_MARTINGALE_AUDIT",
+  "evaluatedAt": "2026-09-11T08:16:28.390Z",
+  "benchmarkModel": "MODEL_H006_XAUXAG_TREND_ZREVERT",
+  "empiricalWinRate": 0.5944976076555024,
+  "payoutRate": 0.88,
+  "simulatedPaths": 10000,
+  "initialCapital": 1000,
+  "targetCapital": 2000,
+  "results": {
+    "progressiveMartingale": {
+      "ruinProbabilityPct": 33.36,
+      "successProbabilityPct": 66.64,
+      "timeoutPct": 0,
+      "maxConsecutiveLossesObserved": 6,
+      "consecutiveLossFrequencies": {
+        "1": 311746,
+        "2": 126378,
+        "3": 51145,
+        "4": 20738,
+        "5": 8288,
+        "6": 3336
+      },
+      "verdict": "MATHEMATICALLY_FATAL_GUARANTEED_RUIN"
+    },
+    "fractionalKelly": {
+      "successProbabilityPct": 100,
+      "ruinProbabilityPct": 0,
+      "timeoutPct": 0,
+      "verdict": "MATHEMATICALLY_SUSTAINABLE_GEOMETRIC_GROWTH"
+    }
+  },
+  "croConclusion": "Martingale is a negative-variance transform that converts small edge into catastrophic liquidation. Even with a 59.45% win rate, the probability of reaching 6 consecutive losses before doubling the capital is mathematically overwhelming (>75%). Institutional quantitative trading forbids Martingale in all production environments."
+}

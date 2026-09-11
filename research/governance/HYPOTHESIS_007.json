@@ -1,0 +1,69 @@
+{
+  "hypothesisId": "HYPOTHESIS_007",
+  "version": "1.0.0",
+  "title": "Exhaustion Wick-Confirmed Trend-Aligned Ratio Mean-Reversion on XAU/XAG",
+  "researchFamily": "FAMILY_04_COMMODITY_RATIO_MICROSTRUCTURE",
+  "status": "FROZEN",
+  "parentHypothesis": "HYPOTHESIS_006",
+  "frozenAt": "2026-09-11T08:25:00.000Z",
+  "instrument": {
+    "asset": "XAUXAG",
+    "name": "Gold/Silver Ratio (Fusion CFD)",
+    "venue": "IQ_OPTION",
+    "activeId": 2071,
+    "provider": "feed",
+    "timeframe": "1m",
+    "payoutRate": 0.88,
+    "breakevenProbability": 0.5319148936170213,
+    "expirationSeconds": 900,
+    "expirationBars": 15
+  },
+  "dataset": {
+    "datasetId": "DATASET_XAUXAG_001",
+    "source": "DUKASCOPY_RECONSTRUCTED_SPOT",
+    "totalRows": 89312,
+    "dateRange": "2025-06-01T00:00:00.000Z to 2025-08-31T23:59:00.000Z",
+    "inSamplePartition": {
+      "start": "2025-06-01T00:00:00.000Z",
+      "end": "2025-07-20T23:59:59.000Z",
+      "purpose": "Wick threshold and baseline calibration"
+    },
+    "outOfSamplePartition": {
+      "start": "2025-07-21T00:00:00.000Z",
+      "end": "2025-08-31T23:59:59.000Z",
+      "purpose": "Strict blind replay and Wilson CI gate"
+    }
+  },
+  "model": {
+    "modelClass": "WickConfirmedRatioModel",
+    "intradayLookback": 120,
+    "macroLookback": 1440,
+    "zThreshold": 2.0,
+    "minWickRatio": 0.35,
+    "rules": {
+      "CALL": "Z_t <= -2.00 AND C_t > EMA_1440(t) AND (min(O_t, C_t) - L_t) / (H_t - L_t) >= 0.35 AND C_t >= O_t",
+      "PUT": "Z_t >= +2.00 AND C_t < EMA_1440(t) AND (H_t - max(O_t, C_t)) / (H_t - L_t) >= 0.35 AND C_t <= O_t",
+      "NO_SIGNAL": "Counter-trend setups, lack of exhaustion wick, flat range (H == L), or lookback < 1440"
+    }
+  },
+  "acceptanceCriteria": {
+    "minOosSample": 100,
+    "wilsonLowerBoundThreshold": 0.5319148936170213,
+    "confidenceLevel": 0.95,
+    "maxDirectionalImbalance": 0.06,
+    "superiorityOverH006": true
+  },
+  "adversarialRequirements": [
+    "SyntheticNullMulberry32",
+    "LabelPermutations1000",
+    "ReversedNegativeControl",
+    "LookaheadBoundaryFuzzing",
+    "ZeroRangeGuard"
+  ],
+  "governance": {
+    "failClosed": true,
+    "zeroLookahead": true,
+    "immutableAfterFreeze": true,
+    "postHocTuningForbidden": true
+  }
+}

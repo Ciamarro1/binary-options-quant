@@ -1,0 +1,22 @@
+{
+  "reportType": "SHADOW_FORWARD_TEST_STATUS",
+  "modelId": "MODEL_H006_XAUXAG_TREND_ZREVERT",
+  "generatedAt": "2026-09-11T08:51:57.054Z",
+  "warmupBars": 89312,
+  "liveSignalsDispatched": 0,
+  "liveSettled": 0,
+  "activePending": 0,
+  "wins": 0,
+  "losses": 0,
+  "pushes": 0,
+  "winRate": 0,
+  "wilsonCI": {
+    "lower": 0,
+    "upper": 0,
+    "center": 0
+  },
+  "breakevenRate": 0.5319148936170213,
+  "wilsonGateMet": false,
+  "paperPnl": 0,
+  "totalProcessedCandles": 284
+}

@@ -1,0 +1,80 @@
+{
+  "experimentId": "EXP_036_XAUXAG_TREND_ZREVERT_001",
+  "hypothesisId": "HYPOTHESIS_006",
+  "asset": "XAUXAG",
+  "executionDate": "2026-09-11T07:26:50.903Z",
+  "dataset": {
+    "datasetId": "DATASET_XAUXAG_001",
+    "totalCandles": 89312,
+    "splitTimestampIso": "2025-07-21T00:00:00.000Z",
+    "inSampleCandles": 47992,
+    "outOfSampleCandles": 41320
+  },
+  "inSampleResults": {
+    "totalSignals": 2141,
+    "resolvedTrades": 2141,
+    "wins": 1133,
+    "losses": 1008,
+    "pushes": 0,
+    "winRate": 0.5291919663708547,
+    "wilsonCI": {
+      "lower": 0.5080155208144185,
+      "upper": 0.5502638454278771,
+      "center": 0.5291919663708547
+    },
+    "expectedValue": -0.0051191032227930755,
+    "callWinRate": 0.5040485829959515,
+    "putWinRate": 0.5507372072853426
+  },
+  "outOfSampleResults": {
+    "totalSignals": 1673,
+    "resolvedTrades": 1672,
+    "wins": 994,
+    "losses": 678,
+    "pushes": 1,
+    "winRate": 0.5944976076555024,
+    "wilsonCI": {
+      "lower": 0.5707727107022741,
+      "upper": 0.6177892808166252,
+      "center": 0.5944976076555024
+    },
+    "expectedValue": 0.11765550239234457,
+    "breakevenRate": 0.5319148936170213,
+    "edgeDetected": true,
+    "callStats": {
+      "wins": 428,
+      "losses": 277,
+      "pushes": 0,
+      "total": 705,
+      "winRate": 0.6070921985815603
+    },
+    "putStats": {
+      "wins": 566,
+      "losses": 401,
+      "pushes": 1,
+      "total": 968,
+      "winRate": 0.5853154084798345
+    },
+    "directionalImbalance": 0.02177679010172573,
+    "brierScore": 0.244988662631587,
+    "reversedControlWinRate": 0.4055023923444976
+  },
+  "validationGates": {
+    "sampleFloor": {
+      "required": 100,
+      "actual": 1672,
+      "pass": true
+    },
+    "statisticalEvidence": {
+      "required": "W_low > 53.1915%",
+      "actual": "W_low = 57.0773%",
+      "pass": true
+    },
+    "directionalSymmetry": {
+      "required": "<= 6.0 pp",
+      "actual": "2.18 pp",
+      "pass": true
+    }
+  },
+  "verdict": "PASS_STATISTICAL_GATE"
+}

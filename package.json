@@ -10,5 +10,8 @@
   },
   "devDependencies": {
     "jest": "^29.7.0"
+  },
+  "dependencies": {
+    "dukascopy-node": "^1.50.0"
   }
 }

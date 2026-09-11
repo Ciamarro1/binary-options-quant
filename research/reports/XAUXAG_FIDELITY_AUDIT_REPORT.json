@@ -1,0 +1,17 @@
+{
+  "protocolVersion": "1.0.0",
+  "status": "INSUFFICIENT_OVERLAP",
+  "iqoRange": {
+    "first": "2026-09-11T04:07:00.000Z",
+    "last": "2026-09-11T05:45:00.000Z",
+    "count": 99
+  },
+  "extRange": {
+    "first": "2025-06-01T22:00:00.000Z",
+    "last": "2025-08-31T23:59:00.000Z",
+    "count": 89312
+  },
+  "alignedPairs": 0,
+  "minimumRequired": 10000,
+  "createdAt": "2026-09-11T06:01:29.654Z"
+}

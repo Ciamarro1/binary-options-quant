@@ -1,0 +1,47 @@
+{
+  "decisionId": "RISK_DECISION_006",
+  "experimentId": "EXP_036_XAUXAG_TREND_ZREVERT_001",
+  "hypothesisId": "HYPOTHESIS_006",
+  "asset": "XAUXAG",
+  "deliberatedAt": "2026-09-11T07:27:00.000Z",
+  "chiefRiskOfficer": "Autonomous Quantitative CRO",
+  "triProofAudit": {
+    "statsProof": {
+      "status": "PASS",
+      "sampleSize": 1672,
+      "sampleFloorMet": true,
+      "realizedWinRate": 0.594498,
+      "breakevenThreshold": 0.531915,
+      "wilsonLowerBound": 0.570773,
+      "wilsonUpperBound": 0.617789,
+      "wilsonGateMet": true,
+      "surplusBasisPoints": 388.58,
+      "expectedValue": 0.117656,
+      "directionalDeltaPp": 0.0218,
+      "callWinRate": 0.607092,
+      "putWinRate": 0.585315
+    },
+    "adversarialProof": {
+      "status": "PASS",
+      "auditId": "ADVERSARIAL_AUDIT_006",
+      "reversedControlWinRate": 0.405502,
+      "negativeControlSymmetryMet": true,
+      "causalLeakageDetected": false
+    },
+    "provenanceProof": {
+      "status": "PASS",
+      "datasetId": "DATASET_XAUXAG_001",
+      "datasetContentHash": "5e9018f67579cfeacfbd8c11e3ab86a99df2b3c8cb723617e5c5a9d930d9c3ea",
+      "specHash": "ee38053ea26d15345a754dfe03a4766b7ac2d139aa932a0a403e45da880a11a4",
+      "codeFrozenExAnte": true,
+      "chineseWallViolations": 0
+    }
+  },
+  "sovereignVerdict": "PASS_RESEARCH_REGISTRY_GATE",
+  "classification": "PROMOTED_TO_CANDIDATE_REGISTRY",
+  "governanceConditions": {
+    "researchRegistryStatus": "APPROVED",
+    "liveExecutionGate": "LOCKED_PENDING_LEVEL_2_FIDELITY",
+    "rationale": "HYPOTHESIS_006 decisively clears all Constitutional Gates: N=1672, Realized Win Rate 59.45%, 95% Wilson Lower Bound 57.08% > P_BE (53.19%) by +388.58 bps. EV is +0.1177. Directional symmetry is 2.18 pp. In accordance with the 4-Tier Promotion Charter, this strategy is certified and promoted to the Candidate Model Registry on Level 1 Research-Grade data. Live capital deployment remains strictly gated until the background observation recorder accumulates contemporary data to execute the Phase 4 Fidelity Audit."
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "datasetId": "EXTERNAL_XAUXAG_1M",
+  "version": "1.0.0",
+  "source": "DUKASCOPY",
+  "sourceType": "EXTERNAL_SPOT_RECONSTRUCTION",
+  "description": "Reconstructed XAU/XAG ratio from Dukascopy spot XAU/USD and XAG/USD M1 candles",
+  "construction": "R_t = XAU/USD(t) / XAG/USD(t)",
+  "dateRange": {
+    "from": "2025-06-01",
+    "to": "2025-09-01",
+    "firstTimestamp": 1748815200000,
+    "lastTimestamp": 1756684740000,
+    "firstISO": "2025-06-01T22:00:00.000Z",
+    "lastISO": "2025-08-31T23:59:00.000Z"
+  },
+  "statistics": {
+    "totalXAUCandles": 89419,
+    "totalXAGCandles": 89316,
+    "alignedCandles": 89312,
+    "quarantinedCandles": 107,
+    "ohlcViolations": 0,
+    "alignmentRate": "99.88%"
+  },
+  "contentHash": "5e9018f67579cfeacfbd8c11e3ab86a99df2b3c8cb723617e5c5a9d930d9c3ea",
+  "hashAlgorithm": "SHA-256",
+  "csvFile": "EXTERNAL_XAUXAG_1M.csv",
+  "csvFormat": "timestamp,open,high,low,close,volume",
+  "timestampFormat": "UNIX_MILLISECONDS",
+  "ratioPrecision": 6,
+  "createdAt": "2026-09-11T05:59:58.496Z",
+  "dataLevel": "LEVEL_0_UNVERIFIED",
+  "promotionPath": "Must pass Fidelity Protocol (Phase 4) to reach LEVEL_1_RESEARCH_GRADE"
+}

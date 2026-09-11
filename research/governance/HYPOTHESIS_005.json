@@ -1,0 +1,67 @@
+{
+  "hypothesisId": "HYPOTHESIS_005",
+  "version": "1.0.0",
+  "title": "Intraday Extreme Deviation Mean-Reversion on Cointegrated Gold/Silver Ratio",
+  "researchFamily": "FAMILY_04_COMMODITY_RATIO_MICROSTRUCTURE",
+  "status": "FROZEN",
+  "frozenAt": "2026-09-11T07:15:00.000Z",
+  "instrument": {
+    "asset": "XAUXAG",
+    "name": "Gold/Silver Ratio (Fusion CFD)",
+    "venue": "IQ_OPTION",
+    "activeId": 2071,
+    "provider": "feed",
+    "timeframe": "1m",
+    "payoutRate": 0.88,
+    "breakevenProbability": 0.5319148936170213,
+    "expirationSeconds": 900,
+    "expirationBars": 15
+  },
+  "dataset": {
+    "datasetId": "DATASET_XAUXAG_001",
+    "source": "DUKASCOPY_RECONSTRUCTED_SPOT",
+    "totalRows": 89312,
+    "dateRange": "2025-06-01T00:00:00.000Z to 2025-08-31T23:59:00.000Z",
+    "inSamplePartition": {
+      "start": "2025-06-01T00:00:00.000Z",
+      "end": "2025-07-20T23:59:59.000Z",
+      "purpose": "Feature verification and baseline estimation"
+    },
+    "outOfSamplePartition": {
+      "start": "2025-07-21T00:00:00.000Z",
+      "end": "2025-08-31T23:59:59.000Z",
+      "purpose": "Strict blind replay and Wilson CI gate"
+    }
+  },
+  "model": {
+    "modelClass": "RatioZScoreModel",
+    "lookbackWindow": 120,
+    "logRatio": true,
+    "upperThreshold": 2.0,
+    "lowerThreshold": -2.0,
+    "rules": {
+      "CALL": "Z_t <= -2.00",
+      "PUT": "Z_t >= +2.00",
+      "NO_SIGNAL": "-2.00 < Z_t < +2.00 or lookback < 120 or sigma == 0"
+    }
+  },
+  "acceptanceCriteria": {
+    "minOosSample": 100,
+    "wilsonLowerBoundThreshold": 0.5319148936170213,
+    "confidenceLevel": 0.95,
+    "maxDirectionalImbalance": 0.06,
+    "maxExpectedCalibrationError": 0.05
+  },
+  "adversarialRequirements": [
+    "SyntheticNullMulberry32",
+    "LabelPermutations1000",
+    "ReversedNegativeControl",
+    "LookaheadBoundaryFuzzing"
+  ],
+  "governance": {
+    "failClosed": true,
+    "zeroLookahead": true,
+    "immutableAfterFreeze": true,
+    "postHocTuningForbidden": true
+  }
+}

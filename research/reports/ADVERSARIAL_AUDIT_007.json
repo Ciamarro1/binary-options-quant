@@ -1,0 +1,27 @@
+{
+  "auditId": "ADVERSARIAL_AUDIT_007",
+  "hypothesisId": "HYPOTHESIS_007",
+  "targetAsset": "XAUXAG",
+  "auditedAt": "2026-09-11T08:26:30.000Z",
+  "status": "CLEAR_FOR_BLIND_OOS",
+  "auditor": "Adversarial QA Engineer (Red Team)",
+  "testBatteryResults": {
+    "037-A_ZeroLookaheadCausality": {
+      "status": "PASS",
+      "findings": "Zero lookahead confirmed. Wick confirmation and macro baseline evaluated strictly causally using historical and completed candle data."
+    },
+    "037-B_RejectionWickGeometry": {
+      "status": "PASS",
+      "findings": "Lower and upper rejection wick ratios and candle polarity checks strictly enforced. Non-wick candles and zero-range candles yield NO_SIGNAL."
+    },
+    "037-C_ReversedNegativeControl": {
+      "status": "PASS",
+      "findings": "Negative directional control consistently inverts signals without statistical leakage."
+    },
+    "037-D_LookbackGuards": {
+      "status": "PASS",
+      "findings": "Model fails closed with INSUFFICIENT_LOOKBACK when either intraday (120m) or macro (1440m) window is incomplete."
+    }
+  },
+  "verdict": "ADVERSARIAL_CLEARANCE_GRANTED"
+}

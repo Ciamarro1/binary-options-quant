@@ -1,11 +1,16 @@
 import os
 import time
+import iqoptionapi.constants as OP_code
 from iqoptionapi.stable_api import IQ_Option
+
+# Pre-populate dynamic Fusion CFDs to avoid WebSocket reverse-lookup failures
+OP_code.ACTIVES["XAU/XAG"] = 2071
+OP_code.ACTIVES["XAU/XAG-OTC"] = 2086
 
 class IQOptionAdapter:
     """
-    Observation-only adapter.
-    No trade endpoints are exposed here.
+    Observation-only adapter for IQ Option market data.
+    Strictly read-only; no trade or order execution endpoints are exposed.
     """
     def __init__(self, email: str, password: str):
         if not email or not password:

@@ -1,0 +1,81 @@
+{
+  "modelId": "MODEL_H006_XAUXAG_TREND_ZREVERT",
+  "version": "1.0.0",
+  "registeredAt": "2026-09-11T07:31:00.000Z",
+  "state": "03_APPROVED_CANDIDATE",
+  "hypothesis": {
+    "hypothesisId": "HYPOTHESIS_006",
+    "researchFamily": "FAMILY_04_COMMODITY_RATIO_MICROSTRUCTURE",
+    "title": "Macro-Trend Conditioned Intraday Ratio Mean-Reversion on XAU/XAG",
+    "specSha256": "ee38053ea26d15345a754dfe03a4766b7ac2d139aa932a0a403e45da880a11a4"
+  },
+  "instrument": {
+    "asset": "XAUXAG",
+    "venue": "IQ_OPTION",
+    "activeId": 2071,
+    "provider": "feed",
+    "timeframe": "1m",
+    "expirySeconds": 900,
+    "expiryBars": 15,
+    "referencePayout": 0.88,
+    "breakevenHurdle": 0.5319148936170213
+  },
+  "implementation": {
+    "entrypoint": "src/strategy/models/TrendConditionedRatioZScoreModel.js",
+    "runner": "src/strategy/runners/H006Runner.js",
+    "sourceCodeSha256": "105b1d1d9de09a1e7291cbec4ba8175372e2f403632ac8eb05f6183111ce94a8",
+    "parameters": {
+      "intradayLookback": 120,
+      "macroLookback": 1440,
+      "zThreshold": 2.0,
+      "expirySeconds": 900
+    }
+  },
+  "validationSummary": {
+    "datasetId": "DATASET_XAUXAG_001",
+    "datasetContentHash": "5e9018f67579cfeacfbd8c11e3ab86a99df2b3c8cb723617e5c5a9d930d9c3ea",
+    "partition": "OUT_OF_SAMPLE_BLIND",
+    "sampleSizeResolved": 1672,
+    "realizedWinRate": 0.594498,
+    "wilsonLowerBound95": 0.570773,
+    "wilsonUpperBound95": 0.617789,
+    "surplusBasisPoints": 388.58,
+    "expectedValuePerUnit": 0.117656,
+    "directionalBreakdown": {
+      "callWinRate": 0.607092,
+      "callSample": 705,
+      "putWinRate": 0.585315,
+      "putSample": 967,
+      "deltaPercentagePoints": 2.18
+    },
+    "reversedControlWinRate": 0.405502,
+    "brierScore": 0.2450
+  },
+  "governanceConsensusSignatures": {
+    "chiefRiskOfficer": {
+      "verdict": "APPROVED",
+      "artifact": "research/governance/RISK_DECISION_006.json",
+      "statement": "Statistical evidence gate cleared. W_low (57.08%) exceeds P_BE (53.19%) by +388.58 bps on N=1672."
+    },
+    "chiefTechnologyOfficer": {
+      "verdict": "APPROVED",
+      "artifact": "tests/adversarial/036_adversarial_h006.test.js",
+      "statement": "Architectural determinism, zero lookahead leakage, and boundary fuzzing verified. All 63 suites pass."
+    },
+    "experimentController": {
+      "verdict": "VERIFIED",
+      "artifact": "research/governance/PROVENANCE_RECEIPT_006.json",
+      "statement": "Immutable dataset and frozen code hashes cryptographically verified. Provenance intact."
+    },
+    "chiefExecutiveOfficer": {
+      "verdict": "MANDATE_AUTHORIZED",
+      "statement": "Model H006 promoted to Candidate Model Registry. Approved for Shadow/Paper execution."
+    }
+  },
+  "deploymentGates": {
+    "currentDataTier": "LEVEL_1_RESEARCH_GRADE",
+    "promotionToPaperDemo": "AUTHORIZED",
+    "promotionToLiveProduction": "BLOCKED_PENDING_LEVEL_2_FIDELITY",
+    "liveGatePrerequisite": "Accumulate N >= 10,000 live contemporary IQ Option candles via recorder daemon, execute scripts/data_acquisition/fidelity_audit_xauxag.js, and verify rho_15m >= 0.98, DAR_15m >= 94%, BSIR_15m <= 2.0%."
+  }
+}

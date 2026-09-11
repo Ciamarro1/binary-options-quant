@@ -1,0 +1,67 @@
+{
+  "hypothesisId": "HYPOTHESIS_006",
+  "version": "1.0.0",
+  "title": "Macro-Trend Conditioned Intraday Ratio Mean-Reversion on XAU/XAG",
+  "researchFamily": "FAMILY_04_COMMODITY_RATIO_MICROSTRUCTURE",
+  "status": "FROZEN",
+  "parentHypothesis": "HYPOTHESIS_005",
+  "frozenAt": "2026-09-11T07:26:00.000Z",
+  "instrument": {
+    "asset": "XAUXAG",
+    "name": "Gold/Silver Ratio (Fusion CFD)",
+    "venue": "IQ_OPTION",
+    "activeId": 2071,
+    "provider": "feed",
+    "timeframe": "1m",
+    "payoutRate": 0.88,
+    "breakevenProbability": 0.5319148936170213,
+    "expirationSeconds": 900,
+    "expirationBars": 15
+  },
+  "dataset": {
+    "datasetId": "DATASET_XAUXAG_001",
+    "source": "DUKASCOPY_RECONSTRUCTED_SPOT",
+    "totalRows": 89312,
+    "dateRange": "2025-06-01T00:00:00.000Z to 2025-08-31T23:59:00.000Z",
+    "inSamplePartition": {
+      "start": "2025-06-01T00:00:00.000Z",
+      "end": "2025-07-20T23:59:59.000Z",
+      "purpose": "Feature calibration and filter verification"
+    },
+    "outOfSamplePartition": {
+      "start": "2025-07-21T00:00:00.000Z",
+      "end": "2025-08-31T23:59:59.000Z",
+      "purpose": "Strict blind replay and Wilson CI gate"
+    }
+  },
+  "model": {
+    "modelClass": "TrendConditionedRatioZScoreModel",
+    "intradayLookback": 120,
+    "macroLookback": 1440,
+    "zThreshold": 2.0,
+    "rules": {
+      "CALL": "Z_t <= -2.00 AND P_t > EMA_1440(t)",
+      "PUT": "Z_t >= +2.00 AND P_t < EMA_1440(t)",
+      "NO_SIGNAL": "Counter-trend setups (Z <= -2.0 & P < EMA, or Z >= 2.0 & P > EMA) or |Z_t| < 2.0 or lookback < 1440"
+    }
+  },
+  "acceptanceCriteria": {
+    "minOosSample": 100,
+    "wilsonLowerBoundThreshold": 0.5319148936170213,
+    "confidenceLevel": 0.95,
+    "maxDirectionalImbalance": 0.06,
+    "maxExpectedCalibrationError": 0.05
+  },
+  "adversarialRequirements": [
+    "SyntheticNullMulberry32",
+    "LabelPermutations1000",
+    "ReversedNegativeControl",
+    "LookaheadBoundaryFuzzing"
+  ],
+  "governance": {
+    "failClosed": true,
+    "zeroLookahead": true,
+    "immutableAfterFreeze": true,
+    "postHocTuningForbidden": true
+  }
+}

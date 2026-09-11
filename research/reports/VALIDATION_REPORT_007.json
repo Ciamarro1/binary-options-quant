@@ -1,0 +1,56 @@
+{
+  "experimentId": "EXP_037_XAUXAG_WICK_CONFIRMED_REVERT_001",
+  "hypothesisId": "HYPOTHESIS_007",
+  "asset": "XAUXAG",
+  "executionDate": "2026-09-11T08:27:12.472Z",
+  "dataset": {
+    "datasetId": "DATASET_XAUXAG_001",
+    "totalCandles": 89312,
+    "splitTimestampIso": "2025-07-21T00:00:00.000Z",
+    "inSampleCandles": 47992,
+    "outOfSampleCandles": 41320
+  },
+  "inSampleResults": {
+    "totalSignals": 191,
+    "resolvedTrades": 191,
+    "wins": 103,
+    "losses": 88,
+    "pushes": 0,
+    "winRate": 0.5392670157068062,
+    "wilsonCI": {
+      "lower": 0.46849901886768497,
+      "upper": 0.6084866560150435,
+      "center": 0.5392670157068062
+    },
+    "expectedValue": 0.013821989528795708,
+    "callWinRate": 0.46511627906976744,
+    "putWinRate": 0.6
+  },
+  "outOfSampleResults": {
+    "totalSignals": 149,
+    "resolvedTrades": 149,
+    "wins": 81,
+    "losses": 68,
+    "pushes": 0,
+    "winRate": 0.5436241610738255,
+    "wilsonCI": {
+      "lower": 0.4635546298046358,
+      "upper": 0.6215008350463,
+      "center": 0.5436241610738255
+    },
+    "expectedValue": 0.022013422818791928,
+    "callWinRate": 0.5614035087719298,
+    "putWinRate": 0.532608695652174,
+    "directionalImbalance": 0.028794813119755847,
+    "brierScore": 0.24823438852348956,
+    "breakevenRate": 0.5319148936170213,
+    "surplusOverBreakevenBps": -684,
+    "reversedControlWinRate": 0.4563758389261745
+  },
+  "evaluation": {
+    "meetsSampleSize": true,
+    "clearsBreakevenHurdle": false,
+    "directionalSymmetryAcceptable": true,
+    "reversedControlSubverted": true
+  }
+}

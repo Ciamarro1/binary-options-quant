@@ -1,0 +1,40 @@
+{
+  "datasetId": "DATASET_XAUXAG_001",
+  "asset": "XAUXAG",
+  "timeframe": "1m",
+  "source": "DUKASCOPY_RECONSTRUCTED_SPOT",
+  "sourceType": "EXTERNAL_SPOT_RECONSTRUCTION",
+  "reconstructionFormula": "R_t = XAU/USD(t) / XAG/USD(t)",
+  "period": "2025-06-01T22:00:00.000Z to 2025-08-31T23:59:00.000Z",
+  "firstTimestamp": 1748815200000,
+  "lastTimestamp": 1756684740000,
+  "totalCandles": 89312,
+  "governance": {
+    "dataTier": "LEVEL_1_RESEARCH_GRADE",
+    "status": "VERIFIED_CANONICAL",
+    "promotionRequirement": "Must undergo Phase 4 Fidelity Audit (rho >= 0.98, DAR >= 94%, BSIR <= 2%) against concurrent IQ Option feed before Level 2 promotion.",
+    "commercialUsePermitted": false,
+    "frozenAt": "2026-09-11T06:13:06.393Z"
+  },
+  "validation": {
+    "monotonic": true,
+    "duplicateCount": 0,
+    "invalidOhlcCount": 0,
+    "cadence": "60s",
+    "normalIntervalCount": 89140,
+    "weekendMarketClosures": 13,
+    "intradayGaps": 158,
+    "monthBreakdown": {
+      "2025-06": 28933,
+      "2025-07": 31471,
+      "2025-08": 28908
+    }
+  },
+  "hashes": {
+    "canonicalFileSha256": "5e9018f67579cfeacfbd8c11e3ab86a99df2b3c8cb723617e5c5a9d930d9c3ea",
+    "semanticContentHash": "24845127de1de02151ca4aa7ea9a4f02a432b92aa6fe6413f9ac9fd7fdbb0e1d",
+    "hashAlgorithm": "SHA-256"
+  },
+  "canonicalFile": "canonical/XAUXAG_1m_canonical.csv",
+  "schema": "timestamp,open,high,low,close,volume"
+}

@@ -1,0 +1,32 @@
+{
+  "auditId": "ADVERSARIAL_AUDIT_005",
+  "hypothesisId": "HYPOTHESIS_005",
+  "targetAsset": "XAUXAG",
+  "auditedAt": "2026-09-11T07:16:30.000Z",
+  "status": "CLEAR_FOR_BLIND_OOS",
+  "auditor": "Adversarial QA Engineer (Red Team)",
+  "testBatteryResults": {
+    "035-A_CausalInvariant": {
+      "status": "PASS",
+      "findings": "Zero lookahead leakage verified. predict() is strictly idempotent and excludes current/future observations from historical window."
+    },
+    "035-B_NumericalFuzzing": {
+      "status": "PASS",
+      "findings": "Insufficient lookback (< 120), zero variance (flat prices), and negative/corrupt prices fail closed without runtime exceptions."
+    },
+    "035-C_NegativeDirectionalControl": {
+      "status": "PASS",
+      "findings": "ReversedRatioZScoreModel consistently inverts CALL/PUT directional signals, ensuring negative control symmetry."
+    },
+    "035-D_SyntheticNullMulberry32": {
+      "status": "PASS",
+      "seed": "0xDEADBEEF",
+      "findings": "Geometric Brownian motion produced win rate consistent with random walk (within [40%, 60%]) with Wilson lower bound strictly below breakeven."
+    },
+    "035-E_WilsonScoreProperties": {
+      "status": "PASS",
+      "findings": "Analytical Wilson confidence interval computation verified against known mathematical bounds."
+    }
+  },
+  "verdict": "ADVERSARIAL_CLEARANCE_GRANTED"
+}

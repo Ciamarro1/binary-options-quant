@@ -1,0 +1,37 @@
+{
+  "decisionId": "RISK_DECISION_007",
+  "experimentId": "EXP_037_XAUXAG_WICK_CONFIRMED_REVERT_001",
+  "hypothesisId": "HYPOTHESIS_007",
+  "asset": "XAUXAG",
+  "deliberatedAt": "2026-09-11T08:28:00.000Z",
+  "chiefRiskOfficer": "Autonomous Quantitative CRO",
+  "triProofAudit": {
+    "statsProof": {
+      "sampleSize": 149,
+      "sampleFloorMet": true,
+      "realizedWinRate": 0.543624,
+      "breakevenThreshold": 0.531915,
+      "nominalEdgeObserved": true,
+      "wilsonLowerBound": 0.463555,
+      "wilsonUpperBound": 0.621501,
+      "wilsonGateMet": false,
+      "deficitBasisPoints": 683.60
+    },
+    "adversarialProof": {
+      "auditId": "ADVERSARIAL_AUDIT_007",
+      "status": "CLEAR_FOR_BLIND_OOS",
+      "reversedControlWinRate": 0.456376,
+      "directionalSymmetryMet": true
+    },
+    "provenanceProof": {
+      "datasetId": "DATASET_XAUXAG_001",
+      "datasetContentHash": "5e9018f67579cfeacfbd8c11e3ab86a99df2b3c8cb723617e5c5a9d930d9c3ea",
+      "codeFrozenExAnte": true,
+      "chineseWallViolations": 0
+    }
+  },
+  "sovereignVerdict": "VETO",
+  "classification": "FALSIFIED_FOR_PRODUCTION_ARCHIVED",
+  "rationale": "Constitutional Invariant 4 mandates W_low > P_BE. Realized win rate (54.36%) exceeds breakeven (53.19%), yielding positive EV (+0.0220). However, the 35% rejection wick filter introduced significant trade starvation (N=149 vs N=1672 in H006) without improving alpha over H006 (54.36% vs 59.45%). The 95% Wilson lower bound (46.3555%) is 683.60 bps below P_BE. The CRO strictly exercises sovereign veto. Retroactive parameter tuning is prohibited by governance.",
+  "remediationPath": "Model H006 remains the sole validated champion in the Model Registry (Win Rate 59.45%, W_low 57.08%). For future iterations on the XAU/XAG ratio, research should investigate alternative microstructure features (e.g. Volume/Tick cluster absorption or Multi-Scale Volatility Compression) rather than single-candle geometric rejection wicks."
+}
