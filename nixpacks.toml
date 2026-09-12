@@ -1,0 +1,11 @@
+[phases.setup]
+nixPkgs = ["python311", "nodejs_20"]
+
+[phases.install]
+cmds = [
+  "pip install -r research/execution/data_acquisition/recorder/requirements.txt",
+  "npm install --omit=dev"
+]
+
+[start]
+cmd = "python3 research/execution/data_acquisition/recorder/cloud_entrypoint.py"

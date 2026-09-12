@@ -1,6 +1,6 @@
 # Project State: Binary Options Quant
 
-**Current Phase:** Commit 016 Complete (Cross-Hypothesis Meta-Analysis Complete & Research Family Archived)
+**Current Phase:** Commit 043 Complete (XAU/XAG Instrument Identity Audit Formalized & Railway 24/7 Cloud Recorder Infrastructure Deployed)
 
 ## Completed Milestones
 1. **Commit 001 - Core Types:** MarketObservation, BinaryOutcome, Signal, ProbabilitySnapshot.
@@ -214,4 +214,16 @@
     - **Architectural Test Suite:** Added `tests/unit/LiveShadowExecutor.test.js` (5/5 tests passing): pre-warming capacity, signal validity, dispatch→settle lifecycle, LOSS accounting, latency budget rejection.
     - **Test Coverage:** 67 test suites / 231 tests passing (100%). **[SHADOW FORWARD TEST ACTIVE]**
 
-**Next Objective:** Monitor Live Shadow Forward Test. As the recorder accumulates bars and the model begins emitting live signals, track shadow PnL and Wilson CI in real-time. When $N_{\text{live}} \ge 30$, evaluate forward test concordance with historical OOS (59.45%). Initiate Level 2 Fidelity Audit when recorder reaches $N \ge 10,000$ closed bars.
+92. **Commit 042 - XAU/XAG Instrument Identity & Execution Fidelity Audit:**
+    - **Quant-Grill Frozen:** Locked `FROZEN_SPEC_XAUXAG_FIDELITY_AUDIT.json` (SHA-256: `8bd0d6fe1a0...`) satisfying all 15 mandatory dimensions ex-ante.
+    - **10-Link Chain of Evidence Audit:** Audited Data Source, Instrument Identity, Timestamp, Price Series, Candle Construction, Entry Price, Expiry Price, Outcome, Payout, and Replay Evidence in `XAUXAG_CHAIN_OF_EVIDENCE_AUDIT.json`.
+    - **20 Scientific Questions Answered:** Documented origin (Dukascopy ECN spot), synthetic reconstruction ($R_t = XAU \div XAG$), calendar divergence (June–August 2025 vs September 2026), and spread characteristics.
+    - **Epistemic Classification:** Confirmed `DATASET_XAUXAG_001` is strictly **LEVEL 1: RESEARCH-GRADE**. Live capital deployment for `MODEL_H006` remains **`BLOCKED`** until Level 2 Fidelity is achieved. Zero strategy code modified, zero parameters tuned. **[AUDIT DOSSIER FROZEN]**
+93. **Commit 043 - Railway 24/7 Cloud Recorder Deployment Infrastructure:**
+    - **Container Architecture:** Created `Dockerfile` (Python 3.11-slim) and `.dockerignore` for cloud continuous execution.
+    - **Persistent Volume Support:** Configured flexible `RAW_DIR` mounting to Railway Volume (`/data`) to prevent data loss on container restarts.
+    - **Cloud Entrypoint & Web Dashboard:** Implemented `cloud_entrypoint.py` serving `/health` (Railway healthcheck), `/metrics`, `/` (HTML progress dashboard towards 10,000 candles), and `/download` (direct one-click `.jsonl` download).
+    - **Railway Configuration & Guide:** Authored `railway.json` and comprehensive user guide `docs/RAILWAY_DEPLOYMENT_GUIDE.md`.
+    - **Test Coverage:** 100% existing test suites passing without regressions. **[CLOUD DEPLOY INFRASTRUCTURE READY]**
+
+**Next Objective:** Deploy the cloud recorder to Railway following `docs/RAILWAY_DEPLOYMENT_GUIDE.md` with persistent volume `/data`. Accumulate $N \ge 10,000$ closed M1 candles of Active 2071 during regular weekday trading hours. Once $N \ge 10,000$, download the dataset via the `/download` dashboard endpoint, download concurrent Dukascopy spot data for the exact same timeframe, and execute `fidelity_audit_xauxag.js` to evaluate $\rho_{15\text{m}} \ge 0.98$ and $\text{BSIR}_{15\text{m}} \le 2.0\%$.

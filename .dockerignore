@@ -1,0 +1,10 @@
+.git
+.github
+node_modules
+scratch
+tests
+research/datasets
+artifacts
+.env
+*.exe
+*.zip

@@ -14,7 +14,7 @@
     "status": "VERIFIED_CANONICAL",
     "promotionRequirement": "Must undergo Phase 4 Fidelity Audit (rho >= 0.98, DAR >= 94%, BSIR <= 2%) against concurrent IQ Option feed before Level 2 promotion.",
     "commercialUsePermitted": false,
-    "frozenAt": "2026-09-11T06:13:06.393Z"
+    "frozenAt": "2026-09-12T21:34:43.939Z"
   },
   "validation": {
     "monotonic": true,

@@ -1,76 +1,10 @@
 {
-  "timestamp_utc": "2026-09-11T05:41:47Z",
-  "probe_status": "SUCCESS_CATALOGED",
-  "credentials_configured": true,
-  "connection_status": "CONNECTED",
-  "server_timestamp": 1789105294.583,
-  "instruments": {
-    "XAUXAG_REGULAR": {
-      "active_id": 2071,
-      "ticker": "XAU/XAG",
-      "name": "front.XAU/XAG",
-      "description": "front.XAU/XAG",
-      "provider": "feed",
-      "precision": 6,
-      "commission_percent": 12,
-      "payout_rate": 0.88,
-      "minimal_bet": 2,
-      "maximal_bet": 20000,
-      "expiration_times_seconds": [
-        900
-      ],
-      "is_enabled": true,
-      "is_suspended": false
-    },
-    "XAUXAG_OTC": {
-      "active_id": 2086,
-      "ticker": "XAU/XAG-OTC",
-      "name": "front.XAU/XAG-OTC",
-      "description": "front.XAU/XAG-OTC",
-      "provider": "OTC",
-      "precision": 6,
-      "commission_percent": 14,
-      "payout_rate": 0.86,
-      "minimal_bet": 2,
-      "maximal_bet": 20000,
-      "expiration_times_seconds": [
-        900
-      ],
-      "is_enabled": true,
-      "is_suspended": false
-    }
-  },
-  "historical_tests": {
-    "XAUXAG_REGULAR": {
-      "success": true,
-      "candles_count": 5,
-      "sample_candle": {
-        "id": 748517,
-        "from": 1789105260,
-        "at": 1789105295000000000,
-        "to": 1789105320,
-        "open": 67.929885,
-        "close": 67.914645,
-        "min": 67.914645,
-        "max": 67.940355,
-        "volume": 560
-      }
-    },
-    "XAUXAG_OTC": {
-      "success": true,
-      "candles_count": 5,
-      "sample_candle": {
-        "id": 1082585,
-        "from": 1789105260,
-        "at": 1789105295000000000,
-        "to": 1789105320,
-        "open": 69.155185,
-        "close": 69.161785,
-        "min": 69.124195,
-        "max": 69.180615,
-        "volume": 0
-      }
-    }
-  },
-  "error_message": null
+  "timestamp_utc": "2026-09-12T21:39:13Z",
+  "probe_status": "BLOCKED_MISSING_CREDENTIALS",
+  "credentials_configured": false,
+  "connection_status": null,
+  "server_timestamp": null,
+  "instruments": {},
+  "historical_tests": {},
+  "error_message": "Valid credentials not set in .env."
 }

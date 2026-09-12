@@ -23,7 +23,11 @@ ASSET = os.environ.get("IQO_ASSET", "XAU/XAG")
 INTERVAL = int(os.environ.get("IQO_INTERVAL", 60))
 MAX_CANDLES = int(os.environ.get("IQO_MAX_CANDLES", 0))  # 0 = infinite / continuous
 
-RAW_DIR = PROJECT_ROOT / "research" / "execution" / "data_acquisition" / "raw"
+custom_raw_dir = os.environ.get("RAW_DIR")
+if custom_raw_dir:
+    RAW_DIR = Path(custom_raw_dir)
+else:
+    RAW_DIR = PROJECT_ROOT / "research" / "execution" / "data_acquisition" / "raw"
 RAW_DIR.mkdir(parents=True, exist_ok=True)
 SAFE_ASSET = ASSET.replace("/", "_").replace("\\", "_")
 RAW_FILE = RAW_DIR / f"IQO_{SAFE_ASSET}_{INTERVAL}s_raw.jsonl"

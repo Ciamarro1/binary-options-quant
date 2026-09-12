@@ -4,6 +4,7 @@
   "description": "Binary options quantitative system",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
     "test": "jest",
     "lint": "echo \"No linting configured yet\" && exit 0",
     "build": "echo \"No build step required\" && exit 0"
